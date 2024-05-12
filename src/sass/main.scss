@@ -3,9 +3,19 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
+:root {
+  --text-dark-color: #2f4f4f;
+  --text-light-color: #e3dada;
+  --text-red-color: #f44e4e;
+  --background-dark-color: #2f4f4f;
+  --background-light-color: #e3dada;
+  --background-red-color: #f44e4e;
+}
+
 // Style dla pliku z przykładem HTML fragmentu
 // @import '../css/common.css';
 @import '../css/header.css';
+@import '../css/hero.css';
 // @import '../css/search.css';
 // @import '../css/movies.css';
 // @import '../css/pagination.css';

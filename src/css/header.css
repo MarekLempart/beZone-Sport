@@ -1,7 +1,7 @@
 /* nagłówek strony */
 .header {
   border: 0.01px solid transparent;
-  background-color: #f44e4e;
+  background-color: var(--background-light-color);
   background-size: 100%;
   background-position: center;
   height: 150px;
@@ -11,7 +11,7 @@
 /* kontener na logo strony */
 .header-logo {
   display: flex;
-  color: #2f4f4f;
+  color: var(--text-red-color);
   gap: 10px;
   padding-left: 25px;
   align-items: center;
@@ -20,7 +20,7 @@
 
 /* logo strony */
 .header svg {
-  color: #2f4f4f;
+  color: var(--text-red-color);
   width: 36px;
   height: 36px;
   margin: 0;
@@ -30,7 +30,7 @@
 .header h2 {
   margin: 0;
   padding-left: 10px;
-  color: #2f4f4f;
+  color: var(--text-red-color);
   font-family: Roboto;
   font-weight: 500;
   font-size: 40px;
@@ -55,7 +55,7 @@
 
 /* odnośnik w elemencie menu */
 .header-navi a {
-  color: #2f4f4f;
+  color: var(--text-red-color);
   font-size: 20px;
   font-weight: 500;
   font-family: Roboto;
@@ -69,7 +69,7 @@
 
 /* aktywny odnośnik w elemencie menu */
 .header-navi a.active {
-  text-decoration: underline 2.5px #ff001b;
+  text-decoration: underline 2.5px var(--text-dark-color);
 }
 
 /* ikona wyszukiwania */
