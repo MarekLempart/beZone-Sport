@@ -10,6 +10,9 @@
   --background-dark-color: #2f4f4f;
   --background-light-color: #e3dada;
   --background-red-color: #f44e4e;
+
+  --transition-duration: 250ms;
+  --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // Style dla pliku z przykładem HTML fragmentu
@@ -25,3 +28,40 @@
 // @import '../css/modal-goit-team.css';
 // @import '../css/modal-registration.css';
 // @import '../css/view.css';
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  /*max-width: 100%;*/
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0px 0px;
+  margin: 0px auto;
+}

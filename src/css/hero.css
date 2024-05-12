@@ -1,25 +1,3 @@
-:root {
-  /* --text-dark-color: #111111;
-  --text-light-color: #ffffff;
-  --text-orange-color: #fd9222;
-  --text-dark-transparent-color: #111111b3;
-  --text-light-transparent-color: #ffffffb3;
-  --text-label-dark-transparent-color: #4040404d;
-  --icon-dark-color: #111111;
-  --icon-dark-transparent-color: #1111111a;
-  --icon-orange-color: #fd9222;
-  --background-dark-color: #1e1823;
-  --background-light-color: #fafafa;
-  --background-white-color: #ffffff;
-  --background-orange-color: #fd9222;
-  --background-button-color: #fcf1e0;
-  --background-modal-light-color: #fafafa;
-  --border-dark-transparent-color: #ffffff80; */
-
-  --transition-duration: 250ms;
-  --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .hero-section {
   background-color: var(--background-dark-color);
   padding: 395px 20px 20px;
@@ -59,7 +37,7 @@
 
 .hero-buy-now-button {
   color: var(--text-light-color);
-  background-color: var(--background-orange-color);
+  background-color: var(--background-red-color);
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -78,8 +56,8 @@
 
 .hero-buy-now-button:hover,
 .hero-buy-now-button:focus {
-  background-color: var(--background-button-color);
-  color: var(--text-orange-color);
+  background-color: var(--background-light-color);
+  color: var(--text-red-color);
 }
 
 .hero-how-it-is-made-button {
@@ -98,9 +76,9 @@
 
 .hero-how-it-is-made-button:hover,
 .hero-how-it-is-made-button:focus {
-  color: var(--text-orange-color);
-  background-color: var(--background-white-color);
-  border: 1px solid var(--text-orange-color);
+  color: var(--text-red-color);
+  background-color: var(--background-light-color);
+  border: 1px solid var(--text-red-color);
 }
 
 .hero-link-made-button {
@@ -117,7 +95,7 @@
 
 .hero-link-made-button:hover,
 .hero-link-made-button:focus {
-  color: var(--text-orange-color);
+  color: var(--text-red-color);
 }
 
 .hero-scroll-button-box {
@@ -128,13 +106,13 @@
   gap: 12px;
   color: var(--text-light-color);
   background-color: transparent;
-  fill: var(--text-orange-color);
+  fill: var(--text-red-color);
   transition: background-color var(--transition-duration) var(--transition-tf);
 }
 
 .hero-scroll-button-box:hover .hero-scroll-down-button,
 .hero-scroll-button-box:focus .hero-scroll-down-button {
-  background-color: var(--background-orange-color);
+  background-color: var(--background-red-color);
   fill: var(--text-light-color);
 }
 
@@ -155,7 +133,7 @@
 
 .hero-link-scroll:hover,
 .hero-link-scroll:focus {
-  color: var(--text-orange-color);
+  color: var(--text-red-color);
 }
 
 .hero-link-scroll:hover .hero-button-scroll-icon,
@@ -170,20 +148,20 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: var(--background-white-color);
+  background-color: var(--background-light-color);
   border: none;
   padding: 0;
   cursor: pointer;
 }
 
 .hero-scroll-down {
-  color: var(--icon-orange-color);
+  color: var(--text-red-color);
 }
 
 .hero-button-scroll-icon {
   width: 16;
   height: 16;
-  fill: var(--icon-orange-color);
+  fill: var(--text-red-color);
   transition: fill var(--transition-duration) var(--transition-tf);
 }
 
@@ -201,7 +179,8 @@
     }*/
 
   .background-image-section {
-    background-image: url('../images/maxresdefault.jpg');
+    background-image: linear-gradient(#2e2f42b3, #2e2f42b3),
+      url('../images/maxresdefault.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -215,7 +194,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .background-image-section {
-      background-image: url('../images/maxresdefault.jpg');
+      background-image: linear-gradient(#2e2f42b3, #2e2f42b3),
+        url('../images/maxresdefault.jpg');
     }
   }
 }
@@ -233,7 +213,8 @@
     }*/
 
   .background-image-section {
-    background-image: url('../images/maxresdefault.jpg');
+    background-image: linear-gradient(#2e2f42b3, #2e2f42b3),
+      url('../images/maxresdefault.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -247,7 +228,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .background-image-section {
-      background-image: url('../images/maxresdefault.jpg');
+      background-image: linear-gradient(#2e2f42b3, #2e2f42b3),
+        url('../images/maxresdefault.jpg');
     }
   }
 
@@ -309,7 +291,8 @@
     }*/
 
   .background-image-section {
-    background-image: url('../images/maxresdefault.jpg');
+    background-image: linear-gradient(#2e2f42b3, #2e2f42b3),
+      url('../images/maxresdefault.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -321,7 +304,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .background-image-section {
-      background-image: url('../images/maxresdefault.jpg');
+      background-image: linear-gradient(#2e2f42b3, #2e2f42b3),
+        url('../images/maxresdefault.jpg');
     }
   }
 }
