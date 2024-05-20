@@ -1,0 +1,166 @@
+/* reviews.css */
+
+.reviews-section {
+  background-color: var(--background-light-color);
+  text-align: center;
+  padding-bottom: 72px;
+}
+
+.cont-reviews {
+  position: relative;
+}
+
+.reviews-heading {
+  font-weight: 600;
+}
+
+.reviews-accent {
+  color: orange;
+}
+
+.reviews-list {
+  display: flex;
+  margin-bottom: 65px;
+  padding-top: 72px;
+}
+
+.reviews-li {
+  background-color: white;
+  border: 1px solid var(--text-dark-color);
+  border-radius: 15px;
+  box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 335px;
+  position: relative;
+}
+/*
+.reviews-li:not(:first-child) {
+  display: none;
+}
+*/
+.review-photo {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.review-heading {
+  font-size: 18px;
+  font-weight: 600;
+  height: 24px;
+  line-height: 1.33;
+  margin-top: 56px;
+}
+
+/* Zmienić rozłożenie słów w linijkach w p */
+.review-p {
+  color: var(--text-dark-color);
+  font-size: 14px;
+  margin: 0px 10px auto 10px;
+  width: 320px;
+  height: 360px;
+  letter-spacing: -0.02em;
+  line-height: 1.29;
+  max-width: 299px;
+}
+
+.reviews-slider {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.reviews-slide {
+  background-color: var(--text-dark-color);
+  border: none;
+  border-radius: 13px;
+  height: 13px;
+  width: 13px;
+}
+
+.active-review {
+  background-color: orangered;
+  width: 28px;
+}
+
+.reviews-js-pagination {
+  height: 13px;
+  padding-bottom: 37px;
+}
+
+.reviews-button {
+  background-color: transparent;
+  border: 1px solid orangered;
+  border-radius: 100px;
+  color: var(--text-dark-color);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 12px 28px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+  background-color: orangered;
+  color: white;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    padding-bottom: 100px;
+  }
+
+  .reviews-heading {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .reviews-list {
+    margin-bottom: 94px;
+    padding-top: 91px;
+  }
+
+  .reviews-li {
+    max-width: 344px;
+  }
+
+  .reviews-li:nth-child(2) {
+    display: flex;
+  }
+
+  .reviews-slider {
+    margin-bottom: 50;
+  }
+
+  .reviews-js-pagination {
+    padding-bottom: 55px;
+  }
+
+  .reviews-button {
+    font-size: 18px;
+    padding: 14px 40px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .reviews-section {
+    padding-bottom: 128px;
+  }
+
+  .reviews-li {
+    max-width: 360px;
+  }
+
+  .reviews-li:nth-child(3) {
+    display: flex;
+  }
+}
