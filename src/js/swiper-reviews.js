@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 import { reviews } from './fakeApi';
 
 // Funkcja tworząca kartę opinii
-function createReviewCard({ name, review, photo, photoAlt }) {
+const createReviewCard = ({ name, review, photo, photoAlt }) => {
   const li = document.createElement('li');
   li.className = 'reviews-li swiper-slide';
 
@@ -29,10 +29,10 @@ function createReviewCard({ name, review, photo, photoAlt }) {
   li.appendChild(p);
 
   return li;
-}
+};
 
 // Funkcja ładująca opinie i dodająca je do listy
-function loadReviews() {
+const loadReviews = () => {
   const reviewsList = document.getElementById('reviews-list');
 
   // Użycie metody .map do stworzenia elementów <li> dla każdej opinii
@@ -40,30 +40,35 @@ function loadReviews() {
 
   // Dodanie każdej karty opinii do listy
   reviewCards.forEach(card => reviewsList.appendChild(card));
-}
+};
 
 // Wywołanie funkcji ładującej opinie
 loadReviews();
 
-// Inicjalizacja Swiper
-const swiper = new Swiper('.reviews-js-slider', {
-  slidesPerView: 3,
-  spaceBetween: 28,
-  pagination: {
-    el: '.reviews-js-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
+// Funkcja dla inicjalizacji Swiper
+const initializeSwiper = () => {
+  const swiper = new Swiper('.reviews-js-slider', {
+    slidesPerView: 3,
+    spaceBetween: 28,
+    pagination: {
+      el: '.reviews-js-pagination',
+      clickable: true,
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 16,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 28,
+      },
     },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 28,
-    },
-  },
-});
+  });
+};
+
+// Wywołanie funkcji inicjalizującej Swiper
+initializeSwiper();

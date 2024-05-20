@@ -18,7 +18,7 @@
 
 .review-window {
   align-items: center;
-  background: var(--color-light);
+  background: white;
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -52,13 +52,13 @@
 
 .review-close-icon {
   height: 24px;
-  stroke: var(--color-black);
+  stroke: black;
   width: 24px;
 }
 
 .review-close:hover .review-close-icon,
 .review-close:focus .review-close-icon {
-  stroke: var(--color-orange);
+  stroke: orange;
 }
 
 .modal-review-heading {
@@ -70,7 +70,7 @@
 }
 
 .modal-review-accent {
-  color: var(--color-orange);
+  color: orangered;
 }
 
 .modal-review-form {
@@ -139,10 +139,10 @@
 }
 
 .modal-review-button {
-  background-color: var(--color-orange);
+  background-color: orange;
   border: none;
   border-radius: 100px;
-  color: var(--color-white);
+  color: white;
   font-size: 14px;
   font-weight: 600;
   margin-top: 4px;
@@ -153,8 +153,8 @@
 
 .modal-review-button:hover,
 .modal-review-button:focus {
-  background-color: var(--color-lightorange);
-  color: var(--color-orange);
+  background-color: yellowgreen;
+  color: orange;
   outline: none;
 }
 
@@ -179,11 +179,12 @@
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 40px;
-    max-width: 298px;
+    max-width: 500px;
   }
 
   .modal-review-form {
     gap: 18px;
+    max-width: 460px;
   }
 
   .modal-review-form-row {
@@ -194,6 +195,8 @@
     background-color: transparent;
     border-radius: 13px;
     padding: 22px 24px;
+    min-width: 200px;
+    max-width: auto;
   }
 
   .review-phone-left {

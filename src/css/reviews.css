@@ -8,6 +8,7 @@
 
 .cont-reviews {
   position: relative;
+  max-width: 1200px;
 }
 
 .reviews-heading {

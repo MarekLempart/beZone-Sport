@@ -6,6 +6,11 @@
   background-position: center;
   height: 150px;
   display: block;
+  margin: 0px auto;
+}
+
+.header-container {
+  max-width: 1200px;
 }
 
 /* kontener na logo strony */
