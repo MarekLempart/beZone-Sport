@@ -13,8 +13,8 @@ const createReviewCard = ({ name, review, photo, photoAlt }) => {
   img.className = 'review-photo';
   img.src = photo;
   img.alt = photoAlt;
-  img.width = 80;
-  img.height = 80;
+  img.width = 90;
+  img.height = 90;
 
   const h3 = document.createElement('h3');
   h3.className = 'review-heading';
