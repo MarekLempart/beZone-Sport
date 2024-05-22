@@ -4,6 +4,11 @@ import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import { reviews } from './fakeApi';
 
+// Funkcja zamieniająca ":)" na emoji
+const replaceSmileysWithEmojis = text => {
+  return text.replace(/:\)/g, '😊');
+};
+
 // Funkcja tworząca kartę opinii
 const createReviewCard = ({ name, review, photo, photoAlt }) => {
   const li = document.createElement('li');
@@ -22,7 +27,7 @@ const createReviewCard = ({ name, review, photo, photoAlt }) => {
 
   const p = document.createElement('p');
   p.className = 'review-p';
-  p.textContent = review;
+  p.textContent = replaceSmileysWithEmojis(review);
 
   li.appendChild(img);
   li.appendChild(h3);

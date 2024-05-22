@@ -29,7 +29,7 @@ export const reviews = [
     id: nanoid(),
     name: 'Edyta',
     review:
-      'Szyte na miarę podejście do każdego schorzenia i wibracji danego dnia :&rpar; Marcin jest pokręcony jak mój kręgosłup :&rpar;. Kręgosłup jest prostszy z każdym dniem, nie wiem za to co będzie z Marcinem. Jeśli jesteś nogą z anatomii i/lub jej pochodnymi to Marcin bardzo dokładnie wyperswaduje Ci gdzie i jak długa jest ! Specjalista przez duże S. Czuję wdzięczność. Dzięki !',
+      'Szyte na miarę podejście do każdego schorzenia i wibracji danego dnia :) Marcin jest pokręcony jak mój kręgosłup :). Kręgosłup jest prostszy z każdym dniem, nie wiem za to co będzie z Marcinem. Jeśli jesteś nogą z anatomii i/lub jej pochodnymi to Marcin bardzo dokładnie wyperswaduje Ci gdzie i jak długa jest ! Specjalista przez duże S. Czuję wdzięczność. Dzięki !',
     photo: edytaPhoto,
     photoAlt: 'a woman with long fair hair and make-up',
   },
@@ -37,7 +37,7 @@ export const reviews = [
     id: nanoid(),
     name: 'Valeriia',
     review:
-      'Mam znaczną skoliozę dwułukową (po ok. 70 stopni w każdym oddziale), dokuczała mi mała mobilność pleców i bóle lędźwiowe. Ortopeda nalegał na operacji usztywniającej, powiedział że nie ma sensu się bawić w fizjoterapię i podobne rzeczy bo to się będzie tylko powoli pogarszało. Otóż nie! Współpracuję z Marcinem od kwietnia i mamy wielką poprawę! Lędźwie nie bolą, a jak czasem się zdarzy to już wiem jak działać. Moje plecy stały się mobilne, mogę się wyginać i obracać na każdą stronę, mam wrażenie jakbym odzyskała z powrotem własne ciało, a to tylko początek. Z całego serducha polecam każdemu Marcina jako dociekliwego, skrupulatnego i empatycznego profesjonalistę! Zmienia życie na lepsze :&rpar;',
+      'Mam znaczną skoliozę dwułukową (po ok. 70 stopni w każdym oddziale), dokuczała mi mała mobilność pleców i bóle lędźwiowe. Ortopeda nalegał na operacji usztywniającej, powiedział że nie ma sensu się bawić w fizjoterapię i podobne rzeczy bo to się będzie tylko powoli pogarszało. Otóż nie! Współpracuję z Marcinem od kwietnia i mamy wielką poprawę! Lędźwie nie bolą, a jak czasem się zdarzy to już wiem jak działać. Moje plecy stały się mobilne, mogę się wyginać i obracać na każdą stronę, mam wrażenie jakbym odzyskała z powrotem własne ciało, a to tylko początek. Z całego serducha polecam każdemu Marcina jako dociekliwego, skrupulatnego i empatycznego profesjonalistę! Zmienia życie na lepsze :)',
     photo: valeriiaPhoto,
     photoAlt: 'a woman with long wavy red hair and freckles',
   },
