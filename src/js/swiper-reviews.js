@@ -58,6 +58,8 @@ const initializeSwiper = () => {
     pagination: {
       el: '.reviews-js-pagination',
       clickable: true,
+      bulletClass: 'swiper-pagination-bullet',
+      bulletActiveClass: 'swiper-pagination-bullet-active',
     },
     breakpoints: {
       320: {

@@ -98,7 +98,8 @@
   width: 13px;
 }
 
-.active-review {
+.active-review,
+.swiper-pagination-bullet-active {
   background-color: orangered;
   width: 28px;
 }
