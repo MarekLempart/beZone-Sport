@@ -36,12 +36,9 @@
   justify-content: center;
   max-width: 335px;
   position: relative;
+  height: 300px;
 }
-/*
-.reviews-li:not(:first-child) {
-  display: none;
-}
-*/
+
 .review-photo {
   left: 50%;
   position: absolute;
@@ -58,16 +55,32 @@
   margin-top: 56px;
 }
 
-/* Zmienić rozłożenie słów w linijkach w p */
 .review-p {
   color: var(--text-dark-color);
   font-size: 14px;
   margin: 5px 10px auto 10px;
   width: 320px;
-  height: 360px;
+  height: 130px;
+  overflow-y: auto;
   letter-spacing: -0.02em;
   line-height: 1.29;
-  max-width: 299px;
+}
+
+.review-p::-webkit-scrollbar {
+  width: 8px;
+}
+
+.review-p::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.review-p::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.review-p::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .reviews-slider {
