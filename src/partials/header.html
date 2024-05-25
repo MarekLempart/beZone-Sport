@@ -1,20 +1,80 @@
-<header id="headerBG" class="header">
-  <div class="container header-container">
-    <!-- kontener na logo i menu -->
-    <div class="header-navibox">
-      <a href="./index.html" class="header-logo" id="logo">
-        <svg>
-          <use href="./icons/icons.svg#icon-film"></use>
-        </svg>
-        <h2 id="logo">BeZone</h2>
-      </a>
-      <div class="header-navi">
-        <a href="./index.html">Home</a>
-        <a href="./index.html">O mnie</a>
-        <a href="./index.html">O metodyce pracy</a>
-        <a href="./index.html">Sala</a>
-        <a href="./index.html">Kontact / umów wizytę</a>
-      </div>
-    </div>
+<!-- ===============HEADER================ -->
+<header class="header" id="header">
+    <div class="container header-container">
+      <nav class="header-navigation">
+        <!-- ============LOGO========= -->
+        <div class="header-logo">
+          <a class="link" href="">
+            <svg class="header-chocolate-icon">
+                <use href="./icons/icons.svg#icon-film"></use>
+              </svg>
+            <p class="header-logo-text">BE <span class="header-chocolate">ZoNe</span></p>
+            <svg class="header-chocolate-icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/icons.svg#icon-chocolate"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- ============NAVIGATION========= -->
+        <div class="header-nav-box">
+          <ul class="list">
+            <li class="header-relative-li">
+              <a class="link header-nav-list-item header-nev-underline" href="#header">Home</a>
+            </li>
+            <li class="header-relative-li">
+              <a class="link header-nav-list-item header-nev-underline" href="#making">O mnie</a>
+            </li>
+            <li class="header-relative-li">
+              <a class="link header-nav-list-item header-nev-underline" href="#products">O metodyce pracy</a>
+            </li>
+            <li class="header-relative-li">
+              <a class="link header-nav-list-item header-nev-underline" href="#sellers">Sala</a>
+            </li>
+            <li class="header-relative-li">
+              <a class="link header-nav-list-item header-nev-underline" href="#reviews">Kontact / umów wizytę</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ============SOCIAL MEDIA========= -->
+        <div class="header-social-media-box">
+          <ul class="list">
+            <li>
+              <a class="link header-social-link" href="#">
+                <svg class="header-instagram-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <use href="./images/icons.svg#icon-instagram">
 
-</header>
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="link header-social-link" href="#">
+                <svg class="header-twitter-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24">
+                <use href="./images/icons.svg#icon-twitter">
+
+                </use></svg>
+
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-burger-menu">
+          <button type="button" class="header-burger-button menu-toggle js-open-menu">
+            <svg class="header-burger-icon">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>

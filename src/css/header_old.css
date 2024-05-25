@@ -1,0 +1,111 @@
+/* nagłówek strony */
+.header {
+  border: 0.01px solid transparent;
+  background-color: var(--background-light-color);
+  background-size: 100%;
+  background-position: center;
+  height: 150px;
+  display: block;
+  margin: 0px auto;
+}
+
+.header-container {
+  max-width: 1200px;
+}
+
+/* kontener na logo strony */
+.header-logo {
+  display: flex;
+  color: var(--text-red-color);
+  gap: 10px;
+  padding-left: 25px;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* logo strony */
+.header svg {
+  color: var(--text-red-color);
+  width: 36px;
+  height: 36px;
+  margin: 0;
+}
+
+/* tytuł strony */
+.header h2 {
+  margin: 0;
+  padding-left: 10px;
+  color: var(--text-red-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/* kontener z menu */
+.header-navibox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* element menu */
+.header-navi {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  align-items: center;
+}
+
+/* odnośnik w elemencie menu */
+.header-navi a {
+  color: var(--text-red-color);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-navi:last-child {
+  padding-right: 25px;
+}
+
+/* aktywny odnośnik w elemencie menu */
+.header-navi a.active {
+  text-decoration: underline 2.5px var(--text-dark-color);
+}
+
+/* ikona wyszukiwania */
+.search-form svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* bez tytułu dla telefonów */
+@media screen and (max-width: 767px) {
+  .header h2 {
+    display: none;
+  }
+}
+
+/* style dla ekranów tabletów i komputerów */
+@media screen and (min-width: 768px) {
+  .header-navi {
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* .search-form {
+    width: 394px;
+  }
+  .header-library {
+    gap: 18px;
+  }
+  .library-button {
+    width: 147px;
+    height: 42px;
+  } */
+}

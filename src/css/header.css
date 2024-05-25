@@ -1,111 +1,259 @@
-/* nagłówek strony */
 .header {
   border: 0.01px solid transparent;
   background-color: var(--background-light-color);
   background-size: 100%;
   background-position: center;
-  height: 150px;
+  height: 100px;
   display: block;
   margin: 0px auto;
 }
 
-.header-container {
-  max-width: 1200px;
-}
-
-/* kontener na logo strony */
-.header-logo {
+.header-navigation {
   display: flex;
-  color: var(--text-red-color);
-  gap: 10px;
-  padding-left: 25px;
   align-items: center;
-  text-decoration: none;
-}
-
-/* logo strony */
-.header svg {
-  color: var(--text-red-color);
-  width: 36px;
-  height: 36px;
-  margin: 0;
-}
-
-/* tytuł strony */
-.header h2 {
-  margin: 0;
-  padding-left: 10px;
-  color: var(--text-red-color);
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 40px;
-}
-
-/* kontener z menu */
-.header-navibox {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin: 0 auto;
 }
 
-/* element menu */
-.header-navi {
+.header-logo > a {
   display: flex;
-  gap: 30px;
-  padding: 0;
+  gap: 4px;
   align-items: center;
+  padding: 25px 0 19px 0;
 }
 
-/* odnośnik w elemencie menu */
-.header-navi a {
-  color: var(--text-red-color);
-  font-size: 20px;
+.header-chocolate-icon {
+  fill: transparent;
+  stroke: var(--text-red-color);
+  stroke-width: 1.8;
+  width: 21px;
+  height: 21px;
+}
+
+.header-nav-box > ul {
+  display: flex;
+  gap: 24px;
+  display: none;
+}
+
+.header-logo-text {
+  white-space: nowrap;
+  color: var(--text-dark-color);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.28; /* 111.111% */
+  letter-spacing: -0.03em;
+}
+
+.header-chocolate {
+  font-style: normal;
+}
+
+.header-nav-list-item {
+  font-size: 14px;
+  font-style: normal;
   font-weight: 500;
-  font-family: Roboto;
-  text-transform: uppercase;
-  text-decoration: none;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -0.02em;
 }
 
-.header-navi:last-child {
-  padding-right: 25px;
+.header-social-media-box > ul {
+  display: flex;
+  gap: 18px;
+  display: none;
 }
 
-/* aktywny odnośnik w elemencie menu */
-.header-navi a.active {
-  text-decoration: underline 2.5px var(--text-dark-color);
+.header-burger-menu {
+  display: block;
+  height: 28px;
 }
 
-/* ikona wyszukiwania */
-.search-form svg {
-  width: 12px;
-  height: 12px;
+.header-burger-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
 }
 
-/* bez tytułu dla telefonów */
-@media screen and (max-width: 767px) {
-  .header h2 {
+.header-burger-icon {
+  fill: transparent;
+  stroke: var(--text-dark-color);
+  stroke-width: 2;
+  width: 28px;
+  height: 28px;
+}
+
+/* ============TABLET============== */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-navigation {
+    max-width: 704px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-logo > a {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 31px 0 31px 0;
+  }
+
+  .header-logo-text {
+    white-space: nowrap;
+    color: var(--text-dark-color);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.28; /* 111.111% */
+    letter-spacing: -0.03em;
+  }
+
+  .header-chocolate {
+    font-style: normal;
+  }
+
+  .header-burger-icon {
+    fill: transparent;
+    stroke: var(--text-dark-color);
+    stroke-width: 2.5;
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-chocolate-icon {
+    fill: transparent;
+    stroke: var(--text-red-color);
+    stroke-width: 2;
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo-text {
+    white-space: nowrap;
+    color: var(--text-dark-color);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: -0.03em;
+  }
+
+  .header-chocolate {
+    font-style: normal;
+  }
+
+  .header-chocolate-icon {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+  }
+
+  .header-burger-menu {
     display: none;
   }
-}
 
-/* style dla ekranów tabletów i komputerów */
-@media screen and (min-width: 768px) {
-  .header-navi {
-    gap: 40px;
+  .header-nav-box {
+    margin-left: 188px;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  /* .search-form {
-    width: 394px;
+  .header-nav-box > ul {
+    display: flex;
+    gap: 24px;
   }
-  .header-library {
+
+  .header-social-media-box {
+    margin-left: 137px;
+  }
+
+  .header-social-media-box > ul {
+    display: flex;
     gap: 18px;
   }
-  .library-button {
-    width: 147px;
-    height: 42px;
-  } */
+
+  .header-nav-list-item {
+    color: var(--text-dark-color);
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav-list-item:hover,
+  .header-nav-list-item:focus {
+    color: var(--text-red-color);
+  }
+
+  .header-relative-li {
+    position: relative;
+  }
+
+  .header-nev-underline::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 1px;
+    bottom: -8px;
+    left: 0;
+    background: var(--background-red-color);
+    transition-property: width;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nev-underline:focus::after {
+    width: 100%;
+  }
+
+  .header-nev-underline:hover::after {
+    width: 100%;
+  }
+
+  .header-nev-underline:active::after {
+    width: 100%;
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-social-link {
+    color: var(--text-dark-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-twitter-icon {
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 2;
+    transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-instagram-icon {
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 2;
+    transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-social-link:hover,
+  .header-social-link:focus {
+    color: var(--text-red-color);
+  }
 }
