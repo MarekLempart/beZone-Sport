@@ -307,7 +307,7 @@
   }
 
   .components-description-under-image {
-    color: var(--text-light-color);
+    color: white;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -545,7 +545,7 @@
     width: 335px;
     height: 270px;
     border-radius: 15px;
-    background-color: var(--background-light-color);
+    background-color: white;
     border: 1px solid var(--text-red-color);
   }
   .components-description-under-image-milk-sweet {
