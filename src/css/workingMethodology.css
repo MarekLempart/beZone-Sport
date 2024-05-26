@@ -18,10 +18,10 @@
 
 /* ============================MOBILE=============================== */
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .components-ul-1 {
+  .methodology-ul-1 {
     padding-bottom: 20px;
   }
-  .components-list {
+  .methodology-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@
     list-style: none;
   }
 
-  .components-list-ul-2 {
+  .methodology-list-ul-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,26 +42,26 @@
     margin: 0;
     list-style: none;
   }
-  .components-list-image {
+  .methodology-list-image {
     background-color: transparent;
     width: 335px;
     height: 270px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
-  .components-milk-chocolate {
+  .methodology-milk-chocolate {
     width: 335px;
     height: 270px;
     flex-shrink: 0;
     border-radius: 15px;
   }
-  .components-orange-border {
+  .methodology-orange-border {
     width: 335px;
     height: 270px;
     flex-shrink: 0;
     border-radius: 15px;
   }
 
-  .components-flip-card-inner {
+  .methodology-flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -70,12 +70,12 @@
     transform-style: preserve-3d;
   }
 
-  .components-flip-card:hover .components-flip-card-inner {
+  .methodology-flip-card:hover .methodology-flip-card-inner {
     transform: rotateY(180deg);
   }
 
-  .components-flip-card-front,
-  .components-flip-card-back {
+  .methodology-flip-card-front,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -83,7 +83,7 @@
     backface-visibility: hidden;
   }
 
-  .components-flip-card-front {
+  .methodology-flip-card-front {
     display: flex;
     flex-direction: column;
     width: 335px;
@@ -92,13 +92,13 @@
     background: var(--background-red-color);
   }
 
-  .components-image-size {
+  .methodology-image-size {
     width: 224px;
     height: 171px;
     flex-shrink: 0;
   }
 
-  .components-flip-card-back {
+  .methodology-flip-card-back {
     background-color: white;
     border-radius: 15px;
     transform: rotateY(180deg);
@@ -106,12 +106,12 @@
     text-align: start;
   }
 
-  .components-link {
+  .methodology-link {
     padding: 28 55 25 56;
     flex-shrink: 0;
   }
 
-  .components-description-under-image {
+  .methodology-description-under-image {
     color: var(--text-red-color);
     font-family: Montserrat;
     font-size: 14px;
@@ -125,7 +125,7 @@
     flex-shrink: 0;
   }
 
-  .components-h3 {
+  .methodology-h3 {
     color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 18px;
@@ -136,7 +136,7 @@
     text-transform: uppercase;
   }
 
-  .components-hidden-paragraph {
+  .methodology-hidden-paragraph {
     width: 279px;
     height: 146px;
     overflow: hidden;
@@ -151,7 +151,7 @@
     letter-spacing: -0.02em;
   }
   /* 2 image */
-  .components-flip-card-front-milk-sweet {
+  .methodology-flip-card-front-milk-sweet {
     display: flex;
     flex-direction: column;
     width: 335px;
@@ -160,7 +160,7 @@
     background-color: white;
     border: 1px solid var(--text-red-color);
   }
-  .components-description-under-image-milk-sweet {
+  .methodology-description-under-image-milk-sweet {
     color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 14px;
@@ -174,8 +174,8 @@
     flex-shrink: 0;
   }
 
-  .components-flip-card-front-milk-sweet,
-  .components-flip-card-back {
+  .methodology-flip-card-front-milk-sweet,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -185,7 +185,7 @@
 
   /* 3 image */
 
-  .components-flip-card-front-nuts {
+  .methodology-flip-card-front-nuts {
     display: flex;
     flex-direction: column;
     width: 335px;
@@ -194,8 +194,8 @@
     background-color: var(--background-dark-color);
   }
 
-  .components-flip-card-front-nuts,
-  .components-flip-card-back {
+  .methodology-flip-card-front-nuts,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -206,35 +206,35 @@
 /* ============================TABLET=============================== */
 
 @media screen and (min-width: 768px) {
-  .components-ul {
+  .methodology-ul {
     display: flex;
     gap: 32px;
   }
-  .components-ul-1 {
+  .methodology-ul-1 {
     padding: 0;
     display: flex;
     flex-direction: column;
   }
-  .components-ul-2 {
+  .methodology-ul-2 {
     display: flex;
     flex-direction: column-reverse;
     padding: 0;
     gap: 32px;
   }
-  .components-list-ul-2 {
+  .methodology-list-ul-2 {
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
     gap: 32px;
   }
-  .components-list {
+  .methodology-list {
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 32px;
   }
 
-  .components-list-image {
+  .compomethodologynents-list-image {
     background-color: transparent;
     width: 336px;
     height: 270px;
@@ -243,20 +243,20 @@
     max-width: 704px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
-  .components-milk-chocolate {
+  .methodology-milk-chocolate {
     width: 336px;
     height: 270px;
     flex-shrink: 0;
     border-radius: 15px;
   }
-  .components-orange-border {
+  .methodology-orange-border {
     width: 336px;
     height: 270px;
     flex-shrink: 0;
     border-radius: 15px;
   }
 
-  .components-flip-card-inner {
+  .methodology-flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -265,12 +265,12 @@
     transform-style: preserve-3d;
   }
 
-  .components-flip-card:hover .components-flip-card-inner {
+  .methodology-flip-card:hover .methodology-flip-card-inner {
     transform: rotateY(180deg);
   }
 
-  .components-flip-card-front,
-  .components-flip-card-back {
+  .methodology-flip-card-front,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -278,7 +278,7 @@
     backface-visibility: hidden;
   }
 
-  .components-flip-card-front {
+  .methodology-flip-card-front {
     display: flex;
     flex-direction: column;
     width: 336px;
@@ -287,13 +287,13 @@
     background: var(--background-red-color);
   }
 
-  .components-image-size {
+  .methodology-image-size {
     width: 224px;
     height: 171px;
     flex-shrink: 0;
   }
 
-  .components-flip-card-back {
+  .methodology-flip-card-back {
     background-color: white;
     border-radius: 15px;
     transform: rotateY(180deg);
@@ -301,12 +301,12 @@
     text-align: start;
   }
 
-  .components-link {
+  .methodology-link {
     padding: 28 56 25 56;
     flex-shrink: 0;
   }
 
-  .components-description-under-image {
+  .methodology-description-under-image {
     color: white;
     font-family: Montserrat;
     font-size: 14px;
@@ -320,7 +320,7 @@
     flex-shrink: 0;
   }
 
-  .components-h3 {
+  .methodology-h3 {
     color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 18px;
@@ -331,7 +331,7 @@
     text-transform: uppercase;
   }
 
-  .components-hidden-paragraph {
+  .methodology-hidden-paragraph {
     width: 279px;
     height: 146px;
     overflow: hidden;
@@ -346,7 +346,7 @@
     letter-spacing: -0.02em;
   }
   /* 2 image */
-  .components-flip-card-front-milk-sweet {
+  .methodology-flip-card-front-milk-sweet {
     display: flex;
     flex-direction: column;
     width: 336px;
@@ -355,7 +355,7 @@
     background-color: white;
     border: 1px solid var(--text-red-color);
   }
-  .components-description-under-image-milk-sweet {
+  .methodology-description-under-image-milk-sweet {
     color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 14px;
@@ -369,8 +369,8 @@
     flex-shrink: 0;
   }
 
-  .components-flip-card-front-milk-sweet,
-  .components-flip-card-back {
+  .methodology-flip-card-front-milk-sweet,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -380,7 +380,7 @@
 
   /* 3 image */
 
-  .components-flip-card-front-nuts {
+  .methodology-flip-card-front-nuts {
     display: flex;
     flex-direction: column;
     width: 336px;
@@ -389,8 +389,8 @@
     background-color: var(--background-dark-color);
   }
 
-  .components-flip-card-front-nuts,
-  .components-flip-card-back {
+  .methodology-flip-card-front-nuts,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -401,16 +401,16 @@
 /* ===========================DESKTOP============================================== */
 
 @media all and (min-width: 1200px) {
-  .components-ul {
+  .methodology-ul {
     display: flex;
     justify-content: center;
     gap: 19px;
   }
-  .components-ul-1 {
+  .methodology-ul-1 {
     display: block;
     padding: 0;
   }
-  .components-list {
+  .methodology-list {
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -418,7 +418,7 @@
     gap: 19px;
   }
 
-  .components-list-ul-2 {
+  .methodology-list-ul-2 {
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -426,7 +426,7 @@
     gap: 19px;
   }
 
-  .components-list-image {
+  .methodology-list-image {
     background-color: transparent;
     width: 270px;
     height: 270px;
@@ -434,20 +434,20 @@
     width: calc((100% - 24px) / 2);
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
-  .components-milk-chocolate {
+  .methodology-milk-chocolate {
     width: 270px;
     height: 270px;
     flex-shrink: 0;
     border-radius: 15px;
   }
-  .components-orange-border {
+  .methodology-orange-border {
     width: 270px;
     height: 270px;
     flex-shrink: 0;
     border-radius: 15px;
   }
 
-  .components-flip-card-inner {
+  .methodology-flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -456,11 +456,11 @@
     transform-style: preserve-3d;
   }
 
-  .components-flip-card:hover .components-flip-card-inner {
+  .methodology-flip-card:hover .methodology-flip-card-inner {
     transform: rotateY(180deg);
   }
 
-  .components-flip-card-front {
+  .methodology-flip-card-front {
     display: flex;
     flex-direction: column;
     width: 270px;
@@ -469,13 +469,13 @@
     background: var(--background-red-color);
   }
 
-  .components-image-size {
+  .methodology-image-size {
     width: 206px;
     height: 160px;
     flex-shrink: 0;
   }
 
-  .components-flip-card-back {
+  .methodology-flip-card-back {
     background-color: white;
     border-radius: 15px;
     transform: rotateY(180deg);
@@ -483,8 +483,8 @@
     justify-content: center;
     align-items: center;
   }
-  .components-flip-card-front,
-  .components-flip-card-back {
+  .methodology-flip-card-front,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -492,11 +492,11 @@
     backface-visibility: hidden;
   }
 
-  .components-link {
+  .methodology-link {
     padding: 28 36 36 28;
   }
 
-  .components-description-under-image {
+  .methodology-description-under-image {
     color: var(--text-light-color);
     font-family: Montserrat;
     font-size: 14px;
@@ -510,7 +510,7 @@
     flex-shrink: 0;
   }
 
-  .components-h3 {
+  .methodology-h3 {
     color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 18px;
@@ -521,7 +521,7 @@
     text-transform: uppercase;
   }
 
-  .components-hidden-paragraph {
+  .methodology-hidden-paragraph {
     width: 230px;
     height: 162px;
     overflow: hidden;
@@ -535,11 +535,11 @@
     line-height: 1.285em; /* 128.571% */
     letter-spacing: -0.02em;
   }
-  .components-hidden-paragraph-seet-desktop {
+  .methodology-hidden-paragraph-seet-desktop {
     height: 140px;
   }
   /* 2 image */
-  .components-flip-card-front-milk-sweet {
+  .methodology-flip-card-front-milk-sweet {
     display: flex;
     flex-direction: column;
     width: 335px;
@@ -548,7 +548,7 @@
     background-color: white;
     border: 1px solid var(--text-red-color);
   }
-  .components-description-under-image-milk-sweet {
+  .methodology-description-under-image-milk-sweet {
     color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 14px;
@@ -562,8 +562,8 @@
     flex-shrink: 0;
   }
 
-  .components-flip-card-front-milk-sweet,
-  .components-flip-card-back {
+  .methodology-flip-card-front-milk-sweet,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -573,7 +573,7 @@
 
   /* 3 image */
 
-  .components-flip-card-front-nuts {
+  .methodology-flip-card-front-nuts {
     display: flex;
     flex-direction: column;
     width: 335px;
@@ -582,8 +582,8 @@
     background-color: var(--background-dark-color);
   }
 
-  .components-flip-card-front-nuts,
-  .components-flip-card-back {
+  .methodology-flip-card-front-nuts,
+  .methodology-flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
