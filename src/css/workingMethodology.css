@@ -1,4 +1,5 @@
 /* workingMethodology.css */
+
 .methodology-section {
   background-color: var(--background-light-color);
   text-align: center;
@@ -9,585 +10,169 @@
 .cont-methodology {
   display: block;
   text-align: center;
-  /* padding-top: 300px; */
 }
 
 .systems-accent {
   color: var(--text-red-color);
 }
 
-/* ============================MOBILE=============================== */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .methodology-ul-1 {
-    padding-bottom: 20px;
-  }
-  .methodology-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .methodology-list-ul-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  .methodology-list-image {
-    background-color: transparent;
-    width: 335px;
-    height: 270px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  .methodology-milk-chocolate {
-    width: 335px;
-    height: 270px;
-    flex-shrink: 0;
-    border-radius: 15px;
-  }
-  .methodology-orange-border {
-    width: 335px;
-    height: 270px;
-    flex-shrink: 0;
-    border-radius: 15px;
-  }
-
-  .methodology-flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-  .methodology-flip-card:hover .methodology-flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .methodology-flip-card-front,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  .methodology-flip-card-front {
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    height: 270px;
-    border-radius: 15px;
-    background: var(--background-red-color);
-  }
-
-  .methodology-image-size {
-    width: 224px;
-    height: 171px;
-    flex-shrink: 0;
-  }
-
-  .methodology-flip-card-back {
-    background-color: white;
-    border-radius: 15px;
-    transform: rotateY(180deg);
-    padding: 28px;
-    text-align: start;
-  }
-
-  .methodology-link {
-    padding: 28 55 25 56;
-    flex-shrink: 0;
-  }
-
-  .methodology-description-under-image {
-    color: var(--text-red-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.29em; /* 128.571% */
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: start;
-    padding: 0 0 28px 28px;
-    flex-shrink: 0;
-  }
-
-  .methodology-h3 {
-    color: var(--text-dark-color);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-  }
-
-  .methodology-hidden-paragraph {
-    width: 279px;
-    height: 146px;
-    overflow: hidden;
-    color: var(--text-dark-color);
-    text-overflow: ellipsis;
-    white-space: wrap;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.29; /* 128.571% */
-    letter-spacing: -0.02em;
-  }
-  /* 2 image */
-  .methodology-flip-card-front-milk-sweet {
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    height: 270px;
-    border-radius: 15px;
-    background-color: white;
-    border: 1px solid var(--text-red-color);
-  }
-  .methodology-description-under-image-milk-sweet {
-    color: var(--text-dark-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.29; /* 128.571% */
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: start;
-    padding: 0 0 25px 28px;
-    flex-shrink: 0;
-  }
-
-  .methodology-flip-card-front-milk-sweet,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  /* 3 image */
-
-  .methodology-flip-card-front-nuts {
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    height: 270px;
-    border-radius: 15px;
-    background-color: var(--background-dark-color);
-  }
-
-  .methodology-flip-card-front-nuts,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
+/* General Styles */
+.methodology {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
-/* ============================TABLET=============================== */
 
+.methodology-section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.methodology-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.methodology-item {
+  width: 335px;
+  height: 270px;
+  perspective: 1000px;
+}
+
+.methodology-flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.methodology-flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.methodology-flip-card:hover .methodology-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.methodology-flip-card-front,
+.methodology-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.methodology-flip-card-front {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-red-color);
+  padding: 28px;
+}
+
+.methodology-flip-card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  padding: 28px;
+  text-align: start;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.methodology-link {
+  flex-shrink: 0;
+}
+
+.methodology-image {
+  width: 224px;
+  height: 171px;
+  flex-shrink: 0;
+}
+
+.methodology-description {
+  padding-top: 28px;
+}
+
+.methodology-title {
+  color: var(--text-red-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.methodology-text {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  color: var(--text-dark-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+/* Scrollbar styles */
+.methodology-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.methodology-text::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.methodology-text::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.methodology-text::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Styles */
 @media screen and (min-width: 768px) {
-  .methodology-ul {
-    display: flex;
+  .methodology {
+    flex-direction: row;
     gap: 32px;
   }
-  .methodology-ul-1 {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .methodology-ul-2 {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0;
-    gap: 32px;
-  }
-  .methodology-list-ul-2 {
-    padding: 0;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 32px;
-  }
+
   .methodology-list {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 32px;
-  }
-
-  .compomethodologynents-list-image {
-    background-color: transparent;
-    width: 336px;
-    height: 270px;
-    list-style: none;
-    width: calc((100% - 24px) / 2);
-    max-width: 704px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  .methodology-milk-chocolate {
-    width: 336px;
-    height: 270px;
-    flex-shrink: 0;
-    border-radius: 15px;
-  }
-  .methodology-orange-border {
-    width: 336px;
-    height: 270px;
-    flex-shrink: 0;
-    border-radius: 15px;
-  }
-
-  .methodology-flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-  .methodology-flip-card:hover .methodology-flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .methodology-flip-card-front,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  .methodology-flip-card-front {
-    display: flex;
-    flex-direction: column;
-    width: 336px;
-    height: 270px;
-    border-radius: 15px;
-    background: var(--background-red-color);
-  }
-
-  .methodology-image-size {
-    width: 224px;
-    height: 171px;
-    flex-shrink: 0;
-  }
-
-  .methodology-flip-card-back {
-    background-color: white;
-    border-radius: 15px;
-    transform: rotateY(180deg);
-    padding: 28px;
-    text-align: start;
-  }
-
-  .methodology-link {
-    padding: 28 56 25 56;
-    flex-shrink: 0;
-  }
-
-  .methodology-description-under-image {
-    color: white;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.285em; /* 128.571% */
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: start;
-    padding: 0 0 25px 28px;
-    flex-shrink: 0;
-  }
-
-  .methodology-h3 {
-    color: var(--text-dark-color);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-  }
-
-  .methodology-hidden-paragraph {
-    width: 279px;
-    height: 146px;
-    overflow: hidden;
-    color: var(--color-black);
-    text-overflow: ellipsis;
-    white-space: wrap;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px; /* 128.571% */
-    letter-spacing: -0.02em;
-  }
-  /* 2 image */
-  .methodology-flip-card-front-milk-sweet {
-    display: flex;
-    flex-direction: column;
-    width: 336px;
-    height: 270px;
-    border-radius: 15px;
-    background-color: white;
-    border: 1px solid var(--text-red-color);
-  }
-  .methodology-description-under-image-milk-sweet {
-    color: var(--text-dark-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.285em; /* 128.571% */
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: start;
-    padding: 0 0 25px 28px;
-    flex-shrink: 0;
-  }
-
-  .methodology-flip-card-front-milk-sweet,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  /* 3 image */
-
-  .methodology-flip-card-front-nuts {
-    display: flex;
-    flex-direction: column;
-    width: 336px;
-    height: 270px;
-    border-radius: 15px;
-    background-color: var(--background-dark-color);
-  }
-
-  .methodology-flip-card-front-nuts,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
   }
 }
-/* ===========================DESKTOP============================================== */
 
-@media all and (min-width: 1200px) {
-  .methodology-ul {
-    display: flex;
-    justify-content: center;
-    gap: 19px;
-  }
-  .methodology-ul-1 {
-    display: block;
-    padding: 0;
-  }
-  .methodology-list {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    gap: 19px;
-  }
-
-  .methodology-list-ul-2 {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    gap: 19px;
-  }
-
-  .methodology-list-image {
-    background-color: transparent;
+@media screen and (min-width: 1200px) {
+  .methodology-item {
     width: 270px;
     height: 270px;
-    list-style: none;
-    width: calc((100% - 24px) / 2);
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  .methodology-milk-chocolate {
-    width: 270px;
-    height: 270px;
-    flex-shrink: 0;
-    border-radius: 15px;
-  }
-  .methodology-orange-border {
-    width: 270px;
-    height: 270px;
-    flex-shrink: 0;
-    border-radius: 15px;
   }
 
-  .methodology-flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-  .methodology-flip-card:hover .methodology-flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .methodology-flip-card-front {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-    height: 270px;
-    border-radius: 15px;
-    background: var(--background-red-color);
-  }
-
-  .methodology-image-size {
+  .methodology-image {
     width: 206px;
     height: 160px;
-    flex-shrink: 0;
   }
 
-  .methodology-flip-card-back {
-    background-color: white;
-    border-radius: 15px;
-    transform: rotateY(180deg);
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  .methodology-flip-card-front,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  .methodology-link {
-    padding: 28 36 36 28;
-  }
-
-  .methodology-description-under-image {
+  .methodology-title {
     color: var(--text-light-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.285em; /* 128.571% */
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: start;
-    padding: 0 0 28px 28px;
-    flex-shrink: 0;
   }
 
-  .methodology-h3 {
-    color: var(--text-dark-color);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-  }
-
-  .methodology-hidden-paragraph {
+  .methodology-text {
     width: 230px;
     height: 162px;
-    overflow: hidden;
-    color: var(--text-dark-color);
-    text-overflow: ellipsis;
-    white-space: wrap;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.285em; /* 128.571% */
-    letter-spacing: -0.02em;
-  }
-  .methodology-hidden-paragraph-seet-desktop {
-    height: 140px;
-  }
-  /* 2 image */
-  .methodology-flip-card-front-milk-sweet {
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    height: 270px;
-    border-radius: 15px;
-    background-color: white;
-    border: 1px solid var(--text-red-color);
-  }
-  .methodology-description-under-image-milk-sweet {
-    color: var(--text-dark-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.285em; /* 128.571% */
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: start;
-    padding: 0 0 25px 28px;
-    flex-shrink: 0;
-  }
-
-  .methodology-flip-card-front-milk-sweet,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  /* 3 image */
-
-  .methodology-flip-card-front-nuts {
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    height: 270px;
-    border-radius: 15px;
-    background-color: var(--background-dark-color);
-  }
-
-  .methodology-flip-card-front-nuts,
-  .methodology-flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
   }
 }
