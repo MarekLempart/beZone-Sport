@@ -1,7 +1,4 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+// main.scss
 
 :root {
   --text-dark-color: #2a2d4a;
@@ -16,23 +13,16 @@
 }
 
 // Style dla pliku z przykładem HTML fragmentu
-// @import '../css/common.css';
 @import '../css/header.css';
 @import '../css/hero.css';
 @import '../css/aboutUs.css';
 @import '../css/reviews.css';
 @import '../css/modal-review.css';
+@import '../css/workingMethodology-heading.css';
 @import '../css/workingMethodology.css';
+@import '../css/workingMethodology-sytem.css';
 @import '../css/modal-menu.css';
 @import '../css/howWork.css';
-// @import '../css/movies.css';
-// @import '../css/pagination.css';
-// @import '../css/footer.css';
-// @import '../css/dev-tools.css';
-// @import '../css/modal-movie.css';
-// @import '../css/modal-goit-team.css';
-// @import '../css/modal-registration.css';
-// @import '../css/view.css';
 
 * {
   margin: 0px;
@@ -41,7 +31,7 @@
 
 img {
   display: block;
-  /*max-width: 100%;*/
+  // max-width: 100%;
 }
 
 .link {

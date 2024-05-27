@@ -1,0 +1,17 @@
+/* workingMethodology-sytem.css */
+
+.methodology-system-section {
+  background-color: var(--background-light-color);
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.cont-system-methodology {
+  display: block;
+  text-align: center;
+}
+
+.systems-accent {
+  color: var(--text-red-color);
+}

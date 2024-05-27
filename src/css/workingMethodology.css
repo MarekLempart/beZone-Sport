@@ -12,10 +12,6 @@
   text-align: center;
 }
 
-.systems-accent {
-  color: var(--text-red-color);
-}
-
 /* General Styles */
 .methodology {
   display: flex;
@@ -34,6 +30,7 @@
 .methodology-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 40px;
   padding: 0;
   margin: 0;
@@ -71,13 +68,12 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 15px;
 }
 
 .methodology-flip-card-front {
   display: flex;
   flex-direction: column;
-  background: var(--background-red-color);
+  background: var(--background-dark-color);
   padding: 28px;
 }
 
@@ -105,7 +101,7 @@
 }
 
 .methodology-title {
-  color: var(--text-red-color);
+  color: var(--text-light-color);
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -147,11 +143,13 @@
 @media screen and (min-width: 768px) {
   .methodology {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 32px;
   }
 
   .methodology-list {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 32px;
   }
 }
