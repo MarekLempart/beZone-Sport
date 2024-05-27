@@ -33,12 +33,12 @@
   justify-content: center;
   gap: 40px;
   padding: 0;
-  margin: 0;
+  margin: 0px auto;
   list-style: none;
 }
 
 .methodology-item {
-  width: 335px;
+  width: 300px;
   height: 270px;
   perspective: 1000px;
 }
@@ -51,9 +51,9 @@
 }
 
 .methodology-flip-card-inner {
+  display: flex;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -72,18 +72,24 @@
 
 .methodology-flip-card-front {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background: var(--background-dark-color);
   padding: 28px;
 }
 
 .methodology-flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
   background-color: white;
   transform: rotateY(180deg);
   padding: 28px;
   text-align: start;
+  justify-content: center;
   overflow: hidden;
-  margin: 10px auto;
+  margin: 0px auto;
 }
 
 .methodology-link {
@@ -110,8 +116,8 @@
 }
 
 .methodology-text {
-  width: 100%;
-  max-height: 100%;
+  width: 280px;
+  height: 180px;
   overflow-y: auto;
   color: var(--text-dark-color);
   font-family: Montserrat, sans-serif;
@@ -156,8 +162,8 @@
 
 @media screen and (min-width: 1200px) {
   .methodology-item {
-    width: 270px;
-    height: 270px;
+    width: 360px;
+    height: 360px;
   }
 
   .methodology-image {
@@ -170,7 +176,7 @@
   }
 
   .methodology-text {
-    width: 230px;
-    height: 162px;
+    width: 270px;
+    height: 200px;
   }
 }
