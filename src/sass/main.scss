@@ -1,12 +1,12 @@
 // main.scss
 
 :root {
-  --text-dark-color: #2a2d4a;
-  --text-light-color: #e3dada;
-  --text-red-color: #f44e4e;
+  --text-dark-color: #000000;
+  --text-light-color: #ffffff;
+  --text-red-color: #e53236;
   --background-dark-color: #2a2d4a;
-  --background-light-color: #e3dada;
-  --background-red-color: #f44e4e;
+  --background-light-color: #dddddd;
+  --background-red-color: #e53236;
 
   --transition-duration: 250ms;
   --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);

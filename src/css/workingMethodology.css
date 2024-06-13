@@ -74,7 +74,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: var(--background-dark-color);
+  background: var(--background-red-color);
   padding: 28px;
 }
 
