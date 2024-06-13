@@ -73,23 +73,21 @@
 .methodology-flip-card-front {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background: var(--background-red-color);
-  padding: 28px;
 }
 
 .methodology-flip-card-back {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   background-color: white;
   transform: rotateY(180deg);
-  padding: 28px;
   text-align: start;
   justify-content: center;
   overflow: hidden;
-  margin: 0px auto;
 }
 
 .methodology-link {
@@ -97,8 +95,8 @@
 }
 
 .methodology-image {
-  width: 224px;
-  height: 171px;
+  width: 206px;
+  height: 160px;
   flex-shrink: 0;
 }
 
@@ -107,6 +105,15 @@
 }
 
 .methodology-title {
+  color: var(--text-dark-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.methodology-title-front {
   color: var(--text-light-color);
   font-family: Montserrat, sans-serif;
   font-size: 14px;
@@ -167,16 +174,20 @@
   }
 
   .methodology-image {
-    width: 206px;
-    height: 160px;
+    width: 247px;
+    height: 192px;
   }
 
   .methodology-title {
+    color: var(--text-dark-color);
+  }
+
+  .methodology-title-front {
     color: var(--text-light-color);
   }
 
   .methodology-text {
-    width: 270px;
-    height: 200px;
+    width: 310px;
+    height: 280px;
   }
 }
