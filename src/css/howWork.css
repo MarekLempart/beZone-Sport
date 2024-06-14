@@ -29,6 +29,9 @@
     gap: 20px;
     max-width: 960px;
   }
+  .how-work-my-photo {
+    width: 500px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -40,5 +43,9 @@
     align-items: center;
     gap: 20px;
     max-width: 1200px;
+  }
+
+  .how-work-my-photo {
+    width: 650px;
   }
 }
