@@ -23,6 +23,7 @@
 .reviews-list {
   display: flex;
   margin-bottom: 30px;
+  margin-left: 20px;
   padding-top: 50px;
 }
 
