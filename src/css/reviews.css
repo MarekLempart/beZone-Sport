@@ -16,7 +16,8 @@
 }
 
 .reviews-accent {
-  color: orange;
+  color: var(--text-red-color);
+  right: 14px;
 }
 
 .reviews-list {
@@ -26,10 +27,11 @@
 }
 
 .reviews-li {
-  background-color: white;
+  background-color: var(--background-light-color);
   border: 1px solid var(--text-dark-color);
   border-radius: 15px;
-  box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25); */
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -100,7 +102,7 @@
 
 .active-review,
 .swiper-pagination-bullet-active {
-  background-color: orangered;
+  background-color: var(--background-red-color);
   width: 28px;
 }
 
@@ -111,7 +113,7 @@
 
 .reviews-button {
   background-color: transparent;
-  border: 1px solid orangered;
+  border: 1px solid var(--text-red-color);
   border-radius: 100px;
   color: var(--text-dark-color);
   font-size: 14px;
@@ -124,8 +126,8 @@
 
 .reviews-button:hover,
 .reviews-button:focus {
-  background-color: orangered;
-  color: white;
+  background-color: var(--background-red-color);
+  color: var(--text-light-color);
   outline: none;
 }
 
@@ -143,6 +145,7 @@
   }
   .reviews-li {
     max-width: 330px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   }
   .review-p {
     width: 310px;
@@ -168,6 +171,7 @@
   }
   .reviews-li {
     max-width: 360px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   }
   .review-p {
     width: 340px;
