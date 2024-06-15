@@ -1,5 +1,11 @@
+/* hero.css */
+
 .hero {
-  background-color: var(--background-light-color);
+  background-image: linear-gradient(
+    var(--background-shadow),
+    var(--background-shadow)
+  );
+  /* background-color: var(--background-light-color); */
 }
 
 .hero-section {
@@ -191,7 +197,10 @@
     }*/
 
   .background-image-section {
-    background-image: linear-gradient(#b3b4bdb3, #b3b4bdb3),
+    background-image: linear-gradient(
+        var(--background-shadow),
+        var(--background-shadow)
+      ),
       url('../images/Be-zone_hero.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +215,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .background-image-section {
-      background-image: linear-gradient(#b3b4bdb3, #b3b4bdb3),
+      background-image: linear-gradient(
+          var(--background-shadow),
+          var(--background-shadow)
+        ),
         url('../images/Be-zone_hero.png');
     }
   }
@@ -225,7 +237,10 @@
     }*/
 
   .background-image-section {
-    background-image: linear-gradient(#b3b4bdb3, #b3b4bdb3),
+    background-image: linear-gradient(
+        var(--background-shadow),
+        var(--background-shadow)
+      ),
       url('../images/Be-zone_hero.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -240,7 +255,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .background-image-section {
-      background-image: linear-gradient(#b3b4bdb3, #b3b4bdb3),
+      background-image: linear-gradient(
+          var(--background-shadow),
+          var(--background-shadow)
+        ),
         url('../images/Be-zone_hero.png');
     }
   }
@@ -303,7 +321,10 @@
     }*/
 
   .background-image-section {
-    background-image: linear-gradient(#b3b4bdb3, #b3b4bdb3),
+    background-image: linear-gradient(
+        var(--background-shadow),
+        var(--background-shadow)
+      ),
       url('../images/Be-zone_hero.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -316,7 +337,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .background-image-section {
-      background-image: linear-gradient(#b3b4bdb3, #b3b4bdb3),
+      background-image: linear-gradient(
+          var(--background-shadow),
+          var(--background-shadow)
+        ),
         url('../images/Be-zone_hero.png');
     }
   }

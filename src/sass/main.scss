@@ -7,6 +7,7 @@
   --background-dark-color: #000000;
   --background-light-color: #ffffff;
   --background-red-color: #e53236;
+  --background-shadow: #b3b4bdb3;
 
   --transition-duration: 250ms;
   --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
@@ -23,6 +24,11 @@
 @import '../css/workingMethodology-sytem.css';
 @import '../css/modal-menu.css';
 @import '../css/howWork.css';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--background-light-color);
+}
 
 * {
   margin: 0px;
