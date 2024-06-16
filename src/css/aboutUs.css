@@ -1,5 +1,5 @@
 .about-us-section {
-  background-color: var(--background-light-color);
+  background-color: var(--background-shadow);
   padding: 50px 20px 20px;
   margin: 0px auto;
 }
@@ -17,6 +17,14 @@
 .about-us-my-photo {
   border-radius: 20px;
   margin: 10px;
+}
+
+.about-us-subtitle {
+  color: var(--text-dark-color);
+}
+
+.about-us-text {
+  color: var(--text-red-color);
 }
 
 @media screen and (min-width: 768px) {

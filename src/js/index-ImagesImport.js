@@ -1,5 +1,6 @@
 // index-ImagesImport.js
 
+// photos for reviews
 import dominikPhoto from '../images/reviews-Dominik.png';
 import edytaPhoto from '../images/reviews-Edyta.png';
 import ewelinaPhoto from '../images/reviews-Ewelina.png';

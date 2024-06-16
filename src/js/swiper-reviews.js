@@ -2,7 +2,7 @@
 
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
-import { reviews } from './fakeApi';
+import { reviews } from './fakeApi-review';
 
 // Funkcja zamieniająca ":)" na emoji
 const replaceSmileysWithEmojis = text => {
