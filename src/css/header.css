@@ -179,12 +179,6 @@
     width: 100%;
   }
 
-  .header-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .header-social-link {
     color: var(--text-dark-color);
     transition-property: color;
