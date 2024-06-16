@@ -27,7 +27,61 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: var(--background-light-color);
+  background-color: var(--background-shadow);
+}
+
+.header,
+.hero {
+  background: transparent; /* Ustaw tło na przezroczyste */
+}
+
+@media screen and (max-width: 767px) {
+  .background-container {
+    margin: 0px auto;
+    background-image:
+    // linear-gradient(
+    //     var(--background-shadow),
+    //     var(--background-shadow)
+    //   ),
+      url('../images/Be-zone_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background-container {
+    margin: 0px auto;
+    background-image:
+    // linear-gradient(
+    //     var(--background-shadow),
+    //     var(--background-shadow)
+    //   ),
+      url('../images/Be-zone_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1199px;
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .background-container {
+    margin: 0px auto;
+    background-image:
+    // linear-gradient(
+    //     var(--background-shadow),
+    //     var(--background-shadow)
+    //   ),
+      url('../images/Be-zone_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1000px;
+  }
 }
 
 * {

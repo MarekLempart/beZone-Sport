@@ -2,17 +2,19 @@
 
 .header {
   border: 0.01px solid transparent;
-  /* background-color: var(--background-light-color); */
-  background-image: linear-gradient(
+  background-color: var(--background-shadow);
+  /* background-image: linear-gradient(
     var(--background-shadow),
     var(--background-shadow)
-  );
+  ); */
   background-size: 100%;
   background-position: center;
   height: 70px;
   display: block;
   margin: 0px auto;
 }
+
+/* .header-container {} */
 
 .header-navigation {
   display: flex;

@@ -1,17 +1,17 @@
 /* hero.css */
 
 .hero {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     var(--background-shadow),
     var(--background-shadow)
-  );
-  /* background-color: var(--background-light-color); */
+  ); */
+  background-color: var(--background-shadow);
 }
 
 .hero-section {
-  background-color: var(--background-light-color);
+  /* background-color: var(--background-light-color); */
   padding: 395px 20px 20px;
-  border-radius: 30px;
+  border-radius: 3px;
   margin: 0px auto;
 }
 
@@ -189,14 +189,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  /*.container {
-        min-width: 375px;
-        max-width: 100%;
-        margin: 0px auto;
-        padding: 0px 0px;
-    }*/
-
-  .background-image-section {
+  /* .background-image-section {
     background-image: linear-gradient(
         var(--background-shadow),
         var(--background-shadow)
@@ -205,12 +198,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 335px;
-    /*max-width: 767px;
-        min-width: 375px;*/
-  }
+    max-width: 767px;
+  } */
 
-  @media (min-device-pixel-ratio: 2),
+  /* @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -221,7 +212,7 @@
         ),
         url('../images/Be-zone_hero.png');
     }
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -230,13 +221,7 @@
     margin: 0px auto;
   }
 
-  /*.container {
-        max-width: 100%;
-        width: 768px;
-        margin: 0 auto;
-    }*/
-
-  .background-image-section {
+  /* .background-image-section {
     background-image: linear-gradient(
         var(--background-shadow),
         var(--background-shadow)
@@ -245,12 +230,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 704px;
-    /*max-width: 1199px;
-        min-width: 768px;*/
-  }
+    max-width: 1199px;
+    min-width: 768px;
+  } */
 
-  @media (min-device-pixel-ratio: 2),
+  /* @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -261,7 +245,7 @@
         ),
         url('../images/Be-zone_hero.png');
     }
-  }
+  } */
 
   .hero-sub-headline {
     color: var(--text-dark-color);
@@ -306,8 +290,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
-}
+/* @media screen and (max-width: 1199px) {
+} */
 
 @media screen and (min-width: 1200px) {
   .hero-section {
@@ -315,12 +299,7 @@
     margin: 0px auto;
   }
 
-  /*.container {
-        width: 1200px;
-        margin: 0 auto;
-    }*/
-
-  .background-image-section {
+  /* .background-image-section {
     background-image: linear-gradient(
         var(--background-shadow),
         var(--background-shadow)
@@ -329,10 +308,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1136px;
-  }
+    max-width: 1000px;
+  } */
 
-  @media (min-device-pixel-ratio: 2),
+  /* @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -343,5 +322,5 @@
         ),
         url('../images/Be-zone_hero.png');
     }
-  }
+  } */
 }
