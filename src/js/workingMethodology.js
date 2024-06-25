@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="methodology-flip-card-inner">
             <div class="methodology-flip-card-front">
               <div class="methodology-link">
-                <img class="methodology-image" src="${img}" alt="${item.title}" width="206" height="160" />
+                <img class="methodology-image" src="${img}" alt="${item.title}" width="180" height="180" />
               </div>
               <div class="methodology-description">
                 <h3 class="methodology-title-front">${item.title}</h3>
