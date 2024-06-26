@@ -31,7 +31,7 @@
   background-color: var(--background-light-color);
   border: 1px solid var(--text-dark-color);
   border-radius: 15px;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 10 10 10px 3px rgba(0, 0, 0, 0.3);
   /* box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25); */
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +146,7 @@
   }
   .reviews-li {
     max-width: 330px;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 10 10 10px 3px rgba(0, 0, 0, 0.3);
   }
   .review-p {
     width: 310px;
@@ -170,7 +170,7 @@
   }
   .reviews-li {
     max-width: 360px;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 10 10 10px 3px rgba(0, 0, 0, 0.3);
   }
   .review-p {
     width: 340px;
