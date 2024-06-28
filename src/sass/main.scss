@@ -25,9 +25,33 @@
 @import '../css/modal-menu.css';
 @import '../css/howWork.css';
 
+@font-face {
+  font-family: 'MontserratExtraLight';
+  src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff2'),
+    url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff'),
+    url('../fonts/montserrat/Montserrat-ExtraLight.ttf.eot') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'MontserratExtraLight';
+//   src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff2'),
+//     url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff'),
+//     url('../fonts/montserrat/Montserrat-ExtraLight.ttf.eot') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'MontserratExtraLight', sans-serif;
   // background-color: var(--background-shadow);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
 }
 
 .header,
