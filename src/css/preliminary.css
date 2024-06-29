@@ -1,0 +1,25 @@
+.preliminary-section {
+  padding: 50px 20px 20px;
+  margin: 0px auto;
+}
+
+.preliminary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.preliminary-text {
+  font-family: 'Oswald';
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 0px;
+}
+
+.preliminary-text-heading {
+  font-family: 'Oswald';
+  font-size: 28px;
+  font-weight: 700;
+  padding: 50px 0px 5px;
+}

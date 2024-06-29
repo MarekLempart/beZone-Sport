@@ -1,0 +1,139 @@
+body {
+  font-family: 'MontserratExtraLight', sans-serif;
+  /* background-color: var(--background-shadow); */
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.header,
+.hero {
+  background: transparent; /* Ustaw tło na przezroczyste */
+}
+
+@media screen and (max-width: 767px) {
+  .background-container {
+    margin: 0px auto;
+    background-image:
+      /* linear-gradient(
+      var(--background-shadow),
+      var(--background-shadow)
+      ), */ url('../images/Be-zone_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background-container {
+    margin: 0px auto;
+    background-image:
+      /* linear-gradient(
+      var(--background-shadow),
+      var(--background-shadow)
+      ), */ url('../images/Be-zone_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1199px;
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .background-container {
+    margin: 0px auto;
+    background-image:
+      /* linear-gradient(
+      var(--background-shadow),
+      var(--background-shadow)
+      ), */ url('../images/Be-zone_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1200px;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  /* max-width: 100%; */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  padding: 0px 0px;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    min-width: 320px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px;
+  }
+  .second-heading {
+    font-size: 28px;
+    padding: 5px 0px 10px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px;
+  }
+  .second-heading {
+    font-size: 32px;
+    padding: 10px 0px 20px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 0px;
+  }
+  .second-heading {
+    font-size: 36px;
+    padding: 10px 0px 30px 0px;
+  }
+}
