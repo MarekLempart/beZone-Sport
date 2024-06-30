@@ -17,11 +17,12 @@ h3 {
 @media screen and (max-width: 767px) {
   .background-container {
     margin: 0px auto;
-    background-image:
-      /* linear-gradient(
+    background-image: url('../images/Be-zone_hero.png');
+    /* background-image:
+      linear-gradient(
       var(--background-shadow),
       var(--background-shadow)
-      ), */ url('../images/Be-zone_hero.png');
+      ), url('../images/Be-zone_hero.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,11 +33,12 @@ h3 {
 @media screen and (min-width: 768px) {
   .background-container {
     margin: 0px auto;
-    background-image:
-      /* linear-gradient(
+    background-image: url('../images/Be-zone_hero.png');
+    /* background-image:
+      linear-gradient(
       var(--background-shadow),
       var(--background-shadow)
-      ), */ url('../images/Be-zone_hero.png');
+      ), url('../images/Be-zone_hero.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -48,11 +50,12 @@ h3 {
 @media screen and (min-width: 1200px) {
   .background-container {
     margin: 0px auto;
-    background-image:
-      /* linear-gradient(
+    background-image: url('../images/Be-zone_hero.png');
+    /* background-image:
+      linear-gradient(
       var(--background-shadow),
       var(--background-shadow)
-      ), */ url('../images/Be-zone_hero.png');
+      ), url('../images/Be-zone_hero.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
