@@ -18,6 +18,7 @@
 @import '../css/header.css';
 @import '../css/hero.css';
 @import '../css/preliminary.css';
+@import '../css/timeToChange.css';
 @import '../css/aboutUs.css';
 @import '../css/reviews.css';
 @import '../css/modal-review.css';
@@ -29,21 +30,11 @@
 
 @font-face {
   font-family: 'MontserratExtraLight';
-  src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff2'),
-    url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff'),
+  src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff'),
     url('../fonts/montserrat/Montserrat-ExtraLight.ttf.eot') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
-// @font-face {
-//   font-family: 'MontserratExtraLight';
-//   src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff2'),
-//     url('../fonts/montserrat/Montserrat-ExtraLight.ttf.woff') format('woff'),
-//     url('../fonts/montserrat/Montserrat-ExtraLight.ttf.eot') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 * {
   margin: 0px;
@@ -85,14 +76,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  display: block;
-  width: 100%;
-  padding: 0px 0px;
-  margin: 0px auto;
-  max-width: 1200px;
 }
 
 @media screen and (max-width: 767px) {
