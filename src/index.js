@@ -7,3 +7,4 @@ import './sass/main.scss';
 import './js/modal-review';
 import './js/swiper-reviews';
 import './js/workingMethodology';
+import './js/workingMSystem';

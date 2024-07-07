@@ -1,6 +1,6 @@
-// index-ImagesImport-MethodologySystem.js
+// index-ImagesImport-MSystem.js
 
-// photos for MethodologySystem
+// photos for MSystem
 
 import imgFunctionalPatterns from '../images/System-functionalPatterns.webp';
 import imgMotionData from '../images/System-motionData.webp';

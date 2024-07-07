@@ -1,17 +1,77 @@
 /* workingMethodology-sytem.css */
 
-.methodology-system-section {
+.msys-section {
   background-color: var(--background-light-color);
   text-align: center;
+  justify-content: center;
   margin: 0px;
   padding-bottom: 20px;
 }
 
-.cont-system-methodology {
+.msys-container {
   display: block;
   text-align: center;
 }
 
-.systems-accent {
+.msys-accent {
   color: var(--text-red-color);
+}
+
+.msys-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.msys-image-link {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.msys-image-link,
+.msys-text-item {
+  width: 100%;
+}
+
+.msys-image {
+  width: 100%;
+  height: auto;
+}
+
+.msys-text-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  margin: 20px auto;
+}
+
+.msys-heading {
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .msys-items {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 960px;
+  }
+
+  .msys-image-link,
+  .msys-text-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .msys-items {
+    max-width: 1200px;
+  }
 }

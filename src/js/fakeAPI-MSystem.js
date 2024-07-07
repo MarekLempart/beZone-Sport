@@ -1,4 +1,4 @@
-// fakeAPI-MethodologySystem.js
+// fakeAPI-MSystem.js
 
 export const methodologySystemData = [
   {
