@@ -12,6 +12,12 @@
   gap: 20px;
   max-width: 500px;
 }
+.about-us-image-link {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+}
 
 .about-us-my-photo {
   border-radius: 5px;
@@ -27,7 +33,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-us-container {
+  .about-us-big-container {
     display: flex;
     flex-direction: row;
     margin: 10px auto;
@@ -36,14 +42,24 @@
     gap: 20px;
     max-width: 960px;
   }
+
+  .about-us-image-link,
+  .about-us-text-item {
+    width: 50%;
+  }
+
+  .about-us-image-link {
+    width: auto;
+    margin: 0px auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .about-us-container {
+  .about-us-big-container {
     display: flex;
     flex-direction: row;
     margin: 10px auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     max-width: 1200px;
