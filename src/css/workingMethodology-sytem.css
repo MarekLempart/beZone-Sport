@@ -13,10 +13,6 @@
   text-align: center;
 }
 
-.msys-accent {
-  color: var(--text-red-color);
-}
-
 .msys-items {
   display: flex;
   flex-direction: column;

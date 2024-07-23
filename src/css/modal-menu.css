@@ -161,6 +161,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-menu-facebook-icon {
+  width: 22px;
+  height: 22px;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-menu-social-svg-use {
   height: 100%;
   width: 100%;
@@ -270,6 +281,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .modal-menu-facebook-icon {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 2;
+    transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .modal-menu-social-svg-use {
     height: 100%;
     width: 100%;

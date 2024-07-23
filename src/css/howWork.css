@@ -14,6 +14,10 @@
   max-width: 500px;
 }
 
+.how-work-accent {
+  color: var(--text-red-color);
+}
+
 .how-work-my-photo {
   border-radius: 1px;
   margin: 0px;
