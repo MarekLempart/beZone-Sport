@@ -50,10 +50,8 @@
 .hero-write-to-me-button {
   color: var(--text-dark-color);
   background-color: var(--background-red-color);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   display: block;
   border: none;
@@ -76,6 +74,7 @@
 .hero-make-an-appointment-button {
   color: var(--text-dark-color);
   background-color: transparent;
+  font-size: 12px;
   display: block;
   border: 1px solid var(--text-dark-color);
   border-radius: 100px;
@@ -96,10 +95,8 @@
 
 .hero-link-made-button {
   color: var(--text-dark-color);
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   transition-property: color;
   transition-duration: var(--transition-duration);
@@ -131,8 +128,7 @@
 
 .hero-link-scroll {
   color: var(--text-red-color);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.17;
@@ -256,15 +252,17 @@
   }
 
   .hero-write-to-me-button {
-    padding: 14px 40px;
+    padding: 18px 40px;
+    font-size: 16px;
   }
 
   .hero-make-an-appointment-button {
     padding: 14px 40px;
+    font-size: 16px;
   }
 
   .hero-link-scroll {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.29;
     letter-spacing: -0.03em;
     gap: 14px;

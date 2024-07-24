@@ -118,7 +118,6 @@
   border-radius: 100px;
   color: var(--text-dark-color);
   font-size: 14px;
-  font-weight: 600;
   margin: 0 auto;
   padding: 12px 28px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
