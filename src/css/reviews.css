@@ -100,12 +100,27 @@
   height: 13px;
   width: 13px;
 }
+.swiper-pagination-bullet {
+  background: var(--text-dark-color);
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
 
-.active-review,
+.swiper-pagination-bullet-active {
+  background: var(--background-red-color);
+  opacity: 1;
+  width: 28px;
+}
+
+/* .active-review,
 .swiper-pagination-bullet-active {
   background-color: var(--background-red-color);
   width: 28px;
-}
+} */
 
 .reviews-js-pagination {
   height: 13px;
