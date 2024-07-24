@@ -110,16 +110,14 @@
   transition: opacity 0.3s;
 }
 
-/* .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   background: var(--background-red-color);
   opacity: 1;
   width: 28px;
-} */
+}
 
-.active-review,
-.swiper-pagination-bullet-active {
+.active-review {
   background-color: var(--background-red-color);
-  opacity: 1;
   width: 28px;
 }
 

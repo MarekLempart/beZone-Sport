@@ -53,10 +53,10 @@ loadReviews();
 // Funkcja dla inicjalizacji Swiper
 const initializeSwiper = () => {
   const swiper = new Swiper('.reviews-js-slider', {
-    slidesPerView: 3,
+    slidesPerView: 7,
     spaceBetween: 28,
     pagination: {
-      el: '.reviews-js-pagination',
+      el: '.swiper-pagination',
       clickable: true,
       bulletClass: 'swiper-pagination-bullet',
       bulletActiveClass: 'swiper-pagination-bullet-active',
