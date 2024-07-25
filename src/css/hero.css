@@ -54,7 +54,7 @@
   font-style: normal;
   line-height: normal;
   display: block;
-  border: none;
+  border: 1px solid var(--text-red-color);
   border-radius: 0px;
   cursor: pointer;
   padding: 12px 28px;

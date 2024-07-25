@@ -72,6 +72,7 @@
 
 .modal-review-accent {
   color: var(--text-red-color);
+  display: inline;
 }
 
 .modal-review-form {
