@@ -9,8 +9,6 @@
   margin: 0px auto;
 }
 
-/* .header-container {} */
-
 .header-navigation {
   display: flex;
   align-items: center;
@@ -42,7 +40,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.14; /* 114.286% */
+  line-height: 1.14;
   letter-spacing: -0.02em;
 }
 

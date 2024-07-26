@@ -165,7 +165,7 @@
   background-color: var(--background-red-color);
   border: none;
   border-radius: 15px;
-  color: white;
+  color: var(--text-light-color);
   font-size: 12px;
   font-weight: 600;
   margin-top: 4px;

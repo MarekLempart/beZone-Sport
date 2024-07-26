@@ -71,7 +71,7 @@
   color: var(--text-light-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14; /* 114.286% */
+  line-height: 1.14;
   letter-spacing: -0.02em;
   transition-property: color;
   transition-duration: 250ms;
