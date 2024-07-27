@@ -44,14 +44,14 @@
 }
 
 .hero-write-to-me-button {
-  color: var(--text-dark-color);
+  color: var(--text-light-color);
   background-color: var(--background-red-color);
   font-size: 12px;
   font-style: normal;
   line-height: normal;
   display: block;
   border: 1px solid var(--text-red-color);
-  border-radius: 0px;
+  border-radius: 10px;
   cursor: pointer;
   padding: 12px 28px;
   margin: auto;
@@ -68,40 +68,27 @@
 }
 
 .hero-make-an-appointment-button {
-  color: var(--text-dark-color);
-  background-color: transparent;
+  color: var(--text-light-color);
+  background-color: var(--background-red-color);
   font-size: 12px;
+  font-style: normal;
+  line-height: normal;
   display: block;
-  border: 1px solid var(--text-dark-color);
+  border: 1px solid var(--text-red-color);
   border-radius: 10px;
   cursor: pointer;
   padding: 12px 28px;
   margin: auto;
-  transition-property: background-color, border;
+  transition-property: background-color, color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-tf);
 }
 
 .hero-make-an-appointment-button:hover,
 .hero-make-an-appointment-button:focus {
-  color: var(--text-red-color);
   background-color: var(--background-light-color);
-  border: 1px solid var(--text-red-color);
-}
-
-.hero-link-made-button {
-  color: var(--text-dark-color);
-  font-size: 14px;
-  font-style: normal;
-  line-height: normal;
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-tf);
-}
-
-.hero-link-made-button:hover,
-.hero-link-made-button:focus {
   color: var(--text-red-color);
+  border: 1px solid var(--text-red-color);
 }
 
 .hero-scroll-button-box {
@@ -248,7 +235,7 @@
   }
 
   .hero-write-to-me-button {
-    padding: 18px 40px;
+    padding: 14px 40px;
     font-size: 16px;
   }
 

@@ -162,16 +162,20 @@
 }
 
 .modal-review-button {
-  background-color: var(--background-red-color);
-  border: none;
-  border-radius: 15px;
   color: var(--text-light-color);
+  background-color: var(--background-red-color);
   font-size: 12px;
-  font-weight: 600;
-  margin-top: 4px;
+  font-style: normal;
+  line-height: normal;
+  display: block;
+  border: 1px solid var(--text-red-color);
+  border-radius: 10px;
+  cursor: pointer;
   padding: 12px 28px;
-  transition: background-color 250ms var(--transition-tf),
-    color 250ms var(--transition-tf);
+  margin: 0px;
+  transition-property: background-color, color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-tf);
 }
 
 .modal-review-button:hover,
@@ -179,7 +183,6 @@
   background-color: var(--background-light-color);
   color: var(--text-red-color);
   border: 1px solid var(--text-red-color);
-  outline: none;
 }
 
 @media screen and (min-width: 768px) {
