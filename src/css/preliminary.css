@@ -19,6 +19,16 @@
   padding-bottom: 50px;
 }
 
+.preliminary-first-text-container {
+  background-color: var(--background-grey-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0px 20px;
+}
+
 .preliminary-second-container {
   background-color: var(--background-light-color);
   display: flex;
