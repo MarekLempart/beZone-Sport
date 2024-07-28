@@ -2,7 +2,23 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 20px;
-  margin: 0px;
-  padding: 20px 0px 20px;
+  background-color: var(--background-red-color);
+  padding: 5px 0px 5px;
+  text-align: center;
+}
+
+.forWhom-first-container,
+.forWhom-second-container,
+.forWhom-third-container,
+.forWhom-fourth-container {
+  background-color: var(--background-light-color);
+  padding: 20px 5px 20px;
+}
+
+.forWhom-point {
+  padding: 5px 0px 0px;
+}
+
+.forWhom-heading {
+  padding: 5px 0px 0px;
 }

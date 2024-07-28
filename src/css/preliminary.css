@@ -1,14 +1,32 @@
 .preliminary-section {
-  padding: 50px 20px 20px;
+  padding: 10px 10px 10px;
   margin: 0px auto;
 }
 
 .preliminary-container {
+  background-color: var(--background-red-color);
+  padding: 5px 0px 5px;
+  text-align: center;
+}
+
+.preliminary-first-container {
+  background-color: var(--background-light-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-bottom: 50px;
+}
+
+.preliminary-second-container {
+  background-color: var(--background-light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
 .preliminary-text {
@@ -21,5 +39,5 @@
   font-family: 'Oswald';
   font-size: 28px;
   font-weight: 700;
-  padding: 50px 0px 5px;
+  padding: 30px 0px 5px;
 }

@@ -79,7 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding-bottom: 32px;
+  padding: 0px 10px 32px;
 }
 .footer-nav {
   color: var(--text-light-color);
@@ -92,6 +92,10 @@
 .footer-nav:hover,
 .footer-nav:focus {
   color: var(--text-red-color);
+}
+
+.footer-contact-box {
+  padding: 0px 10px 0px;
 }
 
 /* ================================================= TABLET 👇 ========================================= */
@@ -115,7 +119,7 @@
   .footer-navigation {
     flex-direction: row;
     gap: 24px;
-    padding-bottom: 50px;
+    padding: 0px 10px 50px;
   }
   .bar {
     margin-top: 0;
