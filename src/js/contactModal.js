@@ -1,6 +1,12 @@
 // contactModal.js
 
+import intlTelInput from 'intl-tel-input';
+import 'intl-tel-input/build/css/intlTelInput.css';
+
 document.addEventListener('DOMContentLoaded', () => {
+  const input = document.querySelector('#review-phone');
+  intlTelInput(input);
+
   const openReviewBtns = document.querySelectorAll(
     '[data-modal-review-open], [data-modal-buy1-open], [data-modal-buy2-open]'
   );
@@ -51,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Handle form submission
   const form = document.querySelector('.modal-review-form');
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
 
     const name = form.querySelector('#review-name').value;
     const email = form.querySelector('#review-email').value;
