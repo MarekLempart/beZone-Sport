@@ -15,12 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (button.hasAttribute('data-modal-buy1-open')) {
         modalHeading.textContent = 'tu możesz napisać ';
         modalAccent.textContent = 'coś do mnie';
+        modal.setAttribute('data-modal-subject', 'Kontakt');
       } else if (button.hasAttribute('data-modal-buy2-open')) {
         modalHeading.textContent = 'tu możesz ';
         modalAccent.textContent = 'umówić wizytę';
+        modal.setAttribute('data-modal-subject', 'Zamawiam trening');
       } else {
         modalHeading.textContent = 'tu możesz napisać ';
         modalAccent.textContent = 'opinię o mojej pracy';
+        modal.setAttribute('data-modal-subject', 'Moja opinia');
       }
 
       modalHeading.appendChild(modalAccent);
@@ -43,6 +46,40 @@ document.addEventListener('DOMContentLoaded', () => {
   modal.addEventListener('click', event => {
     if (event.target === modal) {
       closeModal();
+    }
+  });
+
+  // Handle form submission
+  const form = document.querySelector('.modal-review-form');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    const name = form.querySelector('#review-name').value;
+    const email = form.querySelector('#review-email').value;
+    const phone = form.querySelector('#review-phone').value;
+    const message = form.querySelector('#opinion').value;
+    const subject = modal.getAttribute('data-modal-subject');
+
+    const response = await fetch('http://localhost:3000/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        phone,
+        message,
+        subject,
+      }),
+    });
+
+    if (response.ok) {
+      alert('Wiadomość wysłana!');
+      form.reset();
+      closeModal();
+    } else {
+      alert('Wystąpił błąd podczas wysyłania wiadomości.');
     }
   });
 });

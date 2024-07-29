@@ -4,7 +4,9 @@
   "description": "",
   "homepage": "https://MarekLempart.github.io/beZone-Sport",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "concurrently \"npm run start:server\" \"npm run start:parcel\"",
+    "start:server": "nodemon server.js",
+    "start:parcel": "parcel src/*.html --port 1234",
     "build": "parcel build src/*.html --public-url /beZone-Sport/"
   },
   "repository": {
@@ -12,7 +14,7 @@
     "url": "git+https://github.com/MarekLempart/beZone-Sport.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Marek Lempart <kama.zakupy@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MarekLempart/beZone-Sport/issues"
@@ -20,6 +22,7 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
+    "intl-tel-input": "^17.0.21",
     "modern-normalize": "^1.1.0",
     "nanoid": "^5.0.7",
     "nodemailer": "^6.9.14",
@@ -27,6 +30,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "concurrently": "^7.2.1",
     "nodemon": "^3.1.4",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
