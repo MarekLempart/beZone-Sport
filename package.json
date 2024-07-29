@@ -18,12 +18,16 @@
     "url": "https://github.com/MarekLempart/beZone-Sport/issues"
   },
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
     "modern-normalize": "^1.1.0",
     "nanoid": "^5.0.7",
+    "nodemailer": "^6.9.14",
     "swiper": "^11.1.7"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "nodemon": "^3.1.4",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
