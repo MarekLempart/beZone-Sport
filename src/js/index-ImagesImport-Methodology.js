@@ -7,10 +7,8 @@ import imgCorrection from '../images/ico_correction.png';
 import imgDynamic from '../images/ico_dynamic.png';
 import imgNeuroFitness from '../images/ico_neurofitness.png';
 import imgSensor from '../images/ico_sensor.png';
-import imgPowiezi from '../images/workingMethodology-Powiezi.webp';
 
 const imagesMethodology = [
-  { id: 'powiezi', src: imgPowiezi },
   { id: 'breath', src: imgBreath },
   { id: 'sensor', src: imgSensor },
   { id: 'attitude', src: imgAttitude },

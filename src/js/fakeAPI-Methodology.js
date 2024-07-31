@@ -1,12 +1,6 @@
 // fakeAPI-Methodology.js
 
 export const methodologyData = [
-  // {
-  //   id: 'powiezi',
-  //   title: 'Rozluźnianie powięziowe',
-  //   text: `Twoje ciało sztywniejąc wytwarza coś w rodzaju zamarzniętych węzłów na powięzi dlatego zamiast rozciągania lepszym wyborem jestem praca bezpośrednio z tkanką zblokowaną w ten sposób dajesz ciału informacje tam gdzie trzeba zamiast strzelać na oślep. Dostaniesz techniki samorozluźniania, tak abyś wiedział jak pomóc sobie sam, aby lepiej się regenerować i poradzić sobie z nagłym spięciem. Technika masażu, która rozbija tkankę bliznowatą, jednocześnie nawadniając mięśnie. Jest to skuteczny sposób na uwolnienie napięcia, stopniowo pozwalając ciału poruszać się z mniejszymi ograniczeniami.`,
-  // },
-
   {
     id: 'attitude',
     title: 'Postawa',
@@ -42,6 +36,4 @@ export const methodologyData = [
     title: 'Ćwiczenia korekcyjne',
     text: `Twoje ciało posiada coś takiego jak mechanoreceptory. Znaczy takie czujki, które odczytują napięcie z mięśni. Ewolucyjnie utworzyły nam się faworyzowane ścieżki przekazywania tych napięć, bazujące na ruchach, które robiliśmy najczęściej. Jeśli nauczymy twoje ciało działać przez te ścieżki to twoje ciało będzie bezpieczniejsze i silniejsze w ruchu. Kontekstowe ćwiczenia w tych funkcji (stanie, chodzenie, bieganie, rzucanie) pomagają przywrócić twojemu ciału te wzorce ruchu.`,
   },
-
-  // Dodaj resztę danych w podobnym formacie...
 ];
