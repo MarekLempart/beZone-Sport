@@ -13,6 +13,7 @@
 .forWhom-fourth-container {
   /* background-color: var(--background-light-color); */
   padding: 20px 5px 20px;
+  color: var(--text-light-color);
 }
 
 .forWhom-point {
