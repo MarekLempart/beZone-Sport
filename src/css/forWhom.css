@@ -27,12 +27,12 @@
   .forWhom-background {
     background: transparent;
     margin: 0px auto;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         var(--background-shadow),
         var(--background-shadow)
       ),
-      url('../images/forWhom_background.webp');
-    /* background-image: url('../images/forWhom_background.webp'); */
+      url('../images/forWhom_background.webp'); */
+    background-image: url('../images/forWhom_background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,12 +44,12 @@
   .forWhom-background {
     background: transparent;
     margin: 0px auto;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         var(--background-shadow),
         var(--background-shadow)
       ),
-      url('../images/forWhom_background.webp');
-    /* background-image: url('../images/forWhom_background.webp'); */
+      url('../images/forWhom_background.webp'); */
+    background-image: url('../images/forWhom_background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,12 +62,12 @@
   .forWhom-background {
     background: transparent;
     margin: 0px auto;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         var(--background-shadow),
         var(--background-shadow)
       ),
-      url('../images/forWhom_background.webp');
-    /* background-image: url('../images/forWhom_background.webp'); */
+      url('../images/forWhom_background.webp'); */
+    background-image: url('../images/forWhom_background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
