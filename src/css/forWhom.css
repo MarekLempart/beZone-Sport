@@ -11,7 +11,7 @@
 .forWhom-second-container,
 .forWhom-third-container,
 .forWhom-fourth-container {
-  background-color: var(--background-light-color);
+  /* background-color: var(--background-light-color); */
   padding: 20px 5px 20px;
 }
 
@@ -21,4 +21,56 @@
 
 .forWhom-heading {
   padding: 5px 0px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .forWhom-background {
+    background: transparent;
+    margin: 0px auto;
+    background-image: linear-gradient(
+        var(--background-shadow),
+        var(--background-shadow)
+      ),
+      url('../images/forWhom_background.webp');
+    /* background-image: url('../images/forWhom_background.webp'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .forWhom-background {
+    background: transparent;
+    margin: 0px auto;
+    background-image: linear-gradient(
+        var(--background-shadow),
+        var(--background-shadow)
+      ),
+      url('../images/forWhom_background.webp');
+    /* background-image: url('../images/forWhom_background.webp'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1199px;
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .forWhom-background {
+    background: transparent;
+    margin: 0px auto;
+    background-image: linear-gradient(
+        var(--background-shadow),
+        var(--background-shadow)
+      ),
+      url('../images/forWhom_background.webp');
+    /* background-image: url('../images/forWhom_background.webp'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1200px;
+  }
 }
