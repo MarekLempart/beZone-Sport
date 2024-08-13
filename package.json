@@ -4,9 +4,7 @@
   "description": "",
   "homepage": "https://MarekLempart.github.io/beZone-Sport",
   "scripts": {
-    "start": "concurrently \"npm run start:server\" \"npm run start:parcel\"",
-    "start:server": "nodemon server.js",
-    "start:parcel": "parcel src/*.html --port 3000",
+    "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /beZone-Sport/"
   },
   "repository": {
