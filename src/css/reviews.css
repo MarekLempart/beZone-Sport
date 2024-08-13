@@ -23,8 +23,8 @@
 .reviews-list {
   display: flex;
   margin-bottom: 30px;
-  margin-left: 20px;
-  padding-top: 50px;
+  margin-left: 10px;
+  padding-top: 60px;
 }
 
 .reviews-li {
@@ -61,7 +61,7 @@
 .review-p {
   color: var(--text-dark-color);
   font-size: 14px;
-  margin: 5px 10px auto 10px;
+  margin: 5px 10px 5px 10px;
   width: 280px;
   height: 130px;
   overflow-y: auto;

@@ -62,7 +62,7 @@ const initializeSwiper = () => {
       bulletActiveClass: 'swiper-pagination-bullet-active',
     },
     breakpoints: {
-      320: {
+      280: {
         slidesPerView: 1,
       },
       768: {
