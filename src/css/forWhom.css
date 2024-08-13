@@ -8,10 +8,14 @@
 }
 
 .forWhom-first-container,
-.forWhom-second-container,
+.forWhom-second-container {
+  /* background-color: var(--background-light-color); */
+  padding: 20px 5px 20px;
+  color: var(--text-dark-color);
+}
+
 .forWhom-third-container,
 .forWhom-fourth-container {
-  /* background-color: var(--background-light-color); */
   padding: 20px 5px 20px;
   color: var(--text-light-color);
 }
@@ -33,7 +37,7 @@
         var(--background-shadow)
       ),
       url('../images/forWhom_background.webp'); */
-    background-image: url('../images/forWhom_background.webp');
+    background-image: url('../images/forWhom_background_mobile_04.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +54,7 @@
         var(--background-shadow)
       ),
       url('../images/forWhom_background.webp'); */
-    background-image: url('../images/forWhom_background.webp');
+    background-image: url('../images/forWhom_background_tablet_04.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,7 +72,7 @@
         var(--background-shadow)
       ),
       url('../images/forWhom_background.webp'); */
-    background-image: url('../images/forWhom_background.webp');
+    background-image: url('../images/forWhom_background_desktop_04.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
