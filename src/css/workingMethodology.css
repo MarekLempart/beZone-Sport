@@ -4,7 +4,7 @@
   background-color: var(--background-light-color);
   text-align: center;
   margin: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .cont-methodology {
@@ -159,9 +159,43 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: var(--text-light-color);
   gap: 20px;
-  margin: 0px;
-  padding: 20px 0px 20px;
+  margin: 0px auto;
+  padding: 150px 0px 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .methodology-footer-background {
+    margin: 0px auto;
+    background-image: url('../images/methodology-footer_background_mobile_08.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 767px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .methodology-footer-background {
+    margin: 0px auto;
+    background-image: url('../images/methodology-footer_background_tablet_08.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1199px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .methodology-footer-background {
+    margin: 0px auto;
+    background-image: url('../images/methodology-footer_background_desktop_08.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+  }
 }
 
 /* Responsive Styles */
