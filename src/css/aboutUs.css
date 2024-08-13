@@ -34,7 +34,7 @@
 
 .about-us-my-photo {
   border-radius: 5px;
-  margin: 10px 0px;
+  margin: 10px auto;
 }
 
 .about-us-subtitle {
@@ -42,7 +42,7 @@
 }
 
 .about-us-text {
-  color: var(--text-red-color);
+  color: var(--text-dark-color);
 }
 
 @media screen and (min-width: 768px) {
