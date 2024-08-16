@@ -57,7 +57,7 @@
 .msys-text {
   display: block;
   text-align: start;
-  font-size: 16px;
+  font-size: 13px;
   margin: 0px;
   padding: 10px 50px 10px 50px;
 }
@@ -72,6 +72,10 @@
   .msys-image-link,
   .msys-text-item {
     width: 50%;
+  }
+
+  .msys-text {
+    font-size: 16px;
   }
 
   .msys-items:nth-child(even) {
