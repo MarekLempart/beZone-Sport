@@ -36,6 +36,8 @@
 }
 
 .timeToChange-heading {
+  color: var(--text-red-color);
+  font-size: 32px;
   margin: 0;
   text-align: center;
 }

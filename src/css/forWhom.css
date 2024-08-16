@@ -2,15 +2,20 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: var(--background-red-color);
-  padding: 5px 0px 5px;
+  /* background-color: var(--background-red-color); */
+  /* padding: 5px 0px 5px; */
   text-align: center;
 }
 
+.forWhom-span {
+  color: var(--text-red-color);
+}
+
 .forWhom-first-container {
-  background-color: var(--background-light-color);
-  padding: 50px 5px 20px;
-  color: var(--text-dark-color);
+  background-color: var(--background-dark-color);
+  padding: 50px 5px 50px;
+  font-size: 32px;
+  color: var(--text-light-color);
 }
 
 .forWhom-second-container {
@@ -43,6 +48,11 @@
 
 .forWhom-heading {
   padding: 25px 0px 0px;
+}
+
+.forWhom-second-heading {
+  color: var(--text-red-color);
+  font-size: 32px;
 }
 
 @media screen and (max-width: 767px) {
