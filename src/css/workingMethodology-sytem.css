@@ -21,6 +21,12 @@
   max-width: 600px;
 }
 
+.msys-third-heading {
+  color: var(--text-red-color);
+  font-size: 40px;
+  padding: 10px 50px 10px 50px;
+}
+
 .msys-image-link {
   max-width: 600px;
   display: flex;
@@ -42,7 +48,7 @@
 .msys-text-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: space-around;
   gap: 5px;
   margin: 20px auto;
@@ -50,9 +56,10 @@
 
 .msys-text {
   display: block;
-  text-align: center;
+  text-align: start;
+  font-size: 16px;
   margin: 0px;
-  padding: 20px;
+  padding: 10px 50px 10px 50px;
 }
 
 @media screen and (min-width: 768px) {

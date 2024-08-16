@@ -20,7 +20,7 @@
 }
 
 .forWhom-third-container {
-  padding: 150px 5px 150px;
+  padding: 80px 5px 60px;
   color: var(--text-light-color);
 }
 
@@ -34,8 +34,15 @@
   padding: 5px 0px 0px;
 }
 
+.forWhom-icons {
+  color: red;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.5px;
+}
+
 .forWhom-heading {
-  padding: 5px 0px 0px;
+  padding: 25px 0px 0px;
 }
 
 @media screen and (max-width: 767px) {
@@ -82,7 +89,7 @@
         var(--background-shadow)
       ),
       url('../images/forWhom_background.webp'); */
-    background-image: url('../images/forWhom_background_desktop_04.webp');
+    background-image: url('../images/forWhom_background_desktop_04-01.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
