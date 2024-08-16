@@ -51,7 +51,7 @@
   align-items: start;
   justify-content: space-around;
   gap: 5px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .msys-text {
@@ -59,7 +59,7 @@
   text-align: start;
   font-size: 13px;
   margin: 0px;
-  padding: 10px 50px 10px 50px;
+  padding: 5px 15px 5px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,7 +75,9 @@
   }
 
   .msys-text {
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0px;
+    padding: 10px 20px 10px 20px;
   }
 
   .msys-items:nth-child(even) {
@@ -86,5 +88,11 @@
 @media screen and (min-width: 1200px) {
   .msys-items {
     max-width: 1200px;
+  }
+
+  .msys-text {
+    font-size: 16px;
+    margin: 0px;
+    padding: 10px 50px 10px 50px;
   }
 }
