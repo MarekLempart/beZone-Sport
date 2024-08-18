@@ -10,7 +10,14 @@ export const methodologySystemData = [
   {
     id: 'movMed',
     title: 'MovMed',
-    text: `tak samo, jak my myślimy słowami i obrazami w naszych umysłach, ciała "myślą" za pomocą doznań. Układ nerwowy priorytetowo traktuje informacje sensoryczne, które dostarczają mózgowi bezpośredniej informacji na temat tego, co dzieje się w ciele. Większość naszych procesów sensorycznych jest autonomiczna/refleksyjna, ale ulegają pogorszeniu w obliczu utrzymującego się zagrożenia dla mózgu.<br />System edukuje w zakresie naprawy i wzmocnienia świadomości ciała, jednocześnie prowadząc Cię przez te części ciała, na które powinieneś się skupić, aby zapewnić najtrwalsze korzyści. Dzięki wszechstronnemu zrozumieniu relacji neurologicznych w ciele możemy zmienić sposób odczuwania i funkcjonowania Twojego ciała na lepsze.`,
+    text: `
+    <p class="msys-text">
+    tak samo, jak my myślimy słowami i obrazami w naszych umysłach, ciała "myślą" za pomocą doznań. Układ nerwowy priorytetowo traktuje informacje sensoryczne, które dostarczają mózgowi bezpośredniej informacji na temat tego, co dzieje się w ciele. Większość naszych procesów sensorycznych jest autonomiczna/refleksyjna, ale ulegają pogorszeniu w obliczu utrzymującego się zagrożenia dla mózgu.
+    </p>
+    <p class="msys-text">
+    System edukuje w zakresie naprawy i wzmocnienia świadomości ciała, jednocześnie prowadząc Cię przez te części ciała, na które powinieneś się skupić, aby zapewnić najtrwalsze korzyści. Dzięki wszechstronnemu zrozumieniu relacji neurologicznych w ciele możemy zmienić sposób odczuwania i funkcjonowania Twojego ciała na lepsze.
+    </p>
+    `,
   },
 
   {
