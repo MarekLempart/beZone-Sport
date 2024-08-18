@@ -29,21 +29,39 @@
   color: var(--text-light-color);
 }
 
-.forWhom-fourth-container {
-  background-color: var(--background-light-color);
-  padding: 20px 5px 50px;
-  /* color: var(--text-light-color); */
+.forWhom-list {
+  padding-left: 20px;
+  margin-left: 0;
 }
 
 .forWhom-point {
+  display: flex;
+  align-items: center;
   padding: 5px 0px 0px;
 }
 
 .forWhom-icons {
-  color: red;
+  /* color: var(--text-dark-color);
   fill: transparent;
-  stroke: currentColor;
-  stroke-width: 1.5px;
+  stroke: currentColor; */
+  fill: var(--text-red-color);
+  /* fill: currentColor; */
+  stroke: none;
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  transform: translateY(5px);
+  margin-right: 20px;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.forWhom-icons:hover,
+.forWhom-icons:focus {
+  fill: var(--text-dark-color);
+  stroke: none;
+  /* color: var(--text-red-color); */
 }
 
 .forWhom-heading {
@@ -51,8 +69,21 @@
 }
 
 .forWhom-second-heading {
+  display: flex;
+  align-items: start;
+  padding-left: 60px;
   color: var(--text-red-color);
   font-size: 32px;
+}
+
+.forWhom-text {
+  color: var(--text-red-color);
+  font-weight: 700;
+  display: flex;
+  padding-left: 60px;
+  padding-top: 25px;
+  align-items: start;
+  margin-left: 0;
 }
 
 @media screen and (max-width: 767px) {
