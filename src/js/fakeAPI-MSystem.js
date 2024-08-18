@@ -4,7 +4,9 @@ export const methodologySystemData = [
   {
     id: 'functionalPatterns',
     title: 'Functional Patterns',
-    text: `system, który powstał w oparciu o obserwacje najlepiej ruszających się sportowców, uwzględniający antropologiczną wielką czwórkę (stanie, chodzenie, bieganie, rzucanie) zachowując inżynierskie spojrzenie wprowadza bardzo precyzyjne protokoły treningowe, które pomagają pozbyć się  traumy z twojego ciała. Traumy rozumiane jako wszystkie obciążenia z których twoje ciało nie było się w stanie zregenerować na bieżąco. Precyzyjny kierunek pracy pozwala bodźcowanie twoje ciało dokładnie tam gdzie tego potrzebuje w tym kontekście ruchu, który jest dla niego najważniejszy.`,
+    text: `<p class="msys-text">
+    system, który powstał w oparciu o obserwacje najlepiej ruszających się sportowców, uwzględniający antropologiczną wielką czwórkę (stanie, chodzenie, bieganie, rzucanie) zachowując inżynierskie spojrzenie wprowadza bardzo precyzyjne protokoły treningowe, które pomagają pozbyć się  traumy z twojego ciała. Traumy rozumiane jako wszystkie obciążenia z których twoje ciało nie było się w stanie zregenerować na bieżąco. Precyzyjny kierunek pracy pozwala bodźcowanie twoje ciało dokładnie tam gdzie tego potrzebuje w tym kontekście ruchu, który jest dla niego najważniejszy.
+    </p>`,
   },
 
   {
@@ -23,6 +25,8 @@ export const methodologySystemData = [
   {
     id: 'motionData',
     title: 'Motion data',
-    text: `wyobraź sobie, że całe spektrum ruchu to książka, różne metody treningowe będą pokrywać jedną, kilka stron, czasami nawet cały rozdział, jednak będą wciąż wycinkiem rzeczywistości. Equalibrum to metoda, która wrzuca nas w kontrolowany chaos i w ten chaos dozuje tak abyśmy mogli wzrosnąć. Inspirowana tym jak dziecko uczy się ruchu, jak historia i emocjonalność zmienia jakość naszego ruchu. Pomyśl o tym jak czujesz się gdy robisz coś z przymusu, a kiedy realizujesz swoje marzenie, tą energię można wykorzystać w treningu. Pasja i zabawa kluczem do sukcesu.`,
+    text: `<p class="msys-text">
+    wyobraź sobie, że całe spektrum ruchu to książka, różne metody treningowe będą pokrywać jedną, kilka stron, czasami nawet cały rozdział, jednak będą wciąż wycinkiem rzeczywistości. Equalibrum to metoda, która wrzuca nas w kontrolowany chaos i w ten chaos dozuje tak abyśmy mogli wzrosnąć. Inspirowana tym jak dziecko uczy się ruchu, jak historia i emocjonalność zmienia jakość naszego ruchu. Pomyśl o tym jak czujesz się gdy robisz coś z przymusu, a kiedy realizujesz swoje marzenie, tą energię można wykorzystać w treningu. Pasja i zabawa kluczem do sukcesu.
+    </p>`,
   },
 ];
