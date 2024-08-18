@@ -15,16 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const listItem = document.createElement('li');
       listItem.className = 'msys-items';
 
-      // listItem.innerHTML = `
-      //   <div class="msys-text-item">
-      //     <h3 class="msys-third-heading">${item.title}</h3>
-      //     <p class="msys-text">${item.text}</p>
-      //   </div>
-      //   <div class="msys-image-link">
-      //     <img class="msys-image" src="${img}" alt="${item.title}" />
-      //   </div>
-      // `;
-
       listItem.innerHTML = `
       <div class="msys-text-item">
         <h3 class="msys-third-heading">${item.title}</h3>
@@ -34,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
         <img class="msys-image" src="${img}" alt="${item.title}" />
       </div>
     `;
+
+      // listItem.innerHTML = `
+      //   <div class="msys-text-item">
+      //     <h3 class="msys-third-heading">${item.title}</h3>
+      //     <p class="msys-text">${item.text}</p>
+      //   </div>
+      //   <div class="msys-image-link">
+      //     <img class="msys-image" src="${img}" alt="${item.title}" />
+      //   </div>
+      // `;
 
       return listItem;
     });
