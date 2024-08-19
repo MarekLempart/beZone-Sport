@@ -112,7 +112,7 @@
 
 .methodology-title {
   color: var(--text-red-color);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: start;
@@ -120,7 +120,7 @@
 
 .methodology-title-front {
   color: var(--text-red-color);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: start;
@@ -131,7 +131,7 @@
   height: 180px;
   overflow-y: auto;
   color: var(--text-dark-color);
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;

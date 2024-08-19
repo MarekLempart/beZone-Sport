@@ -12,20 +12,14 @@
   gap: 20px;
 }
 
-.hero-hi-my-name {
-  color: var(--text-dark-color);
-  width: 300px;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: -0.0375em;
-}
-
 .hero-text {
   color: var(--text-dark-color);
-  font-size: 25px;
   line-height: 1.5;
   max-width: 350px;
+}
+
+.hero-span {
+  color: var(--text-red-color);
 }
 
 .hero-modal-and-link-button {

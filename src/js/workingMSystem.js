@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       listItem.innerHTML = `
       <div class="msys-text-item">
-        <h3 class="msys-third-heading">${item.title}</h3>
+        <h2 class="msys-second-heading">${item.title}</h2>
         ${item.text}
       </div>
       <div class="msys-image-link">
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // listItem.innerHTML = `
       //   <div class="msys-text-item">
-      //     <h3 class="msys-third-heading">${item.title}</h3>
+      //     <h2 class="msys-second-heading">${item.title}</h2>
       //     <p class="msys-text">${item.text}</p>
       //   </div>
       //   <div class="msys-image-link">

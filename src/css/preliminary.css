@@ -4,7 +4,7 @@
 }
 
 .preliminary-container {
-  background-color: var(--background-red-color);
+  /* background-color: var(--background-red-color); */
   padding: 5px 0px 5px;
   text-align: center;
 }
@@ -41,16 +41,9 @@
   padding-top: 30px;
 }
 
-/* .preliminary-text {
-  font-size: 18px;
-  font-weight: 300;
-} */
-
-.preliminary-text-heading {
+.preliminary-heading {
   font-family: 'Oswald';
   color: var(--text-red-color);
-  font-size: 28px;
-  font-weight: 700;
   padding: 30px 0px 5px;
 }
 

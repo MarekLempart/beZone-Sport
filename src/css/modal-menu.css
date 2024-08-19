@@ -69,7 +69,6 @@
 .mobile-menu-nav-list-item {
   position: relative;
   color: var(--text-light-color);
-  font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;

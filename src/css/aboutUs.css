@@ -4,7 +4,6 @@
 
 .about-us-container {
   display: block;
-  background-color: var(--background-red-color);
   padding: 5px 0px 0px;
 }
 
@@ -17,24 +16,37 @@
   align-items: center;
   gap: 20px;
   padding: 10px 10px 0px;
-  /* max-width: 500px; */
 }
 
-.about-us-text-item {
-  padding: 20px 10px 20px;
-  text-align: center;
+.about-us-second-heading {
+  color: var(--text-red-color);
+  padding: 10px 50px 10px 50px;
 }
 
 .about-us-image-link {
+  max-width: 600px;
   display: flex;
-  margin: 10px auto;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.about-us-image-link,
+.about-us-text-item {
+  width: 100%;
 }
 
 .about-us-my-photo {
-  border-radius: 5px;
-  margin: 10px auto;
+  width: 100%;
+  height: auto;
+}
+
+.about-us-text-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  gap: 5px;
 }
 
 .about-us-subtitle {
@@ -49,9 +61,10 @@
   .about-us-big-container {
     display: flex;
     flex-direction: row;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     justify-content: center;
     align-items: center;
+    max-width: 960px;
     /* gap: 20px; */
   }
 
@@ -62,7 +75,7 @@
 
   .about-us-image-link {
     width: auto;
-    margin: 0px auto;
+    /* margin: 0px auto; */
   }
 }
 
@@ -73,6 +86,6 @@
     margin: 0px auto;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    max-width: 1200px;
   }
 }

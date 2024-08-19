@@ -14,7 +14,6 @@
 .forWhom-first-container {
   background-color: var(--background-dark-color);
   padding: 50px 5px 50px;
-  font-size: 32px;
   color: var(--text-light-color);
 }
 
@@ -73,7 +72,6 @@
   align-items: start;
   padding-left: 60px;
   color: var(--text-red-color);
-  font-size: 32px;
 }
 
 .forWhom-text {
