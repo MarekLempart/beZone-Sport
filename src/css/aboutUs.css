@@ -60,7 +60,7 @@
 @media screen and (min-width: 768px) {
   .about-us-big-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     /* margin: 0px auto; */
     justify-content: center;
     align-items: center;
@@ -87,7 +87,7 @@
 @media screen and (min-width: 1200px) {
   .about-us-big-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 0px auto;
     justify-content: space-between;
     align-items: center;
