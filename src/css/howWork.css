@@ -4,10 +4,11 @@
   margin: 0px auto;
 }
 
-.how-work-heading {
+.how-work-second-heading {
   margin: 0px auto;
   justify-content: center;
   text-align: center;
+  padding: 5px 0px 10px 0px;
 }
 
 .how-work-small-container {
@@ -69,6 +70,10 @@
     max-width: 960px;
   }
 
+  .how-work-second-heading {
+    padding: 10px 0px 20px 0px;
+  }
+
   .how-work-image-container,
   .how-work-text-container {
     width: 50%;
@@ -91,6 +96,10 @@
 @media screen and (min-width: 1200px) {
   .how-work-small-container {
     max-width: 1200px;
+  }
+
+  .how-work-second-heading {
+    padding: 10px 0px 30px 0px;
   }
 
   /* .how-work-container {

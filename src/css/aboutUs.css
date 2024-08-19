@@ -4,7 +4,6 @@
 
 .about-us-container {
   display: block;
-  padding: 5px 0px 0px;
 }
 
 .about-us-big-container {
@@ -14,8 +13,6 @@
   margin: 0px auto;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 10px 10px 0px;
 }
 
 .about-us-second-heading {
@@ -54,7 +51,10 @@
 }
 
 .about-us-text {
-  color: var(--text-dark-color);
+  display: block;
+  text-align: start;
+  margin: 0px;
+  padding: 5px 15px 0px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -73,6 +73,11 @@
     width: 50%;
   }
 
+  .about-us-text {
+    margin: 0px;
+    padding: 10px 20px 0px 20px;
+  }
+
   .about-us-image-link {
     width: auto;
     /* margin: 0px auto; */
@@ -87,5 +92,10 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
+  }
+
+  .about-us-text {
+    margin: 0px;
+    padding: 10px 50px 0px 50px;
   }
 }
