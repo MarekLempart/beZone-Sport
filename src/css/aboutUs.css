@@ -1,3 +1,5 @@
+/* aboutUs.css */
+
 .about-us-section {
   display: block;
 }
@@ -17,10 +19,10 @@
 
 .about-us-second-heading {
   color: var(--text-red-color);
-  padding: 10px 50px 10px 50px;
+  padding: 5px 50px 0px 50px;
 }
 
-.about-us-image-link {
+.about-us-image-container {
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -28,7 +30,7 @@
   justify-content: center;
 }
 
-.about-us-image-link,
+.about-us-image-container,
 .about-us-text-item {
   width: 100%;
 }
@@ -46,10 +48,6 @@
   gap: 5px;
 }
 
-.about-us-subtitle {
-  color: var(--text-dark-color);
-}
-
 .about-us-text {
   display: block;
   text-align: start;
@@ -61,26 +59,18 @@
   .about-us-big-container {
     display: flex;
     flex-direction: row-reverse;
-    /* margin: 0px auto; */
     justify-content: center;
     align-items: center;
     max-width: 960px;
-    /* gap: 20px; */
   }
 
-  .about-us-image-link,
+  .about-us-image-container,
   .about-us-text-item {
     width: 50%;
   }
 
   .about-us-text {
-    margin: 0px;
-    padding: 10px 20px 0px 20px;
-  }
-
-  .about-us-image-link {
-    width: auto;
-    /* margin: 0px auto; */
+    padding: 0px 20px 0px 20px;
   }
 }
 
@@ -95,7 +85,6 @@
   }
 
   .about-us-text {
-    margin: 0px;
     padding: 10px 50px 0px 50px;
   }
 }

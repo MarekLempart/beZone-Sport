@@ -1,24 +1,29 @@
+/* howWork.css */
+
 .how-work-section {
-  /* background-color: var(--background-shadow); */
-  padding: 50px 20px 20px;
+  display: block;
+  /* text-align: center; */
+  justify-content: center;
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+.how-work-container {
+  display: block;
+}
+
+.how-work-big-container {
+  display: flex;
+  flex-direction: column;
   margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .how-work-second-heading {
-  margin: 0px auto;
-  justify-content: center;
-  text-align: center;
-  padding: 5px 0px 10px 0px;
-}
-
-.how-work-small-container {
-  display: flex;
-  flex-direction: column;
-  margin: 10px auto;
-  justify-content: center;
-  text-align: center;
-  gap: 20px;
-  max-width: 600px;
+  padding: 10px 50px 10px 50px;
 }
 
 .how-work-accent {
@@ -40,38 +45,31 @@
 
 .how-work-image {
   width: 100%;
-  margin: 0px auto;
   height: auto;
 }
-
-/* .how-work-image {
-  border-radius: 1px;
-  margin: 0px auto;
-  min-width: 280px;
-} */
 
 .how-work-text-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: space-around;
-  margin: 5px auto;
+  gap: 5px;
 }
 
 .how-work-text {
-  margin: 0;
-  text-align: center;
+  display: block;
+  text-align: start;
+  margin: 0px;
+  padding: 5px 15px 0px 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .how-work-small-container {
+  .how-work-big-container {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     max-width: 960px;
-  }
-
-  .how-work-second-heading {
-    padding: 10px 0px 20px 0px;
   }
 
   .how-work-image-container,
@@ -79,40 +77,30 @@
     width: 50%;
   }
 
-  /* .how-work-container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 960px;
+  .how-work-second-heading {
+    padding: 10px 20px 0px 20px;
   }
-  .how-work-image {
-    width: 500px;
-  } */
+
+  .how-work-text {
+    padding: 10px 20px 0px 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .how-work-small-container {
+  .how-work-big-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
   }
 
   .how-work-second-heading {
-    padding: 10px 0px 30px 0px;
+    padding: 10px 50px 30px 50px;
   }
 
-  /* .how-work-container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 1200px;
+  .how-work-text {
+    padding: 10px 50px 0px 50px;
   }
-
-  .how-work-image {
-    width: 650px;
-  } */
 }
