@@ -60,7 +60,7 @@
   display: block;
   text-align: start;
   margin: 0px;
-  padding: 5px 15px 0px 15px;
+  padding: 5px 15px 15px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,7 +82,7 @@
   }
 
   .how-work-text {
-    padding: 10px 20px 0px 20px;
+    padding: 10px 20px 20px 20px;
   }
 }
 
@@ -101,6 +101,6 @@
   }
 
   .how-work-text {
-    padding: 10px 50px 0px 50px;
+    padding: 10px 50px 20px 50px;
   }
 }
