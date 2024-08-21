@@ -1,6 +1,19 @@
 /* timeToChange.css */
 
-.timeToChange-container {
+.timeToChange-first-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--background-dark-color);
+  padding: 50px 0px 50px;
+  color: var(--text-light-color);
+}
+
+.timeToChange-span {
+  color: var(--text-red-color);
+}
+
+.timeToChange-second-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +55,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .timeToChange-container {
+  .timeToChange-second-container {
     flex-direction: row;
     justify-content: space-between;
     max-width: 960px;
@@ -55,7 +68,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .timeToChange-container {
+  .timeToChange-second-container {
     max-width: 1200px;
   }
 }
