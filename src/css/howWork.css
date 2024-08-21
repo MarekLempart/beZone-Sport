@@ -69,7 +69,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 960px;
+    max-width: 100%;
   }
 
   .how-work-image-container,

@@ -20,16 +20,22 @@
   align-items: center;
 }
 
-.preliminary-first-text-container {
+.preliminary-first-text-item,
+.preliminary-text-second-item {
   display: block;
   text-align: start;
   margin: 0px;
-  padding: 5px 15px 0px 15px;
+  padding: 0px 15px 0px 15px;
 }
 
 .preliminary-second-heading {
   color: var(--text-red-color);
-  padding: 5px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
+}
+
+.preliminary-video-container {
+  background-color: var(--background-dark-color);
+  padding: 5px;
 }
 
 .preliminary-image-container,
@@ -43,7 +49,8 @@
 
 .preliminary-image-container,
 .preliminary-video-container,
-.preliminary-text-item {
+.preliminary-text-item,
+.preliminary-text-second-item {
   width: 100%;
 }
 
@@ -61,29 +68,19 @@
   gap: 5px;
 }
 
-.preliminary-video-container .preliminary-video {
-  width: 100%;
-  height: 400px;
-  /* width: 100%;
-  height: 500px;
-  flex-shrink: 0;
-  border-radius: 0px;
-  border: 0px;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
-    url(../images/preliminary-first-container_mobile_01.webp),
-    lightgray -158.445px -335.767px / 187.796% 186.969% no-repeat; */
+.preliminary-text-second-item {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-around;
+  gap: 5px;
 }
 
-/* .preliminary-text {
-  display: block;
-  text-align: start;
-  margin: 0px;
-  padding: 5px 15px 0px 15px;
-} */
+.preliminary-video-container,
+.preliminary-video {
+  width: 100%;
+  height: 400px;
+}
 
 @media screen and (min-width: 768px) {
   .preliminary-first-container {
@@ -91,7 +88,6 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    max-width: 960px;
   }
 
   .preliminary-second-container {
@@ -99,23 +95,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 960px;
   }
 
   .preliminary-image-container,
   .preliminary-video-container,
-  .preliminary-text-item {
+  .preliminary-text-item,
+  .preliminary-text-second-item {
     width: 50%;
   }
 
-  .preliminary-first-text-container {
+  .preliminary-first-text-item,
+  .preliminary-text-second-item {
     padding: 0px 20px 0px 20px;
   }
-
-  /* .preliminary-video {
-    width: 600px;
-    height: 400px;
-  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -137,62 +129,8 @@
     max-width: 1200px;
   }
 
-  .preliminary-first-text-container {
+  .preliminary-first-text-item,
+  .preliminary-text-second-item {
     padding: 10px 50px 0px 50px;
   }
-  /* .preliminary-video {
-    width: 600px;
-  } */
 }
-
-/* @media screen and (max-width: 767px) {
-  .preliminary-first-text-container {
-    background: transparent;
-    margin: 0px auto;
-    background-image: linear-gradient(
-        var(--background-shadow),
-        var(--background-shadow)
-      ),
-      url('../images/forWhom_background.webp');
-    background-image: url('../images/preliminary-first-container_mobile_01.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 767px;
-  }
-} */
-
-/* @media screen and (min-width: 768px) {
-  .preliminary-first-text-container {
-    background: transparent;
-    margin: 0px auto;
-    background-image: linear-gradient(
-        var(--background-shadow),
-        var(--background-shadow)
-      ),
-      url('../images/forWhom_background.webp');
-    background-image: url('../images/preliminary-first-container_tablet_01.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1199px;
-    min-width: 768px;
-  }
-} */
-
-/* @media screen and (min-width: 1200px) {
-  .preliminary-first-text-container {
-    background: transparent;
-    margin: 0px auto;
-    background-image: linear-gradient(
-        var(--background-shadow),
-        var(--background-shadow)
-      ),
-      url('../images/forWhom_background.webp');
-    background-image: url('../images/preliminary-first-container_desktop_01.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1200px;
-  }
-} */

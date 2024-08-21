@@ -57,14 +57,14 @@
   display: block;
   text-align: start;
   margin: 0px;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 20px 15px;
 }
 
 @media screen and (min-width: 768px) {
   .msys-items {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 960px;
+    max-width: 100%;
   }
 
   .msys-image-link,
@@ -74,7 +74,7 @@
 
   .msys-text {
     margin: 0px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 25px 20px;
   }
 
   .msys-items:nth-child(even) {
@@ -89,6 +89,6 @@
 
   .msys-text {
     margin: 0px;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px 25px 50px;
   }
 }

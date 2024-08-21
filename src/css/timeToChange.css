@@ -58,7 +58,7 @@
   .timeToChange-second-container {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 960px;
+    max-width: 100%;
   }
 
   .timeToChange-image-container,
