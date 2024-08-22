@@ -17,9 +17,39 @@
 }
 
 .forWhom-second-container {
-  background-color: var(--background-light-color);
-  padding: 20px 5px 20px;
-  color: var(--text-dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.forWhom-image-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forWhom-second-text-container,
+.forWhom-image-container {
+  width: 100%;
+}
+
+.forWhom-image {
+  width: 100%;
+  height: auto;
+}
+
+.forWhom-second-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  /* padding: 20px 5px 20px; */
+  margin: 20px auto;
 }
 
 .forWhom-third-container {
@@ -84,6 +114,17 @@
 }
 
 @media screen and (max-width: 767px) {
+  .forWhom-second-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .forWhom-second-text-container,
+  .forWhom-image-container {
+    width: 50%;
+  }
+
   .forWhom-third-container {
     background: transparent;
     margin: 0px auto;
@@ -92,7 +133,7 @@
         var(--background-shadow)
       ),
       url('../images/forWhom_background.webp'); */
-    background-image: url('../images/forWhom_background_mobile_04.webp');
+    background-image: url('../images/forWhom_background_desktop_04-01.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,6 +142,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .forWhom-second-container {
+    max-width: 1200px;
+  }
+
   .forWhom-third-container {
     background: transparent;
     margin: 0px auto;
@@ -109,7 +154,7 @@
         var(--background-shadow)
       ),
       url('../images/forWhom_background.webp'); */
-    background-image: url('../images/forWhom_background_tablet_04.webp');
+    background-image: url('../images/forWhom_background_desktop_04-01.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

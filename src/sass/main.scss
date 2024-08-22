@@ -95,7 +95,7 @@ img {
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   h3 {
@@ -119,6 +119,35 @@ img {
   body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p,
+  ul {
+    font-size: 13px;
+  }
+
+  .container {
+    min-width: 768px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (min-width: 932px) {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.3;
   }
@@ -133,7 +162,7 @@ img {
 
   p,
   ul {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .container {
@@ -162,7 +191,7 @@ img {
 
   p,
   ul {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .container {
