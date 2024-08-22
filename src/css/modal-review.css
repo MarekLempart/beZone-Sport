@@ -19,17 +19,17 @@
 .review-window {
   align-items: center;
   background: var(--background-light-color);
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   height: 471px;
   left: 50%;
   overflow: auto;
-  padding: 0 24px;
+  padding: 15px 0px 10px 10px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 311px;
+  width: 290px;
 }
 
 .review-close {
@@ -95,7 +95,7 @@
   border-radius: 8px;
   padding: 14px 18px;
   transition: box-shadow 200ms linear;
-  width: 270px;
+  width: 240px;
 }
 
 .modal-review-field::placeholder {
@@ -107,7 +107,7 @@
   border-radius: 8px;
   padding: 14px 18px;
   transition: box-shadow 200ms linear;
-  width: 308px;
+  width: 278px;
 }
 
 .modal-review-field-phone::placeholder {
