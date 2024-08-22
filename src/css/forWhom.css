@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* background-color: var(--background-red-color); */
-  /* padding: 5px 0px 5px; */
 }
 
 .forWhom-span {
@@ -19,9 +17,9 @@
 .forWhom-second-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 600px;
 }
 
 .forWhom-image-container {
@@ -113,10 +111,27 @@
   margin-left: 0;
 }
 
-@media screen and (max-width: 767px) {
+.forWhom-third-container {
+  background: transparent;
+  margin: 0px auto;
+  /* background-image: linear-gradient(
+        var(--background-shadow),
+        var(--background-shadow)
+      ),
+      url('../images/forWhom_background.webp'); */
+  background-image: url('../images/forWhom_background_desktop_04-01.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 767px;
+}
+
+@media screen and (min-width: 767px) {
   .forWhom-second-container {
+    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
   }
 
@@ -137,33 +152,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 767px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .forWhom-second-container {
-    max-width: 1200px;
-  }
-
-  .forWhom-third-container {
-    background: transparent;
-    margin: 0px auto;
-    /* background-image: linear-gradient(
-        var(--background-shadow),
-        var(--background-shadow)
-      ),
-      url('../images/forWhom_background.webp'); */
-    background-image: url('../images/forWhom_background_desktop_04-01.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     max-width: 1199px;
     min-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .forWhom-second-container {
+    max-width: 1200px;
+  }
+
   .forWhom-third-container {
     background: transparent;
     margin: 0px auto;

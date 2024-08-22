@@ -10,11 +10,11 @@
 
 .about-us-big-container {
   background-color: var(--background-light-color);
-  margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px auto;
 }
 
 .about-us-second-heading {
