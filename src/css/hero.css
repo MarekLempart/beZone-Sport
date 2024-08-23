@@ -1,8 +1,8 @@
 /* hero.css */
 
 .hero-section {
-  padding: 395px 20px 20px;
-  border-radius: 3px;
+  padding: 460px 20px 20px;
+  /* border-radius: 3px; */
   margin: 0px auto;
 }
 
@@ -27,7 +27,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  gap: 26px;
 }
 
 .hero-modal-button-first-line {
@@ -184,7 +184,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding: 671px 40px 40px;
+    padding: 860px 40px 20px;
     margin: 0px auto;
   }
 
@@ -264,7 +264,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    padding: 381px 40px 40px;
+    padding: 520px 40px 20px;
     margin: 0px auto;
   }
 
