@@ -9,14 +9,14 @@
   color: var(--text-red-color);
 }
 
-.preliminary-first-header-container {
+/* .preliminary-first-header-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: var(--background-dark-color);
   padding: 35px 20px 35px;
   color: var(--text-light-color);
-}
+} */
 
 .preliminary-container {
   /* background-color: var(--background-red-color); */
@@ -38,6 +38,8 @@
   display: block;
   text-align: start;
   padding: 10px 15px 10px 15px;
+  width: 100%; /* Ustaw szerokość na 100% kontenera */
+  box-sizing: border-box; /* Uwzględnia padding w szerokości elementu */
 }
 
 .preliminary-second-heading {
@@ -69,7 +71,6 @@
 .preliminary-image {
   width: 100%;
   height: auto;
-  /* display: block; */
 }
 
 .preliminary-text-item {
@@ -86,6 +87,7 @@
   text-align: start;
   justify-content: space-around;
   gap: 5px;
+  width: 100%;
 }
 
 .preliminary-video-container,
@@ -96,6 +98,8 @@
 
 .preliminary-text {
   padding: 5px 0px 5px 0px;
+  white-space: normal; /* Umożliwia normalne zawijanie tekstu */
+  word-wrap: break-word; /* Zawija długie wyrazy w razie potrzeby */
 }
 
 @media screen and (min-width: 768px) {
@@ -128,6 +132,10 @@
   .preliminary-second-heading {
     padding: 20px 20px 0px 20px;
   }
+  .preliminary-text-item,
+  .preliminary-second-text-item {
+    max-width: 600px; /* Dodanie maksymalnej szerokości dla kontenerów tekstowych */
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -156,5 +164,10 @@
 
   .preliminary-second-heading {
     padding: 20px 50px 10px 50px;
+  }
+
+  .preliminary-text-item,
+  .preliminary-second-text-item {
+    width: 600px;
   }
 }
