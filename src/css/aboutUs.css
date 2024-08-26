@@ -32,7 +32,7 @@
 
 .about-us-second-heading {
   color: var(--text-red-color);
-  padding: 5px 15px 5px 15px;
+  padding: 40px 15px 5px 15px;
 }
 
 .about-us-image-container {
@@ -59,6 +59,7 @@
   align-items: start;
   justify-content: space-around;
   gap: 5px;
+  padding-bottom: 40px;
 }
 
 .about-us-text {
@@ -80,6 +81,10 @@
   .about-us-image-container,
   .about-us-text-item {
     width: 50%;
+  }
+
+  .about-us-text-item {
+    padding-bottom: 0px;
   }
 
   .about-us-second-heading {

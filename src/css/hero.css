@@ -1,7 +1,7 @@
 /* hero.css */
 
 .hero-section {
-  padding: 490px 20px 20px;
+  padding: 420px 20px 20px;
   /* border-radius: 3px; */
   margin: 0px auto;
 }
@@ -184,7 +184,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding: 860px 40px 20px;
+    padding: 790px 40px 40px;
     margin: 0px auto;
   }
 
@@ -264,7 +264,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    padding: 640px 40px 20px;
+    padding: 600px 40px 40px;
     margin: 0px auto;
   }
 

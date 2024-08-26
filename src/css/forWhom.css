@@ -56,7 +56,8 @@
 }
 
 .forWhom-list {
-  padding-left: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
   margin-left: 0;
 }
 
@@ -97,17 +98,8 @@
 .forWhom-second-heading {
   display: flex;
   align-items: start;
-  padding: 20px 10px 20px 60px;
+  padding: 20px 10px 20px 30px;
   color: var(--text-red-color);
-}
-
-.forWhom-text {
-  color: var(--text-red-color);
-  font-weight: 700;
-  display: flex;
-  padding: 25px 20px 30px 60px;
-  align-items: start;
-  margin-left: 0;
 }
 
 .forWhom-third-container {
@@ -154,6 +146,19 @@
     max-width: 1199px;
     min-width: 768px;
   }
+
+  .forWhom-list {
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-left: 0;
+  }
+
+  .forWhom-second-heading {
+    display: flex;
+    align-items: start;
+    padding: 20px 10px 20px 40px;
+    color: var(--text-red-color);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -174,5 +179,18 @@
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1200px;
+  }
+
+  .forWhom-list {
+    padding-left: 50px;
+    padding-right: 20px;
+    margin-left: 0;
+  }
+
+  .forWhom-second-heading {
+    display: flex;
+    align-items: start;
+    padding: 20px 10px 20px 50px;
+    color: var(--text-red-color);
   }
 }

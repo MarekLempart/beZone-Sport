@@ -7,9 +7,19 @@
   padding-bottom: 0px;
 }
 
-.cont-methodology {
-  display: block;
+.methodology-first-header-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  background-color: var(--background-dark-color);
+  padding: 35px 20px 35px;
+  color: var(--text-light-color);
+  max-width: 1160px;
+  margin: 0px auto;
+}
+
+.methodology-span {
+  color: var(--text-red-color);
 }
 
 /* General Styles */
