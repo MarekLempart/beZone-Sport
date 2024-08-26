@@ -5,7 +5,10 @@ export const methodologySystemData = [
     id: 'functionalPatterns',
     title: 'Functional Patterns',
     text: `<p class="msys-text">
-    system, który powstał w oparciu o obserwacje najlepiej ruszających się sportowców, uwzględniający antropologiczną wielką czwórkę (stanie, chodzenie, bieganie, rzucanie) zachowując inżynierskie spojrzenie wprowadza bardzo precyzyjne protokoły treningowe, które pomagają pozbyć się  traumy z twojego ciała. Traumy rozumiane jako wszystkie obciążenia z których twoje ciało nie było się w stanie zregenerować na bieżąco. Precyzyjny kierunek pracy pozwala bodźcowanie twoje ciało dokładnie tam gdzie tego potrzebuje w tym kontekście ruchu, który jest dla niego najważniejszy.
+    System, który powstał w oparciu o obserwacje najlepiej ruszających się sportowców, uwzględniający nasze najbardziej fundamentalne potrzeby ruchowe (chodzenie, bieganie, rzucanie).
+    </p>
+    <p class="msys-text">
+    Functional Patterns daje Ci bardzo precyzyjne protokoły treningowe, które pomagają wzmocnić Cię dokładnie tam, gdzie potrzebujesz! Ceniąc Twój czas, podejmujemy celne działania ku Twojemu zdrowiu i sprawności!
     </p>`,
   },
 
@@ -13,20 +16,16 @@ export const methodologySystemData = [
     id: 'movMed',
     title: 'MovMed',
     text: `
-    <p class="msys-text">
-    tak samo, jak my myślimy słowami i obrazami w naszych umysłach, ciała "myślą" za pomocą doznań. Układ nerwowy priorytetowo traktuje informacje sensoryczne, które dostarczają mózgowi bezpośredniej informacji na temat tego, co dzieje się w ciele. Większość naszych procesów sensorycznych jest autonomiczna/refleksyjna, ale ulegają pogorszeniu w obliczu utrzymującego się zagrożenia dla mózgu.
-    </p>
-    <p class="msys-text">
-    System edukuje w zakresie naprawy i wzmocnienia świadomości ciała, jednocześnie prowadząc Cię przez te części ciała, na które powinieneś się skupić, aby zapewnić najtrwalsze korzyści. Dzięki wszechstronnemu zrozumieniu relacji neurologicznych w ciele możemy zmienić sposób odczuwania i funkcjonowania Twojego ciała na lepsze.
-    </p>
+    <p class="msys-text">Litery, które widzisz są rozkodowywanie przez Twój umysł, który nadaje im sens.</p>
+    <p class="msys-text">Podobnie Twoje ciała rozkodowuje informacje otrzymywanego z zewnętrznego środowiska i środka Twojego ciała. W oparciu o te informacje, działają Twoje systemy autorefleksyjnie - te kalibrujące Twoje ciało do działania i wyciszenia.</p>
+    <p class="msys-text">Ten system skupia się na tym, aby doinformować Twoje ciało z poziomu układu nerwowego (szef od przesyłu informacji). Dzięki temu będziesz w stanie łatwiej się zrelaksować i zmobilizować do działania, kiedy potrzebujesz.</p>
     `,
   },
 
   {
     id: 'motionData',
     title: 'Motion data',
-    text: `<p class="msys-text">
-    wyobraź sobie, że całe spektrum ruchu to książka, różne metody treningowe będą pokrywać jedną, kilka stron, czasami nawet cały rozdział, jednak będą wciąż wycinkiem rzeczywistości. Equalibrum to metoda, która wrzuca nas w kontrolowany chaos i w ten chaos dozuje tak abyśmy mogli wzrosnąć. Inspirowana tym jak dziecko uczy się ruchu, jak historia i emocjonalność zmienia jakość naszego ruchu. Pomyśl o tym jak czujesz się gdy robisz coś z przymusu, a kiedy realizujesz swoje marzenie, tą energię można wykorzystać w treningu. Pasja i zabawa kluczem do sukcesu.
-    </p>`,
+    text: `<p class="msys-text">Kiedy dziecko uczy się chodzić, wywala się 1000 razy. Dzięki, tym nieudanym próbom uczy się chodzić. Bruce Lee powiedział "Nie boję się tego kto trenował 1000 kopnięć, boję się tego kto 1000 razy trenował jedno kopnięcie".</p>
+    <p class="msys-text">Ten system daje Ci bezpieczne ramy, w których przez zabawę będziesz mógł eksplorować różne zakątki ruchu. Dzięki temu będziesz coraz wszechstronniejszy i silniejszy w chaosie codziennego życia.</p>`,
   },
 ];
