@@ -16,7 +16,7 @@ export const methodologySystemData = [
     id: 'movMed',
     title: 'MovMed',
     text: `
-    <p class="msys-text">Litery, które widzisz są rozkodowywanie przez Twój umysł, który nadaje im sens.</p>
+    <p class="msys-text">Litery, które widzisz są rozkodowywane przez Twój umysł, który nadaje im sens.</p>
     <p class="msys-text">Podobnie Twoje ciała rozkodowuje informacje otrzymywanego z zewnętrznego środowiska i środka Twojego ciała. W oparciu o te informacje, działają Twoje systemy autorefleksyjnie - te kalibrujące Twoje ciało do działania i wyciszenia.</p>
     <p class="msys-text">Ten system skupia się na tym, aby doinformować Twoje ciało z poziomu układu nerwowego (szef od przesyłu informacji). Dzięki temu będziesz w stanie łatwiej się zrelaksować i zmobilizować do działania, kiedy potrzebujesz.</p>
     `,

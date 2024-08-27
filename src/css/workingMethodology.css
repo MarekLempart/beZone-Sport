@@ -18,8 +18,39 @@
   margin: 0px auto;
 }
 
+.methodology-header {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0px auto;
+}
+
 .methodology-span {
   color: var(--text-red-color);
+}
+
+.methodology-button {
+  color: var(--text-light-color);
+  background-color: var(--background-red-color);
+  font-size: 10px;
+  font-style: normal;
+  line-height: normal;
+  display: block;
+  border: 1px solid var(--text-red-color);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 16px;
+  margin: auto;
+  transition-property: background-color, color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-tf);
+}
+
+.methodology-button:hover,
+.methodology-button:focus {
+  background-color: var(--background-light-color);
+  color: var(--text-red-color);
+  border: 1px solid var(--text-red-color);
 }
 
 /* General Styles */
@@ -175,6 +206,42 @@
   padding: 150px 0px 150px;
 }
 
+.methodology-footer-list {
+  margin: 0px auto;
+  padding-inline-start: 30px;
+  text-align: start;
+}
+
+.methodology-footer-point {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 0px;
+}
+
+.methodology-icons {
+  /* color: var(--text-dark-color);
+  fill: transparent;
+  stroke: currentColor; */
+  fill: var(--text-red-color);
+  /* fill: currentColor; */
+  stroke: none;
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  transform: translateY(5px);
+  margin-right: 20px;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.methodology-icons:hover,
+.methodology-icons:focus {
+  fill: var(--text-dark-color);
+  stroke: none;
+  /* color: var(--text-red-color); */
+}
+
 @media screen and (max-width: 767px) {
   .methodology-footer-background {
     margin: 0px auto;
@@ -216,10 +283,21 @@
     gap: 32px;
   }
 
+  .methodology-button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
   .methodology-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 100px;
+  }
+
+  .methodology-footer-list {
+    padding-left: auto;
+    padding-right: auto;
+    margin: 0px auto;
   }
 }
 
@@ -245,5 +323,11 @@
   .methodology-text {
     width: 200px;
     height: 200px;
+  }
+
+  .methodology-footer-list {
+    padding-left: 400px;
+    padding-right: 20px;
+    margin-left: 0;
   }
 }
