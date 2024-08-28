@@ -1,4 +1,4 @@
-// index-ImagesImport.js
+// js/index-ImagesImport.js
 
 // photos for reviews
 import avatarMan01Photo from '../images/Avatar-Man01.webp';

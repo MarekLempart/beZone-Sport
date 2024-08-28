@@ -1,4 +1,4 @@
-// index-ImagesImport-Methodology.js
+// js/index-ImagesImport-Methodology.js
 
 // photos for Methodology
 import imgAttitude from '../images/ico_attitude.png';

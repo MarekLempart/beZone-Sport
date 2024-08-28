@@ -1,4 +1,4 @@
-// fakeApi.js
+// js/fakeApi.js
 
 import { nanoid } from 'nanoid';
 import images from './index-ImagesImport';

@@ -1,4 +1,4 @@
-// fakeAPI-Methodology.js
+// js/fakeAPI-Methodology.js
 
 export const methodologyData = [
   {

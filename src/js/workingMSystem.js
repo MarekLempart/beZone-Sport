@@ -1,4 +1,4 @@
-// workingMSystem.js
+// js/workingMSystem.js
 
 import { methodologySystemData } from './fakeAPI-MSystem.js';
 import imagesMethodologySystem from './index-ImagesImport-MSystem.js';

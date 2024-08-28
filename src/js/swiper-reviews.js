@@ -1,4 +1,4 @@
-// swiper-reviews.js
+// js/swiper-reviews.js
 
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';

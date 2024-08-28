@@ -1,4 +1,4 @@
-// workingMethodology.js
+// js/workingMethodology.js
 
 import { methodologyData } from './fakeAPI-Methodology.js';
 import imagesMethodology from './index-ImagesImport-Methodology.js';
