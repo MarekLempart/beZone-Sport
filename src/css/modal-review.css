@@ -26,6 +26,7 @@
   height: 471px;
   left: 50%;
   overflow: auto;
+  border-radius: 15px;
   padding: 15px 5px 10px 15px;
   position: absolute;
   top: 50%;
