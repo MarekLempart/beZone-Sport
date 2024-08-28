@@ -21,7 +21,6 @@
 .review-window {
   align-items: center;
   background: var(--background-light-color);
-  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   height: 471px;

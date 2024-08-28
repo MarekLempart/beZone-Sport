@@ -207,6 +207,10 @@
   padding: 150px 0px 150px;
 }
 
+.methodology-footer-header {
+  padding: 10px 20px 5px 20px;
+}
+
 .methodology-footer-list {
   margin: 0px auto;
   padding-inline-start: 30px;
