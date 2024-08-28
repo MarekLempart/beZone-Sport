@@ -22,6 +22,14 @@ export const reviews = [
   },
   {
     id: nanoid(),
+    name: 'Dominik',
+    review:
+      'Do Marcina trafiłem, ponieważ widziałem jego trening i zainteresowała mnie zupełnie inna metoda treningów, na początku chciałem oo prostu urozmaicić swoje treningi i spróbować czegoś nowego. I tak zostałem. Widzę poprawę postawy, większe zakresy ruchu, zwiększenie świadomości ciała, a z każdym treningiem widzę ile jeszcze przede mną do odkrycia. Bardzo cenię podejście Marcina, który rozwija się i uczy cały czas a następnie adaptuje metody treningowe. Polecam zarówno osobom z bólami różnego rodzaju, jak i sportowcom amatorom którzy chcą zwiększyć swoje możliwości i rozwinąć świadomość ciała i sposób trenowania. Dla mnie ważna jest poprawa techniki biegu - właściwie to był powód rozpoczęcia treningów.',
+    photo: images.dominikPhoto,
+    photoAlt: 'a smiling young man with lush hair',
+  },
+  {
+    id: nanoid(),
     name: 'Edyta',
     review:
       'Szyte na miarę podejście do każdego schorzenia i wibracji danego dnia :) Marcin jest pokręcony jak mój kręgosłup :). Kręgosłup jest prostszy z każdym dniem, nie wiem za to co będzie z Marcinem. Jeśli jesteś nogą z anatomii i/lub jej pochodnymi to Marcin bardzo dokładnie wyperswaduje Ci gdzie i jak długa jest ! Specjalista przez duże S. Czuję wdzięczność. Dzięki!',
@@ -35,14 +43,6 @@ export const reviews = [
       'Mam znaczną skoliozę dwułukową (po ok. 70 stopni w każdym oddziale), dokuczała mi mała mobilność pleców i bóle lędźwiowe. Ortopeda nalegał na operacji usztywniającej, powiedział że nie ma sensu się bawić w fizjoterapię i podobne rzeczy bo to się będzie tylko powoli pogarszało. Otóż nie! Współpracuję z Marcinem od kwietnia i mamy wielką poprawę! Lędźwie nie bolą, a jak czasem się zdarzy to już wiem jak działać. Moje plecy stały się mobilne, mogę się wyginać i obracać na każdą stronę, mam wrażenie jakbym odzyskała z powrotem własne ciało, a to tylko początek. Z całego serducha polecam każdemu Marcina jako dociekliwego, skrupulatnego i empatycznego profesjonalistę! Zmienia życie na lepsze :)',
     photo: images.avatarWoman01Photo,
     photoAlt: 'a woman with long wavy red hair and freckles',
-  },
-  {
-    id: nanoid(),
-    name: 'Dominik',
-    review:
-      'Do Marcina trafiłem, ponieważ widziałem jego trening i zainteresowała mnie zupełnie inna metoda treningów, na początku chciałem oo prostu urozmaicić swoje treningi i spróbować czegoś nowego. I tak zostałem. Widzę poprawę postawy, większe zakresy ruchu, zwiększenie świadomości ciała, a z każdym treningiem widzę ile jeszcze przede mną do odkrycia. Bardzo cenię podejście Marcina, który rozwija się i uczy cały czas a następnie adaptuje metody treningowe. Polecam zarówno osobom z bólami różnego rodzaju, jak i sportowcom amatorom którzy chcą zwiększyć swoje możliwości i rozwinąć świadomość ciała i sposób trenowania. Dla mnie ważna jest poprawa techniki biegu - właściwie to był powód rozpoczęcia treningów.',
-    photo: images.avatarMan01Photo,
-    photoAlt: 'a smiling young man with lush hair',
   },
   {
     id: nanoid(),
