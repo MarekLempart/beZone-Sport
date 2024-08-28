@@ -243,9 +243,9 @@
   /* color: var(--text-red-color); */
 }
 
-.methodology-third-header {
+/* .methodology-third-header {
   padding: 0px 10px 0px;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .methodology-footer-background {
