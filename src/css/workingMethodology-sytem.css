@@ -24,7 +24,7 @@
 .msys-second-heading {
   color: var(--text-red-color);
   text-transform: uppercase;
-  padding: 40px 15px 5px 15px;
+  padding: 10px 15px 20px 15px;
 }
 
 .msys-image-link {
@@ -51,13 +51,14 @@
   align-items: start;
   justify-content: space-around;
   gap: 5px;
+  padding: 40px;
 }
 
 .msys-text {
   display: block;
   text-align: start;
   margin: 0px;
-  padding: 5px 15px 40px 15px;
+  padding: 5px 15px 5px 15px;
 }
 
 @media screen and (min-width: 768px) {
