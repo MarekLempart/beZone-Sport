@@ -51,7 +51,8 @@
   align-items: start;
   justify-content: space-around;
   gap: 5px;
-  padding: 40px;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .msys-text {
@@ -71,6 +72,10 @@
   .msys-image-link,
   .msys-text-item {
     width: 50%;
+  }
+
+  .msys-text-item {
+    padding: 0px;
   }
 
   .msys-second-heading {
