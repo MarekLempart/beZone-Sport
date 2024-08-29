@@ -19,8 +19,6 @@
 }
 
 .preliminary-container {
-  /* background-color: var(--background-red-color); */
-  /* padding: 0px 0px 5px; */
   text-align: center;
 }
 
@@ -38,8 +36,8 @@
   display: block;
   text-align: start;
   padding: 30px 20px 30px 20px;
-  width: 100%; /* Ustaw szerokość na 100% kontenera */
-  box-sizing: border-box; /* Uwzględnia padding w szerokości elementu */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .preliminary-first-heading {
@@ -98,8 +96,8 @@
 
 .preliminary-text {
   padding: 5px 0px 5px 0px;
-  white-space: normal; /* Umożliwia normalne zawijanie tekstu */
-  word-wrap: break-word; /* Zawija długie wyrazy w razie potrzeby */
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,7 +135,7 @@
   }
   .preliminary-text-item,
   .preliminary-second-text-item {
-    max-width: 600px; /* Dodanie maksymalnej szerokości dla kontenerów tekstowych */
+    max-width: 600px;
   }
 }
 

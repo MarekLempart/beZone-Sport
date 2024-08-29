@@ -70,11 +70,7 @@
 }
 
 .forWhom-icons {
-  /* color: var(--text-dark-color);
-  fill: transparent;
-  stroke: currentColor; */
   fill: var(--text-red-color);
-  /* fill: currentColor; */
   stroke: none;
   width: 24px;
   height: 24px;
@@ -90,7 +86,6 @@
 .forWhom-icons:focus {
   fill: var(--text-dark-color);
   stroke: none;
-  /* color: var(--text-red-color); */
 }
 
 .forWhom-heading {
@@ -107,11 +102,6 @@
 .forWhom-third-container {
   background: transparent;
   margin: 0px auto;
-  /* background-image: linear-gradient(
-        var(--background-shadow),
-        var(--background-shadow)
-      ),
-      url('../images/forWhom_background.webp'); */
   background-image: url('../images/forWhom_background_04.webp');
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,11 +126,6 @@
   .forWhom-third-container {
     background: transparent;
     margin: 0px auto;
-    /* background-image: linear-gradient(
-        var(--background-shadow),
-        var(--background-shadow)
-      ),
-      url('../images/forWhom_background.webp'); */
     background-image: url('../images/forWhom_background_04.webp');
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,11 +156,6 @@
   .forWhom-third-container {
     background: transparent;
     margin: 0px auto;
-    /* background-image: linear-gradient(
-        var(--background-shadow),
-        var(--background-shadow)
-      ),
-      url('../images/forWhom_background.webp'); */
     background-image: url('../images/forWhom_background_04.webp');
     background-size: cover;
     background-repeat: no-repeat;

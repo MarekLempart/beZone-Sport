@@ -89,7 +89,6 @@
   font-weight: 400;
   letter-spacing: -0.02em;
   position: relative;
-  /* width: 100%; */
 }
 
 .modal-review-field {
@@ -197,7 +196,6 @@
 
   .modal-review-form {
     gap: 18px;
-    /* max-width: 460px; */
   }
 
   .modal-review-form-row {
@@ -209,8 +207,6 @@
     border-radius: 13px;
     padding: 22px 24px;
     width: 470px;
-    /* min-width: 200px; */
-    /* max-width: auto; */
   }
 
   .modal-review-field-phone {
@@ -218,26 +214,14 @@
     border-radius: 13px;
     padding: 22px 24px;
     width: 520px;
-    /* min-width: 200px; */
-    /* max-width: auto; */
   }
-
-  /* .review-phone-left {
-    box-shadow: 4px 0px 0px -1px rgba(0, 0, 0, 0.1);
-    gap: 18px;
-    left: 24px;
-    padding-right: 32px;
-    top: 17px;
-  } */
 
   .modal-review-phone .modal-review-field {
     padding-left: 177px;
-    /* box-sizing: border-box; */
   }
 
   .modal-review-field-phone {
     padding-left: 177px;
-    /* box-sizing: border-box; */
   }
 
   .modal-review-phone .modal-review-label {
