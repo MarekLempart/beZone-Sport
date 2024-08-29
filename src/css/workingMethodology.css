@@ -335,8 +335,9 @@
   }
 
   .methodology-footer-list {
-    padding-left: 400px;
-    padding-right: 20px;
-    margin-left: 0;
+    margin: 0px auto;
+    /* padding-left: 400px;
+    padding-right: 20px; */
+    padding-inline-start: auto;
   }
 }
