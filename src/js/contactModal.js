@@ -22,15 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
       if (button.hasAttribute('data-modal-buy1-open')) {
         modalHeading.textContent = 'tu możesz napisać ';
         modalAccent.textContent = 'coś do mnie';
-        modal.setAttribute('data-modal-subject', 'Kontakt');
+        modal.setAttribute('data-modal-subject', 'Zapytanie od klienta');
       } else if (button.hasAttribute('data-modal-buy2-open')) {
         modalHeading.textContent = 'tu możesz ';
         modalAccent.textContent = 'umówić wizytę';
-        modal.setAttribute('data-modal-subject', 'Zamawiam trening');
+        modal.setAttribute(
+          'data-modal-subject',
+          'Prośba o umówienie terminy treningu'
+        );
       } else {
         modalHeading.textContent = 'tu możesz napisać ';
         modalAccent.textContent = 'opinię o mojej pracy';
-        modal.setAttribute('data-modal-subject', 'Moja opinia');
+        modal.setAttribute('data-modal-subject', 'Opinia na temat Bezone');
       }
 
       modalHeading.appendChild(modalAccent);
@@ -63,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const name = form.querySelector('#review-name').value;
     const email = form.querySelector('#review-email').value;
-    const phone = form.querySelector('#review-phone').value;
+    // const phone = form.querySelector('#review-phone').value;
+    const phone = iti.getNumber();
     const message = form.querySelector('#opinion').value;
     const subject = modal.getAttribute('data-modal-subject');
 
