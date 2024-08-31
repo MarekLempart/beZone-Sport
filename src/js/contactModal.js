@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const name = form.querySelector('#review-name').value;
     const email = form.querySelector('#review-email').value;
-    // const phone = form.querySelector('#review-phone').value;
-    const phone = iti.getNumber();
+    const phone = form.querySelector('#review-phone').value;
+    // const phone = iti.getNumber();
     const message = form.querySelector('#opinion').value;
     const subject = modal.getAttribute('data-modal-subject');
 
