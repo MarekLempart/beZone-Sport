@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalAccent.textContent = 'umówić wizytę';
         modal.setAttribute(
           'data-modal-subject',
-          'Prośba o umówienie terminy treningu'
+          'Prośba o umówienie terminu treningu'
         );
       } else {
         modalHeading.textContent = 'tu możesz napisać ';
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await axios.post(
         'https://deploy-marek-b05855e6af89.herokuapp.com/api/v1/users/contact',
         {
-          to: 'eppum.ml@gmail.com',
+          to: 'm.bojarski91@gmail.com',
           subject,
           name,
           email,
