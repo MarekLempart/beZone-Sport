@@ -1,5 +1,6 @@
 // js/contactModal.js
 
+import axios from 'axios';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
@@ -66,26 +67,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = form.querySelector('#opinion').value;
     const subject = modal.getAttribute('data-modal-subject');
 
-    const response = await fetch('http://localhost:3000/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        phone,
-        message,
-        subject,
-      }),
-    });
+    try {
+      const response = await axios.post(
+        'https://deploy-marek-b05855e6af89.herokuapp.com/api/v1/users/contact',
+        {
+          to: 'eppum.ml@gmail.com',
+          subject,
+          name,
+          email,
+          phone,
+          text: message,
+        }
+      );
 
-    if (response.ok) {
-      alert('Wiadomość wysłana!');
-      form.reset();
-      closeModal();
-    } else {
+      if (response.status === 200) {
+        alert('Wiadomość wysłana!');
+        form.reset();
+        closeModal();
+      } else {
+        alert('Wystąpił błąd podczas wysyłania wiadomości.');
+      }
+    } catch (error) {
       alert('Wystąpił błąd podczas wysyłania wiadomości.');
     }
+
+    // const response = await fetch('http://localhost:3000/send-email', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     name,
+    //     email,
+    //     phone,
+    //     message,
+    //     subject,
+    //   }),
+    // });
+
+    // if (response.ok) {
+    //   alert('Wiadomość wysłana!');
+    //   form.reset();
+    //   closeModal();
+    // } else {
+    //   alert('Wystąpił błąd podczas wysyłania wiadomości.');
+    // }
   });
 });
