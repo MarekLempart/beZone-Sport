@@ -4,13 +4,13 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  /* right: 15%; */
+  right: 15%;
   display: none; /* Początkowo ukryj przycisk */
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: var(--background-ligth-color);
-  border: 2.5px solid var(--text-red-color); /* Zwiększono grubość obramowania */
+  border: 2px solid var(--text-red-color); /* Zwiększono grubość obramowania */
   padding: 0;
   cursor: pointer;
   z-index: 999; /* Upewnij się, że przycisk jest na wierzchu innych elementów */
@@ -21,8 +21,8 @@
 }
 
 #scrollToTopButton svg {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   transform: rotate(180deg); /* Obrócenie ikony do góry */
   fill: var(--text-red-color);
 }
@@ -35,4 +35,15 @@
 #scrollToTopButton:hover,
 #scrollToTopButton:focus {
   background-color: var(--background-red-color);
+}
+
+@media screen and (min-width: 768px) {
+  #scrollToTopButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none; /* Początkowo ukryj przycisk */
+    width: 40px;
+    height: 40px;
+  }
 }
