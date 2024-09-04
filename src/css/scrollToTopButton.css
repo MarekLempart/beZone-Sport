@@ -3,7 +3,6 @@
 .crollToTopButtonContainer {
   position: fixed;
   bottom: 30px;
-  right: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -11,7 +10,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: flex-end; /* Przycisk znajdzie się po prawej stronie */
-  padding-right: 20px;
   z-index: 999;
 }
 
@@ -49,9 +47,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .crollToTopButtonContainer {
+  /* .crollToTopButtonContainer {
     padding-right: 40px;
-  }
+  } */
 
   #scrollToTopButton {
     display: flex;
