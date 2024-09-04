@@ -1,27 +1,34 @@
 /* css/scrollToTopButton.css */
 
 .crollToTopButtonContainer {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  width: 1200px;
+  justify-content: flex-end; /* Przycisk znajdzie się po prawej stronie */
+  padding-right: 20px;
+  z-index: 999;
 }
 
 #scrollToTopButton {
-  position: fixed;
-  bottom: 30px;
-  right: 10%;
   display: none; /* Początkowo ukryj przycisk */
   width: 36px;
   height: 36px;
   border-radius: 50%;
   background-color: var(--background-ligth-color);
-  border: 2px solid var(--text-red-color); /* Zwiększono grubość obramowania */
+  border: 2px solid var(--text-red-color);
   padding: 0;
   cursor: pointer;
   z-index: 999; /* Upewnij się, że przycisk jest na wierzchu innych elementów */
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(-50%);
+  /* transform: translateX(0); */
 }
 
 #scrollToTopButton svg {
@@ -42,6 +49,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .crollToTopButtonContainer {
+    padding-right: 40px;
+  }
+
   #scrollToTopButton {
     display: flex;
     align-items: center;
