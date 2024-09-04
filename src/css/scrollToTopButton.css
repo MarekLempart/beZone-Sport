@@ -1,8 +1,12 @@
 /* css/scrollToTopButton.css */
 
+.crollToTopButtonContainer {
+  max-width: 1200px;
+}
+
 #scrollToTopButton {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 10%;
   display: none; /* Początkowo ukryj przycisk */
   width: 36px;
