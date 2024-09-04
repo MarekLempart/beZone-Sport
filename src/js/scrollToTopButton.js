@@ -1,21 +1,24 @@
 // js/scrollToTopButton.js
 
-const scrollToTopButton = document.getElementById('scrollToTopButton');
+document.addEventListener('DOMContentLoaded', function () {
+  const scrollToTopButton = document.getElementById('scrollToTopButton');
 
-// Pokaż przycisk, gdy użytkownik przewinie stronę w dół
-window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 100) {
-    // Możesz dostosować wartość, aby przycisk pojawił się po przewinięciu o określoną liczbę pikseli
-    scrollToTopButton.style.display = 'block';
+  if (scrollToTopButton) {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 100) {
+        scrollToTopButton.style.display = 'block';
+      } else {
+        scrollToTopButton.style.display = 'none';
+      }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
   } else {
-    scrollToTopButton.style.display = 'none';
+    console.error('Element #scrollToTopButton not found in the DOM.');
   }
-});
-
-// Obsługa zdarzenia kliknięcia przycisku
-scrollToTopButton.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth', // Działa w większości nowoczesnych przeglądarek, aby przewijać płynnie
-  });
 });

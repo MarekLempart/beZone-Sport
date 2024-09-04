@@ -109,7 +109,7 @@
   height: 28px;
   border-radius: 50%;
   background-color: var(--background-ligth-color);
-  border: 1px solid var(--text-red-color);
+  border: 2.5px solid var(--text-red-color);
   padding: 0;
   cursor: pointer;
 }
