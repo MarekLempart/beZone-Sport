@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const scrollToTopButton = document.getElementById('scrollToTopButton');
 
   if (scrollToTopButton) {
+    scrollToTopButton.style.display = 'none';
+
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 100) {
         scrollToTopButton.style.display = 'block';
