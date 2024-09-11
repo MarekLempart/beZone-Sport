@@ -46,6 +46,10 @@
   background-color: var(--background-red-color);
 }
 
+.crollToTopButtonContainerDiv {
+  padding: 20px 20px;
+}
+
 @media screen and (min-width: 768px) {
   /* .crollToTopButtonContainer {
     padding-right: 40px;
@@ -58,5 +62,9 @@
     display: none; /* Początkowo ukryj przycisk */
     width: 40px;
     height: 40px;
+  }
+
+  .crollToTopButtonContainerDiv {
+    padding: 40px 40px;
   }
 }
