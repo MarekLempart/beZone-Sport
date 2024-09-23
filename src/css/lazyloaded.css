@@ -1,8 +1,8 @@
 /* css/lazyloaded.css */
 
 .blur-up {
-  filter: blur(20px);
-  transition: filter 1500ms ease;
+  filter: blur(10px);
+  transition: filter 1000ms ease;
 }
 
 .blur-up.lazyloaded {

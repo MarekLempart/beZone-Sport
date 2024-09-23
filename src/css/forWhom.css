@@ -176,13 +176,3 @@
     color: var(--text-red-color);
   }
 }
-
-/* Opcjonalnie: dodaj styli dla lazy-loaded tła */
-.lazyloaded {
-  opacity: 1;
-  transition: opacity 1s ease;
-}
-
-.lazyload {
-  opacity: 0;
-}
