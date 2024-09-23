@@ -1,6 +1,7 @@
 // js/contactModal.js
 
-import axios from 'axios';
+// import axios from 'axios';
+import emailjs from 'emailjs-com';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
@@ -59,41 +60,87 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Handle form submission
-  const form = document.querySelector('.modal-review-form');
-  form.addEventListener('submit', async event => {
-    event.preventDefault();
+  // // Handle form submission
+  // const form = document.querySelector('.modal-review-form');
+  // form.addEventListener('submit', async event => {
+  //   event.preventDefault();
 
-    const name = form.querySelector('#review-name').value;
-    const email = form.querySelector('#review-email').value;
-    const phone = form.querySelector('#review-phone').value;
-    // const phone = iti.getNumber();
-    const message = form.querySelector('#opinion').value;
-    const subject = modal.getAttribute('data-modal-subject');
+  //   const name = form.querySelector('#review-name').value;
+  //   const email = form.querySelector('#review-email').value;
+  //   const phone = form.querySelector('#review-phone').value;
+  //   // const phone = iti.getNumber();
+  //   const message = form.querySelector('#opinion').value;
+  //   const subject = modal.getAttribute('data-modal-subject');
 
-    try {
-      const response = await axios.post(
-        'https://deploy-marek-b05855e6af89.herokuapp.com/api/v1/users/contact',
-        {
-          to: 'm.bojarski91@gmail.com',
-          subject,
-          name,
-          email,
-          phone,
-          text: message,
+  //   try {
+  //     const response = await axios.post(
+  //       'https://deploy-marek-b05855e6af89.herokuapp.com/api/v1/users/contact',
+  //       {
+  //         to: 'm.bojarski91@gmail.com',
+  //         subject,
+  //         name,
+  //         email,
+  //         phone,
+  //         text: message,
+  //       }
+  //     );
+
+  //     if (response.status === 200) {
+  //       alert('Wiadomość wysłana!');
+  //       form.reset();
+  //       closeModal();
+  //     } else {
+  //       alert('Wystąpił błąd podczas wysyłania wiadomości.');
+  //     }
+  //   } catch (error) {
+  //     alert('Wystąpił błąd podczas wysyłania wiadomości.');
+  //   }
+  // });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Inicjalizacja EmailJS z Twoim User ID
+    emailjs.init('Marek Lempart');
+    // Dodanie listenera na formularz
+    const form = document.querySelector('.modal-review-form');
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+
+      const name = form.querySelector('#review-name').value;
+      const email = form.querySelector('#review-email').value;
+      const phone = form.querySelector('#review-phone').value;
+      const message = form.querySelector('#opinion').value;
+      const subject = document
+        .querySelector('[data-modal-subject]')
+        .getAttribute('data-modal-subject');
+
+      // Tworzymy dane do wysłania w EmailJS
+      const templateParams = {
+        name,
+        email,
+        phone,
+        message,
+        subject,
+      };
+
+      try {
+        // Wysyłanie wiadomości za pomocą EmailJS
+        const response = await emailjs.send(
+          'service_g5pmlsi',
+          'template_i9me02a',
+          templateParams
+        );
+        if (response.status === 200) {
+          alert('Wiadomość wysłana pomyślnie!');
+          form.reset(); // Resetowanie formularza
+          modal.classList.add('is-hidden'); // Zamknięcie modala
+        } else {
+          alert('Wystąpił błąd podczas wysyłania wiadomości.');
         }
-      );
-
-      if (response.status === 200) {
-        alert('Wiadomość wysłana!');
-        form.reset();
-        closeModal();
-      } else {
+      } catch (error) {
+        console.error('Błąd przy wysyłaniu emaila:', error);
         alert('Wystąpił błąd podczas wysyłania wiadomości.');
       }
-    } catch (error) {
-      alert('Wystąpił błąd podczas wysyłania wiadomości.');
-    }
+    });
 
     // const response = await fetch('http://localhost:3000/send-email', {
     //   method: 'POST',
