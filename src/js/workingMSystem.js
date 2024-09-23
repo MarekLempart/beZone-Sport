@@ -1,5 +1,6 @@
 // js/workingMSystem.js
 
+import 'lazysizes';
 import { methodologySystemData } from './fakeAPI-MSystem.js';
 import imagesMethodologySystem from './index-ImagesImport-MSystem.js';
 
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ${item.text}
       </div>
       <div class="msys-image-link">
-        <img class="msys-image" src="${img}" alt="${item.title}" />
+        <img class="msys-image lazyload blur-up" src="./images/placeholder.webp" data-src="${img}" alt="${item.title}" loading="lazy" />
       </div>
     `;
 
