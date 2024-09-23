@@ -1,4 +1,4 @@
-// main.scss
+// sass/main.scss
 
 :root {
   --text-dark-color: #000000;
@@ -31,6 +31,7 @@
 @import '../css/howWork.css';
 @import '../css/footer.css';
 @import '../css/scrollToTopButton.css';
+@import '../css/lazyloaded.css';
 
 @font-face {
   font-family: 'MontserratExtraLight';

@@ -1,0 +1,15 @@
+/* css/lazyloaded.css */
+
+/* .blur-up {
+  filter: blur(10px);
+  transition: filter 0.5s ease;
+} */
+
+.blur-up {
+  filter: blur(10px);
+  transition: filter 500ms;
+}
+
+.blur-up.lazyloaded {
+  filter: blur(0);
+}
