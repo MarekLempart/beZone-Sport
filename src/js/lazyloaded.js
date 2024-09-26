@@ -4,10 +4,10 @@ import 'lazysizes';
 import 'lazysizes/plugins/bgset/ls.bgset'; // Import pluginu bgset
 
 // Poniewąż Parcel ma problem ze ścieżkami w HTML, wymaga zaimportowania obrazów i jest zrobione to dynamicznie
+import image6 from '../images/aboutUs-img_12.webp';
+import image4 from '../images/forWhom-img_05.webp';
 import backgroundImage from '../images/forWhom_background_04.webp';
-import image4 from '../images/forWhom_firstPhoto_05.webp';
-import image5 from '../images/howWork_07.webp';
-import image6 from '../images/myPhoto_tablet.webp';
+import image5 from '../images/howWork-img_07.webp';
 import image1 from '../images/preliminary-img_01.webp';
 import image2 from '../images/timeToChange-img_03.webp';
 import image3 from '../images/timeToChange-img_04.webp';
@@ -72,13 +72,15 @@ document.addEventListener('DOMContentLoaded', function () {
     ) {
       img.setAttribute('data-src', image3);
     } else if (
-      img.getAttribute('data-src') === './images/forWhom_firstPhoto_05.webp'
+      img.getAttribute('data-src') === './images/forWhom-img_05.webp'
     ) {
       img.setAttribute('data-src', image4);
-    } else if (img.getAttribute('data-src') === './images/howWork_07.webp') {
+    } else if (
+      img.getAttribute('data-src') === './images/howWork-img_07.webp'
+    ) {
       img.setAttribute('data-src', image5);
     } else if (
-      img.getAttribute('data-src') === './images/myPhoto_tablet.webp'
+      img.getAttribute('data-src') === './images/aboutUs-img_12.webp'
     ) {
       img.setAttribute('data-src', image6);
     }
