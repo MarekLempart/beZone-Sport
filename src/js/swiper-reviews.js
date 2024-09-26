@@ -53,8 +53,9 @@ loadReviews();
 // Funkcja dla inicjalizacji Swiper
 const initializeSwiper = () => {
   const swiper = new Swiper('.reviews-js-slider', {
-    slidesPerView: 3,
-    spaceBetween: 28,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlides: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -64,16 +65,19 @@ const initializeSwiper = () => {
     breakpoints: {
       280: {
         slidesPerView: 1,
+        spaceBetween: 30,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 16,
+        slidesPerView: 'auto',
+        spaceBetween: 35,
       },
       1200: {
-        slidesPerView: 3,
-        spaceBetween: 28,
+        slidesPerView: 'auto',
+        spaceBetween: 40,
       },
     },
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
   });
 };
 

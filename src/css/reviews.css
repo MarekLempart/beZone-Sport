@@ -39,6 +39,12 @@
   max-width: 300px;
   position: relative;
   height: 300px;
+  flex: 0 0 auto;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
 }
 
 .review-photo {
