@@ -1,2 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(){var o=document.getElementById("scrollToTopButton");o?(o.style.display="none",window.addEventListener("scroll",(function(){window.pageYOffset>100?o.style.display="block":o.style.display="none"})),o.addEventListener("click",(function(){window.scrollTo({top:0,behavior:"smooth"})}))):console.error("Element #scrollToTopButton not found in the DOM.")}));
-//# sourceMappingURL=index.ca492810.js.map

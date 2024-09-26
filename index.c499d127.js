@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){var o=document.getElementById("scrollToTopButton"),e=document.getElementById("footer");o&&e?(o.style.display="none",window.addEventListener("scroll",(function(){var n=e.getBoundingClientRect(),t=window.innerHeight;window.pageYOffset>100&&n.top>t?o.style.display="block":o.style.display="none"})),o.addEventListener("click",(function(){window.scrollTo({top:0,behavior:"smooth"})}))):console.error("Element #scrollToTopButton or #footer not found in the DOM.")}));
+//# sourceMappingURL=index.c499d127.js.map
