@@ -9,8 +9,8 @@ import image4 from '../images/forWhom-img_05.webp';
 import backgroundImage from '../images/forWhom_background_04.webp';
 import image5 from '../images/howWork-img_07.webp';
 import image1 from '../images/preliminary-img_01.webp';
-import image2 from '../images/timeToChange-img_03.webp';
-import image3 from '../images/timeToChange-img_04.webp';
+import image2 from '../images/timeToChange01-img_03.webp';
+import image3 from '../images/timeToChange02-img_04.webp';
 
 // Importuj obrazy tła
 import desktopBg from '../images/methodology-footer_background_desktop_08.webp';
