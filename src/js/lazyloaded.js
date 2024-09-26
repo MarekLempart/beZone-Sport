@@ -8,7 +8,7 @@ import backgroundImage from '../images/forWhom_background_04.webp';
 import image4 from '../images/forWhom_firstPhoto_05.webp';
 import image5 from '../images/howWork_07.webp';
 import image6 from '../images/myPhoto_tablet.webp';
-import image1 from '../images/preliminary-photo_01.webp';
+import image1 from '../images/preliminary-img_01.webp';
 import image2 from '../images/timeToChange-img_03.webp';
 import image3 from '../images/timeToChange-img_04.webp';
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Jeśli nie masz problemów z Parcel, to te linie nie są potrzebne.
   lazyImages.forEach(img => {
-    if (img.getAttribute('data-src') === './images/preliminary-photo_01.webp') {
+    if (img.getAttribute('data-src') === './images/preliminary-img_01.webp') {
       img.setAttribute('data-src', image1);
     } else if (
       img.getAttribute('data-src') === './images/timeToChange-img_03.webp'
