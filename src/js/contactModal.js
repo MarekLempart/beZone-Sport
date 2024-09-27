@@ -5,9 +5,32 @@ import emailjs from 'emailjs-com';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
+// Funkcja do uzyskania kraju użytkownika na podstawie IP
+function getCountryCode(callback) {
+  fetch('https://ipinfo.io?token=your_ipinfo_token')
+    .then(response => response.json())
+    .then(data => {
+      callback(data.country.toLowerCase());
+    })
+    .catch(() => {
+      callback('pl'); // Domyślnie Polska w przypadku błędu
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.querySelector('#review-phone');
-  intlTelInput(input);
+
+  // intlTelInput(input);
+
+  // Inicjalizacja intl-tel-input z opcją automatycznego ustawienia kraju
+  getCountryCode(countryCode => {
+    intlTelInput(input, {
+      initialCountry: countryCode, // Ustawiamy domyślny kraj
+      preferredCountries: ['pl', 'us', 'de'], // Lista preferowanych krajów
+      utilsScript:
+        'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js', // Skrypt pomocniczy do formatowania
+    });
+  });
 
   const openReviewBtns = document.querySelectorAll(
     '[data-modal-review-open], [data-modal-buy1-open], [data-modal-buy2-open]'
