@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   getCountryCode(countryCode => {
     intlTelInput(input, {
       initialCountry: countryCode, // Ustawiamy domyślny kraj
-      preferredCountries: ['pl', 'us', 'co.uk', 'de'], // Lista preferowanych krajów
+      preferredCountries: ['pl', 'us', 'gb', 'de'], // Lista preferowanych krajów
       utilsScript:
         'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js', // Skrypt pomocniczy do formatowania
     });
