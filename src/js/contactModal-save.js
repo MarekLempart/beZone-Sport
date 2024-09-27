@@ -1,8 +1,21 @@
 // js/contactModal.js
 
+// import axios from 'axios';
 import emailjs from 'emailjs-com';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
+
+// // Funkcja do uzyskania kraju użytkownika na podstawie IP
+// function getCountryCode(callback) {
+//   fetch('https://ipinfo.io?token=your_ipinfo_token')
+//     .then(response => response.json())
+//     .then(data => {
+//       callback(data.country.toLowerCase());
+//     })
+//     .catch(() => {
+//       callback('pl'); // Domyślnie Polska w przypadku błędu
+//     });
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.querySelector('#phone_id');
@@ -13,6 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
     utilsScript:
       'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js', // Skrypt pomocniczy do formatowania
   });
+
+  // // Inicjalizacja intl-tel-input z opcją automatycznego ustawienia kraju
+  // getCountryCode(countryCode => {
+  //   intlTelInput(input, {
+  //     initialCountry: countryCode, // Ustawiamy domyślny kraj
+  //     preferredCountries: ['pl', 'us', 'gb', 'de'], // Lista preferowanych krajów
+  //     utilsScript:
+  //       'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js', // Skrypt pomocniczy do formatowania
+  //   });
+  // });
 
   const openReviewBtns = document.querySelectorAll(
     '[data-modal-review-open], [data-modal-buy1-open], [data-modal-buy2-open]'
@@ -65,6 +88,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // // Handle form submission
+  // const form = document.querySelector('.modal-review-form');
+  // form.addEventListener('submit', async event => {
+  //   event.preventDefault();
+
+  //   const name = form.querySelector('#name_id').value;
+  //   const email = form.querySelector('#email_id').value;
+  //   const phone = form.querySelector('#phone_id').value;
+  //   // const phone = iti.getNumber();
+  //   const message = form.querySelector('#message').value;
+  //   const subject = modal.getAttribute('data-modal-subject');
+
+  //   try {
+  //     const response = await axios.post(
+  //       'https://deploy-marek-b05855e6af89.herokuapp.com/api/v1/users/contact',
+  //       {
+  //         to: 'm.bojarski91@gmail.com',
+  //         subject,
+  //         name,
+  //         email,
+  //         phone,
+  //         text: message,
+  //       }
+  //     );
+
+  //     if (response.status === 200) {
+  //       alert('Wiadomość wysłana!');
+  //       form.reset();
+  //       closeModal();
+  //     } else {
+  //       alert('Wystąpił błąd podczas wysyłania wiadomości.');
+  //     }
+  //   } catch (error) {
+  //     alert('Wystąpił błąd podczas wysyłania wiadomości.');
+  //   }
+  // });
+
   document.addEventListener('DOMContentLoaded', () => {
     // Inicjalizacja EmailJS z Twoim User ID
     emailjs.init('xtkeKbpRdN9dos4sU');
@@ -109,5 +169,27 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Wystąpił błąd podczas wysyłania wiadomości.');
       }
     });
+
+    // const response = await fetch('http://localhost:3000/send-email', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     name,
+    //     email,
+    //     phone,
+    //     message,
+    //     subject,
+    //   }),
+    // });
+
+    // if (response.ok) {
+    //   alert('Wiadomość wysłana!');
+    //   form.reset();
+    //   closeModal();
+    // } else {
+    //   alert('Wystąpił błąd podczas wysyłania wiadomości.');
+    // }
   });
 });
