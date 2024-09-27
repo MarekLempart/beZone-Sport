@@ -1,5 +1,9 @@
 /* css/basicStyles.css */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header,
 .hero {
   background: transparent; /* Ustaw tło na przezroczyste */
