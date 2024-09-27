@@ -18,7 +18,7 @@ function getCountryCode(callback) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const input = document.querySelector('#review-phone');
+  const input = document.querySelector('#phone_id');
 
   // intlTelInput(input);
 
@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // form.addEventListener('submit', async event => {
   //   event.preventDefault();
 
-  //   const name = form.querySelector('#review-name').value;
-  //   const email = form.querySelector('#review-email').value;
-  //   const phone = form.querySelector('#review-phone').value;
+  //   const name = form.querySelector('#name_id').value;
+  //   const email = form.querySelector('#email_id').value;
+  //   const phone = form.querySelector('#phone_id').value;
   //   // const phone = iti.getNumber();
-  //   const message = form.querySelector('#opinion').value;
+  //   const message = form.querySelector('#message').value;
   //   const subject = modal.getAttribute('data-modal-subject');
 
   //   try {
@@ -128,21 +128,21 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async event => {
       event.preventDefault();
 
-      const name = form.querySelector('#review-name').value;
-      const email = form.querySelector('#review-email').value;
-      const phone = form.querySelector('#review-phone').value;
-      const message = form.querySelector('#opinion').value;
+      const name = form.querySelector('#name_id').value;
+      const email = form.querySelector('#email_id').value;
+      const phone = form.querySelector('#phone_id').value;
+      const message = form.querySelector('#message').value;
       const subject = document
         .querySelector('[data-modal-subject]')
         .getAttribute('data-modal-subject');
 
       // Tworzymy dane do wysłania w EmailJS
       const templateParams = {
+        subject,
         name,
         email,
         phone,
         message,
-        subject,
       };
 
       try {
@@ -150,7 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const response = await emailjs.send(
           'service_g5pmlsi',
           'template_i9me02a',
-          templateParams
+          templateParams,
+          'xtkeKbpRdN9dos4sU'
         );
         if (response.status === 200) {
           alert('Wiadomość wysłana pomyślnie!');
