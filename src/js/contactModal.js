@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('DOMContentLoaded', () => {
     // Inicjalizacja EmailJS z Twoim User ID
-    emailjs.init('Marek Lempart');
+    emailjs.init('xtkeKbpRdN9dos4sU');
     // Dodanie listenera na formularz
     const form = document.querySelector('.modal-review-form');
     form.addEventListener('submit', async event => {
@@ -138,20 +138,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Tworzymy dane do wysłania w EmailJS
       const templateParams = {
-        subject,
-        name,
-        email,
-        phone,
-        message,
+        name_id: name,
+        email_id: email,
+        phone_id: phone,
+        message: message,
+        subject: subject,
       };
 
       try {
         // Wysyłanie wiadomości za pomocą EmailJS
         const response = await emailjs.send(
-          'service_g5pmlsi',
-          'template_i9me02a',
-          templateParams,
-          'xtkeKbpRdN9dos4sU'
+          'service_g5pmlsi', // Service ID
+          'template_i9me02a', // Template ID
+          templateParams
         );
         if (response.status === 200) {
           alert('Wiadomość wysłana pomyślnie!');
