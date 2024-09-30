@@ -74,15 +74,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   padding: 0;
   margin: 0px auto;
   list-style: none;
 }
 
 .methodology-item {
-  width: 240px;
-  height: 240px;
+  width: 280px;
+  height: 280px;
   perspective: 1000px;
 }
 
@@ -168,8 +168,8 @@
 }
 
 .methodology-text {
-  width: 180px;
-  height: 180px;
+  width: 260px;
+  height: 220px;
   overflow-y: auto;
   color: var(--text-dark-color);
   font-weight: 400;
@@ -293,7 +293,17 @@
   .methodology-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 10px;
+  }
+
+  .methodology-item {
+    width: 300px;
+    height: 300px;
+  }
+
+  .methodology-text {
+    width: 280px;
+    height: 240px;
   }
 
   .methodology-footer-list {
@@ -305,8 +315,8 @@
 
 @media screen and (min-width: 1200px) {
   .methodology-item {
-    width: 260px;
-    height: 260px;
+    width: 360px;
+    height: 360px;
   }
 
   .methodology-image {
@@ -323,8 +333,8 @@
   }
 
   .methodology-text {
-    width: 200px;
-    height: 200px;
+    width: 340px;
+    height: 280px;
   }
 
   .methodology-footer-list {
