@@ -26,14 +26,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transform: translateX(0); */
+  transition: opacity 0.3s ease;
 }
 
 #scrollToTopButton svg {
   width: 30px;
   height: 30px;
-  transform: rotate(180deg); /* Obrócenie ikony do góry */
+  /* transform: rotate(180deg); */
+  /* Obrócenie ikony do góry */
   fill: var(--text-red-color);
+  transition: transform 0.3s ease, fill 0.3s ease; /* Dodano dla animacji ikony */
 }
 
 #scrollToTopButton:hover svg,
