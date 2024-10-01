@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const header = document.getElementById('header'); // Header
   const footer = document.getElementById('footer'); // Footer
   let scrollTimeout;
+  let lastScrollTop = window.pageYOffset; // Zapamiętujemy pozycję przewinięcia
 
   // Początkowa widoczność przycisku w sekcji hero
   scrollDownButton.classList.remove('hidden');
@@ -98,17 +99,21 @@ document.addEventListener('DOMContentLoaded', function () {
       const footerRect = footer.getBoundingClientRect();
       const headerRect = header.getBoundingClientRect();
       const windowHeight = window.innerHeight;
+      const currentScrollTop = window.pageYOffset;
 
-      // Zmieniamy ikonę w zależności od kierunku przewijania
-      if (window.pageYOffset > window.innerHeight) {
-        // Jeśli przewijamy w górę (jesteśmy daleko od góry strony)
-        scrollBothWaysButton.querySelector('svg').style.transform =
-          'rotate(180deg)';
+      // Określenie kierunku przewijania
+      const scrollDirection = currentScrollTop > lastScrollTop ? 'down' : 'up';
+
+      // Obracanie ikony w zależności od kierunku przewijania
+      const icon = scrollBothWaysButton.querySelector('svg');
+      if (scrollDirection === 'up') {
+        icon.style.transform = 'rotate(180deg)'; // Obróć ikonę do góry
       } else {
-        // Jeśli przewijamy w dół (jesteśmy blisko góry strony)
-        scrollBothWaysButton.querySelector('svg').style.transform =
-          'rotate(0deg)';
+        icon.style.transform = 'rotate(0deg)'; // Obróć ikonę w dół
       }
+
+      // Aktualizujemy pozycję przewinięcia
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
 
       // Jeśli przewiniemy więcej niż 100px i header jest poza ekranem
       if (
@@ -139,14 +144,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 3000); // 3 sekundy bezczynności
     });
 
-    // Przycisk przewija w górę lub w dół w zależności od kierunku
+    // Przycisk przewija w górę lub w dół w zależności od pozycji
     scrollBothWaysButton.addEventListener('click', () => {
       if (window.pageYOffset > window.innerHeight) {
+        // Przewiń do góry, gdy użytkownik jest niżej na stronie
         window.scrollTo({
           top: 0,
           behavior: 'smooth',
         });
       } else {
+        // Przewiń w dół, gdy użytkownik jest blisko góry strony
         window.scrollTo({
           top: document.body.scrollHeight,
           behavior: 'smooth',
