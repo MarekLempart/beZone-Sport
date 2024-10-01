@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Jeśli użytkownik przewinął więcej niż 100px i footer oraz header nie są widoczne
       if (
-        window.pageYOffset > 50 &&
+        window.pageYOffset > 100 &&
         footerRect.top > windowHeight &&
         headerRect.bottom < 0
       ) {
