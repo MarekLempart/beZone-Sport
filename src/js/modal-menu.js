@@ -20,6 +20,21 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
+  // Zamykanie menu po kliknięciu poza jego obszar
+  document.addEventListener('click', event => {
+    const isClickInsideMenu = mobileMenu.contains(event.target);
+    const isClickOnOpenBtn = openMenuBtn.contains(event.target);
+
+    // Jeśli kliknięto poza menu i nie kliknięto na przycisk otwierający, zamknij menu
+    if (
+      !isClickInsideMenu &&
+      !isClickOnOpenBtn &&
+      mobileMenu.classList.contains('is-open')
+    ) {
+      toggleMenu();
+    }
+  });
+
   // Zamykanie menu mobilnego na szerszych ekranach w przypadku zmiany orientacji urządzenia
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;

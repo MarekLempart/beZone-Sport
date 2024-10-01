@@ -18,11 +18,11 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: var(--background-ligth-color);
+  background-color: var(--background-red-color);
   border: 3px solid var(--text-red-color);
   padding: 0;
   cursor: pointer;
-  z-index: 99; /* Upewnij się, że przycisk jest na wierzchu innych elementów */
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,20 +32,19 @@
 #scrollBothWaysButton svg {
   width: 30px;
   height: 30px;
-  /* transform: rotate(180deg); */
   /* Obrócenie ikony do góry */
-  fill: var(--text-red-color);
+  fill: var(--text-light-color);
   transition: transform 0.3s ease, fill 0.3s ease; /* Dodano dla animacji ikony */
 }
 
 #scrollBothWaysButton:hover svg,
 #scrollBothWaysButton:focus svg {
-  fill: var(--text-light-color);
+  fill: var(--text-red-color);
 }
 
 #scrollBothWaysButton:hover,
 #scrollBothWaysButton:focus {
-  background-color: var(--background-red-color);
+  background-color: var(--background-ligth-color);
 }
 
 .scrollBothWaysButtonContainerDiv {
@@ -53,15 +52,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* .crollToTopButtonContainer {
-    padding-right: 40px;
-  } */
-
   #scrollBothWaysButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* display: none; */
     width: 40px;
     height: 40px;
   }
