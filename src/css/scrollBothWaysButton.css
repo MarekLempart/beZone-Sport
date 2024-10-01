@@ -1,6 +1,6 @@
-/* css/scrollToTopButton.css */
+/* css/scrollBothWaysButton.css */
 
-.crollToTopButtonContainer {
+.scrollBothWaysButtonContainer {
   position: fixed;
   bottom: 30px;
   left: 50%;
@@ -13,7 +13,7 @@
   z-index: 99;
 }
 
-#scrollToTopButton {
+#scrollBothWaysButton {
   display: none; /* Początkowo ukryj przycisk */
   width: 36px;
   height: 36px;
@@ -29,7 +29,7 @@
   transition: opacity 0.3s ease;
 }
 
-#scrollToTopButton svg {
+#scrollBothWaysButton svg {
   width: 30px;
   height: 30px;
   /* transform: rotate(180deg); */
@@ -38,17 +38,17 @@
   transition: transform 0.3s ease, fill 0.3s ease; /* Dodano dla animacji ikony */
 }
 
-#scrollToTopButton:hover svg,
-#scrollToTopButton:focus svg {
+#scrollBothWaysButton:hover svg,
+#scrollBothWaysButton:focus svg {
   fill: var(--text-light-color);
 }
 
-#scrollToTopButton:hover,
-#scrollToTopButton:focus {
+#scrollBothWaysButton:hover,
+#scrollBothWaysButton:focus {
   background-color: var(--background-red-color);
 }
 
-.crollToTopButtonContainerDiv {
+.scrollBothWaysButtonContainerDiv {
   padding: 0px 25px 0px 0px;
 }
 
@@ -57,16 +57,16 @@
     padding-right: 40px;
   } */
 
-  #scrollToTopButton {
+  #scrollBothWaysButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none; /* Początkowo ukryj przycisk */
+    /* display: none; */
     width: 40px;
     height: 40px;
   }
 
-  .crollToTopButtonContainerDiv {
+  .scrollBothWaysButtonContainerDiv {
     padding: 0px 45px 0px 0px;
   }
 }
