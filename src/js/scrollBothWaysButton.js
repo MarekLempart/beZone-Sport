@@ -53,9 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollTimeout = setTimeout(() => {
         if (
           footerRect.top <= windowHeight || // Footer widoczny
-          headerRect.bottom >= 0 || // Header widoczny
-          !scrollDownButton.classList.contains('hidden') // Hero-scroll button widoczny
+          headerRect.bottom >= 0 // Header widoczny
         ) {
+          scrollBothWaysButton.style.display = 'none'; // Ukryj scroll-both-ways button
+        } else {
           scrollBothWaysButton.style.display = 'none'; // Ukryj scroll-both-ways button
         }
       }, 3000); // 3 sekundy bezczynności
