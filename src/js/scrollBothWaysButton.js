@@ -27,11 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Obracanie ikony w zależności od kierunku przewijania
       const icon = scrollBothWaysButton.querySelector('svg');
-      if (scrollDirection === 'up') {
-        icon.style.transform = 'rotate(180deg)'; // Obróć ikonę do góry
-      } else {
-        icon.style.transform = 'rotate(0deg)'; // Obróć ikonę w dół
-      }
+      icon.style.transform =
+        scrollDirection === 'up' ? 'rotate(180deg)' : 'rotate(0deg)'; // Obróć ikonę w zależności od kierunku
 
       // Aktualizujemy pozycję przewinięcia
       lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
@@ -45,9 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollBothWaysButton.style.display = 'block'; // Pokaż przycisk scroll-both-ways
         scrollDownButton.classList.add('hidden'); // Ukryj przycisk hero-scroll-down-button
       } else {
-        scrollBothWaysButton.style.display = 'none'; // Ukryj przycisk scroll-both-ways
-
-        // Pokaż przycisk w sekcji hero, gdy jest w górnej części strony
+        // Ukryj przycisk scroll-both-ways i pokaż hero-scroll-button gdy w górnej części strony
+        scrollBothWaysButton.style.display = 'none';
         if (window.pageYOffset < 100) {
           scrollDownButton.classList.remove('hidden'); // Pokaż przycisk hero-scroll-down-button
         }
@@ -58,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (
           footerRect.top <= windowHeight || // Footer widoczny
           headerRect.bottom >= 0 || // Header widoczny
-          scrollDownButton.classList.contains('hidden') === false // Hero-scroll button widoczny
+          !scrollDownButton.classList.contains('hidden') // Hero-scroll button widoczny
         ) {
           scrollBothWaysButton.style.display = 'none'; // Ukryj scroll-both-ways button
         }
