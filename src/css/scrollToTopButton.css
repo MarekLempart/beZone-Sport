@@ -9,7 +9,7 @@
   max-width: 1200px;
   margin: 0px 0px 40px auto;
   display: flex;
-  justify-content: flex-end; /* Przycisk znajdzie się po prawej stronie */
+  justify-content: flex-end;
   z-index: 99;
 }
 

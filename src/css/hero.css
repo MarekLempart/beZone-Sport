@@ -175,6 +175,10 @@
     height: 40px;
   }
 
+  .hidden {
+    display: none;
+  }
+
   .hero-button-scroll-icon {
     width: 30px;
     height: 30px;

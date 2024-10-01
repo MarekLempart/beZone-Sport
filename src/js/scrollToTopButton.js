@@ -2,15 +2,20 @@
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   const scrollToTopButton = document.getElementById('scrollToTopButton');
+//   const footer = document.getElementById('footer'); // Pobieramy footer
 
-//   if (scrollToTopButton) {
-//     scrollToTopButton.style.display = 'none';
+//   if (scrollToTopButton && footer) {
+//     scrollToTopButton.style.display = 'none'; // Początkowo ukryty
 
 //     window.addEventListener('scroll', () => {
-//       if (window.pageYOffset > 100) {
-//         scrollToTopButton.style.display = 'block';
+//       const footerRect = footer.getBoundingClientRect();
+//       const windowHeight = window.innerHeight;
+
+//       // Jeśli użytkownik przewinął więcej niż 100px i footer nie jest widoczny
+//       if (window.pageYOffset > 100 && footerRect.top > windowHeight) {
+//         scrollToTopButton.style.display = 'block'; // Pokaż przycisk
 //       } else {
-//         scrollToTopButton.style.display = 'none';
+//         scrollToTopButton.style.display = 'none'; // Ukryj przycisk
 //       }
 //     });
 
@@ -21,26 +26,37 @@
 //       });
 //     });
 //   } else {
-//     console.error('Element #scrollToTopButton not found in the DOM.');
+//     console.error(
+//       'Element #scrollToTopButton or #footer not found in the DOM.'
+//     );
 //   }
 // });
 
 document.addEventListener('DOMContentLoaded', function () {
   const scrollToTopButton = document.getElementById('scrollToTopButton');
-  const footer = document.getElementById('footer'); // Pobieramy footer
+  const scrollDownButton = document.getElementById('scrollDownButton'); // Dodany przycisk z sekcji hero
+  const header = document.getElementById('header'); // Header
+  const footer = document.getElementById('footer'); // Footer
 
-  if (scrollToTopButton && footer) {
-    scrollToTopButton.style.display = 'none'; // Początkowo ukryty
+  if (scrollToTopButton && scrollDownButton && header && footer) {
+    scrollToTopButton.style.display = 'none'; // Ukryj przycisk na początku
 
     window.addEventListener('scroll', () => {
       const footerRect = footer.getBoundingClientRect();
+      const headerRect = header.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
-      // Jeśli użytkownik przewinął więcej niż 100px i footer nie jest widoczny
-      if (window.pageYOffset > 100 && footerRect.top > windowHeight) {
-        scrollToTopButton.style.display = 'block'; // Pokaż przycisk
+      // Jeśli użytkownik przewinął więcej niż 100px i footer oraz header nie są widoczne
+      if (
+        window.pageYOffset > 50 &&
+        footerRect.top > windowHeight &&
+        headerRect.bottom < 0
+      ) {
+        scrollToTopButton.style.display = 'block'; // Pokaż przycisk scroll-to-top
+        scrollDownButton.classList.add('hidden'); // Ukryj przycisk w sekcji hero
       } else {
-        scrollToTopButton.style.display = 'none'; // Ukryj przycisk
+        scrollToTopButton.style.display = 'none'; // Ukryj przycisk scroll-to-top
+        scrollDownButton.classList.remove('hidden'); // Pokaż przycisk w sekcji hero
       }
     });
 
@@ -52,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   } else {
     console.error(
-      'Element #scrollToTopButton or #footer not found in the DOM.'
+      'Element #scrollToTopButton, #scrollDownButton, #header, or #footer not found in the DOM.'
     );
   }
 });
