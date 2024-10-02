@@ -3,6 +3,7 @@
 import emailjs from 'emailjs-com';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
+import Notiflix from 'notiflix';
 
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.querySelector('#phone_id');
@@ -97,15 +98,15 @@ document.addEventListener('DOMContentLoaded', () => {
       );
 
       if (response.status === 200) {
-        alert('Wiadomość wysłana pomyślnie!');
+        Notiflix.Notify.success('Wiadomość wysłana pomyślnie!');
         form.reset(); // Resetowanie formularza
         modal.classList.add('is-hidden'); // Zamknięcie modala
       } else {
-        alert('Wystąpił błąd podczas wysyłania wiadomości.');
+        Notiflix.Notify.failure('Wystąpił błąd podczas wysyłania wiadomości.');
       }
     } catch (error) {
       console.error('Błąd przy wysyłaniu emaila:', error);
-      alert('Wystąpił błąd podczas wysyłania wiadomości.');
+      Notiflix.Notify.failure('Wystąpił błąd podczas wysyłania wiadomości.');
     }
   });
 

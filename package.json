@@ -28,6 +28,7 @@
     "modern-normalize": "^1.1.0",
     "nanoid": "^5.0.7",
     "nodemailer": "^6.9.14",
+    "notiflix": "^3.2.7",
     "swiper": "^11.1.7"
   },
   "devDependencies": {
