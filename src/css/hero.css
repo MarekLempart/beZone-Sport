@@ -114,6 +114,10 @@
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 .hero-scroll-down {
   color: var(--text-red-color);
 }
