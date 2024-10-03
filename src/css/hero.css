@@ -114,8 +114,14 @@
   cursor: pointer;
 }
 
-.hidden {
+/* .hidden {
   display: none;
+} */
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .hero-scroll-down {
@@ -179,9 +185,9 @@
     height: 40px;
   }
 
-  .hidden {
+  /* .hidden {
     display: none;
-  }
+  } */
 
   .hero-button-scroll-icon {
     width: 30px;
