@@ -9,12 +9,6 @@ const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
 const SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
 
-console.log('EmailJS Config:', {
-  Service: SERVICE_ID,
-  Template: TEMPLATE_ID,
-  KeyLoaded: !!PUBLIC_KEY,
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.querySelector('#phone_id');
 
