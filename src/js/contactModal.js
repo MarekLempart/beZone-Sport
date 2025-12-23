@@ -5,6 +5,10 @@ import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 import Notiflix from 'notiflix';
 
+const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+const SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
+
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.querySelector('#phone_id');
 
@@ -66,8 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Inicjalizacja EmailJS z Twoim User ID
-  emailjs.init('xtkeKbpRdN9dos4sU'); // Upewnij się, że to jest poprawne User ID
+  if (PUBLIC_KEY) {
+    emailjs.init(PUBLIC_KEY);
+  } else {
+    console.error('Brak klucza publicznego EmailJS! Sprawdź plik .env.');
+  }
 
   // Dodanie listenera na formularz
   const form = document.querySelector('.modal-review-form');
@@ -92,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       // Wysyłanie wiadomości za pomocą EmailJS
       const response = await emailjs.send(
-        'service_g5pmlsi', // Service ID z EmailJS
-        'template_i9me02a', // Template ID z EmailJS
+        SERVICE_ID,
+        TEMPLATE_ID,
         templateParams
       );
 
@@ -109,50 +116,4 @@ document.addEventListener('DOMContentLoaded', () => {
       Notiflix.Notify.failure('Wystąpił błąd podczas wysyłania wiadomości.');
     }
   });
-
-  // document.addEventListener('DOMContentLoaded', () => {
-  //   // Inicjalizacja EmailJS z Twoim User ID
-  //   emailjs.init('xtkeKbpRdN9dos4sU');
-  //   // Dodanie listenera na formularz
-  //   const form = document.querySelector('.modal-review-form');
-  //   form.addEventListener('submit', async event => {
-  //     event.preventDefault();
-
-  //     const name = form.querySelector('#name_id').value;
-  //     const email = form.querySelector('#email_id').value;
-  //     const phone = form.querySelector('#phone_id').value;
-  //     const message = form.querySelector('#message').value;
-  //     const subject = document
-  //       .querySelector('[data-modal-subject]')
-  //       .getAttribute('data-modal-subject');
-
-  //     // Tworzymy dane do wysłania w EmailJS
-  //     const templateParams = {
-  //       name_id: name,
-  //       email_id: email,
-  //       phone_id: phone,
-  //       message: message,
-  //       subject: subject,
-  //     };
-
-  //     try {
-  //       // Wysyłanie wiadomości za pomocą EmailJS
-  //       const response = await emailjs.send(
-  //         'service_g5pmlsi', // Service ID
-  //         'template_i9me02a', // Template ID
-  //         templateParams
-  //       );
-  //       if (response.status === 200) {
-  //         alert('Wiadomość wysłana pomyślnie!');
-  //         form.reset(); // Resetowanie formularza
-  //         modal.classList.add('is-hidden'); // Zamknięcie modala
-  //       } else {
-  //         alert('Wystąpił błąd podczas wysyłania wiadomości.');
-  //       }
-  //     } catch (error) {
-  //       console.error('Błąd przy wysyłaniu emaila:', error);
-  //       alert('Wystąpił błąd podczas wysyłania wiadomości.');
-  //     }
-  //   });
-  // });
 });
